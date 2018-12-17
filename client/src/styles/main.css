@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Niramit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Niramit-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Niramit', sans-serif;
+}
+.logo {
+    width: 100px;
+}
+.active {
+    color: red;
+}
