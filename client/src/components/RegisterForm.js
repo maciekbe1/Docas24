@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import axios from 'axios'
+import docas from '../api/docas';
 
 class RegisterForm extends React.Component {
     constructor(props) {
         super(props);
+        
         this.state = {
                 login: '',
                 password: '',
@@ -10,23 +13,28 @@ class RegisterForm extends React.Component {
                 email: ''
         }
     }
-
-    onSubmit = e => {
+    
+    onSubmit = async (e) => {
         e.preventDefault();
         console.log(this.state);
+        const response = await docas.post('/api/registerDocasUser?groupId=5c16f5ad165ad5a46d17f0acfed84dfe',
+        // {login: this.state.login, password: this.state.password}
+        {user: this.state}
+        
+    );
     }
-    change = e => {
+    onChange = e => {
         this.setState({ [e.target.name]: e.target.value })
     }
     render(){
         return(
             <div className="register-form">
                     <p>DANE DO REJESTRACJI</p>
-                <form>
+                <form onSubmit={this.onSubmit}>
                         <div>
                             <input
                                 value={this.state.login}
-                                onChange={e => this.change(e)}
+                                onChange={e => this.onChange(e)}
                                 className="docas-input"
                                 name="login"
                                 component="input"
@@ -37,7 +45,7 @@ class RegisterForm extends React.Component {
                         <div>
                             <input
                                 value={this.state.password}
-                                onChange={e => this.change(e)}
+                                onChange={e => this.onChange(e)}
                                 className="docas-input"
                                 name="password"
                                 component="input"
@@ -48,7 +56,7 @@ class RegisterForm extends React.Component {
                         <div>
                             <input
                                 value={this.state.repeatPassword}
-                                onChange={e => this.change(e)}
+                                onChange={e => this.onChange(e)}
                                 className="docas-input"
                                 name="repeatPassword"
                                 component="input"
@@ -59,7 +67,7 @@ class RegisterForm extends React.Component {
                         <div>
                             <input
                                 value={this.state.email}
-                                onChange={e => this.change(e)}
+                                onChange={e => this.onChange(e)}
                                 className="docas-input"
                                 name="email"
                                 component="input"
@@ -68,7 +76,7 @@ class RegisterForm extends React.Component {
                             />
                         </div>
                         <input
-                            onClick={e => this.onSubmit(e)}
+                            // onClick={e => this.onSubmit(e)}
                             type="submit"
                             className="docas-btn-primary"
                             value="Wyślij"

@@ -7,9 +7,16 @@ nav a {
 .logo {
     width: 150px;
 }
-.nav-list {
+.nav-bar {
     float: right;
 }
+.nav-list {
+    display: flex;
+}
 .nav-list li {
+    list-style: none;
     margin-right: 10px;
+}
+.nav-list li:last-child {
+    margin-right: 0;
 }
