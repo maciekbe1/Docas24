@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import FormsPage from './pages/FormsPage'
-import ContactPage from './pages/ContactPage'
-import RegisterPage from './pages/RegisterPage'
-import HomePage from './pages/HomePage'
-import HelpPage from './pages/HelpPage'
-import Header from './Header'
+import FormsPage from './pages/FormsPage';
+import ContactPage from './pages/ContactPage';
+import RegisterPage from './pages/RegisterPage';
+import HomePage from './pages/HomePage';
+import HelpPage from './pages/HelpPage';
+import Header from './Header';
+import '../styles/main.css';
 
 const App = () => {
     return (

@@ -1,0 +1,15 @@
+nav {
+    height: 60px;
+}
+nav a {
+    line-height: 60px;
+}
+.logo {
+    width: 150px;
+}
+.nav-list {
+    float: right;
+}
+.nav-list li {
+    margin-right: 10px;
+}

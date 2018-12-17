@@ -1,0 +1,29 @@
+.left-side-strap img {
+    /* position: absolute; */
+    width: 50%;
+    opacity: 0.5;
+    top: 50%;
+}
+.right-side-strap img {
+    width: 50%;
+    /* position: absolute; */
+    /* margin-inline-start: 10px; */
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    opacity: 0.5;
+    top: 100%;
+}
+.login-image img {
+    width: 100%;
+}
+.register-form {
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 37px rgba(243, 216, 255, 0.35);
+}
+.docas-input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+}

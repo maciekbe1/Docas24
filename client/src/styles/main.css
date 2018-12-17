@@ -8,9 +8,24 @@
 body {
     font-family: 'Niramit', sans-serif;
 }
-.logo {
-    width: 100px;
+a {
+    color: #000;
 }
-.active {
-    color: red;
+a:hover {
+    text-decoration: none;
+}
+.selected {
+    color: #0b51ca;
+}
+.docas-btn-primary {
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    box-shadow: 0 25px 42px rgba(69, 137, 254, 0.35);
+    background-color: #0b51ca;
+}
+.docas-input {
+    height: 40px;
+    border: 2px solid #0b51ca;
+    /* background-color: #3399ff; */
 }

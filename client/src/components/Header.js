@@ -1,30 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../images/docas_logo.png'
-import '../styles/main.css'
+import '../styles/header.css';
 
 const Header = (props) => {
     return (
         <div className="container">
-            <nav className="nav">
-                <Link to="/">
+            <nav>
+                <Link className="" to="/">
                     <img alt="logo" className="logo" src={logo} />
                 </Link>
-                <ul className="">
-                    <li>
-                        <Link to="/pages/partners">Partnerzy</Link>
+                <ul className="nav nav-list">
+                    <li className="nav-item">
+                        <NavLink activeClassName="selected" to="/pages/partners">Partnerzy</NavLink>
                     </li>
-                    <li>
-                        <Link to="/pages/integration">Integracja</Link>
+                    <li className="nav-item">
+                        <NavLink activeClassName="selected" to="/pages/integration">Integracja</NavLink>
                     </li>
-                    <li>
-                        <Link to="/pages/help">Pomoc</Link>
+                    <li className="nav-item">
+                        <NavLink activeClassName="selected" to="/pages/help">Pomoc</NavLink>
                     </li>
-                    <li>
-                        <Link to="/pages/register">Rejestracja</Link>
+                    <li className="nav-item">
+                        <NavLink activeClassName="selected" to="/pages/register">Rejestracja</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <a target="_blank" href="https://b2ng.bpower2.com/index.php/site/login">Zaloguj</a>
                     </li>
                 </ul>
-                <a href="https://b2ng.bpower2.com/index.php/site/login">Zaloguj</a>
             </nav>
         </div>
     )
