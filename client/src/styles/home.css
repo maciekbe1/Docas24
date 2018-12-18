@@ -21,8 +21,9 @@
     margin-bottom: 50px;
 }
 .square {
-    width: 100%;
-    height: 300px;
+    width: 570px;
+    height: 441px;
+    margin: 14px;
     background-color: #d9e8f7;
     display: flex;
     border-radius: 5px;
@@ -32,6 +33,12 @@
     margin-inline-start: auto;
     margin-bottom: 15px;
     color: #000;
+}
+.form-filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .form-filter p {
     margin-left: 15px;
