@@ -16,12 +16,12 @@
     },
     {
         "id": 4,
-        "name": "zus 5",
+        "name": "zus 4",
         "class": "zus"
     },
     {
         "id": 5,
-        "name": "zus 6",
+        "name": "zus 5",
         "class": "zus"
     },
     {
@@ -41,12 +41,12 @@
     },
     {
         "id": 9,
-        "name": "us 5",
+        "name": "us 4",
         "class": "us"
     },
     {
         "id": 10,
-        "name": "us 6",
+        "name": "us 5",
         "class": "us"
     },
     {
@@ -66,12 +66,12 @@
     },
     {
         "id": 14,
-        "name": "bank 5",
+        "name": "bank 4",
         "class": "bank"
     },
     {
         "id": 15,
-        "name": "bank 6",
+        "name": "bank 5",
         "class": "bank"
     },
     {
@@ -91,12 +91,12 @@
     },
     {
         "id": 19,
-        "name": "dg 5",
+        "name": "dg 4",
         "class": "dg"
     },
     {
         "id": 20,
-        "name": "dg 6",
+        "name": "dg 5",
         "class": "dg"
     },
     {
@@ -116,12 +116,12 @@
     },
     {
         "id": 24,
-        "name": "other 5",
+        "name": "other 4",
         "class": "other"
     },
     {
         "id": 25,
-        "name": "other 6",
+        "name": "other 5",
         "class": "other"
     }
 ]

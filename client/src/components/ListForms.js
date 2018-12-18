@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 class ListForm extends Component {
 
     render() {
+        const { forms } = this.props
         return (
             <section className='form-filter'>
-                    {this.props.forms.map(form => {
+                    {forms.map(form => {
                      return (
                         <div className={form.class} key={form.id}>
                             <div className="square">
