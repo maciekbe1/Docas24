@@ -25,9 +25,10 @@ a:hover {
     background-color: #0b51ca;
 }
 .docas-btn-transparent {
-height: 40px;
-border: 2px solid #0b51ca;
-padding: 10px
+    color: #0b51ca;
+    height: 40px;
+    border: 2px solid #0b51ca;
+    padding: 5px 10px;
 }
 .docas-input {
     height: 40px;

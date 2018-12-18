@@ -1,0 +1,127 @@
+[
+    {
+        "id": 1,
+        "name": "zus 1",
+        "class": "zus"
+    },
+    {
+        "id": 2,
+        "name": "zus 2",
+        "class": "zus"
+    },
+    {
+        "id": 3,
+        "name": "zus 3",
+        "class": "zus"
+    },
+    {
+        "id": 4,
+        "name": "zus 5",
+        "class": "zus"
+    },
+    {
+        "id": 5,
+        "name": "zus 6",
+        "class": "zus"
+    },
+    {
+        "id": 6,
+        "name": "us 1",
+        "class": "us"
+    },
+    {
+        "id": 7,
+        "name": "us 2",
+        "class": "us"
+    },
+    {
+        "id": 8,
+        "name": "us 3",
+        "class": "us"
+    },
+    {
+        "id": 9,
+        "name": "us 5",
+        "class": "us"
+    },
+    {
+        "id": 10,
+        "name": "us 6",
+        "class": "us"
+    },
+    {
+        "id": 11,
+        "name": "bank 1",
+        "class": "bank"
+    },
+    {
+        "id": 12,
+        "name": "bank 2",
+        "class": "bank"
+    },
+    {
+        "id": 13,
+        "name": "bank 3",
+        "class": "bank"
+    },
+    {
+        "id": 14,
+        "name": "bank 5",
+        "class": "bank"
+    },
+    {
+        "id": 15,
+        "name": "bank 6",
+        "class": "bank"
+    },
+    {
+        "id": 16,
+        "name": "dg 1",
+        "class": "dg"
+    },
+    {
+        "id": 17,
+        "name": "dg 2",
+        "class": "dg"
+    },
+    {
+        "id": 18,
+        "name": "dg 3",
+        "class": "dg"
+    },
+    {
+        "id": 19,
+        "name": "dg 5",
+        "class": "dg"
+    },
+    {
+        "id": 20,
+        "name": "dg 6",
+        "class": "dg"
+    },
+    {
+        "id": 21,
+        "name": "other 1",
+        "class": "other"
+    },
+    {
+        "id": 22,
+        "name": "other 2",
+        "class": "other"
+    },
+    {
+        "id": 23,
+        "name": "other 3",
+        "class": "other"
+    },
+    {
+        "id": 24,
+        "name": "other 5",
+        "class": "other"
+    },
+    {
+        "id": 25,
+        "name": "other 6",
+        "class": "other"
+    }
+]
