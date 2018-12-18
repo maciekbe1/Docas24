@@ -5,33 +5,37 @@ import '../styles/header.css';
 
 const Header = (props) => {
     return (
-        <div className="container">
-        
+        <header className="header container-fluid">
+
             <nav className="nav navbar-expand-lg">
-            
-                <Link className="navbar-brand col-sm-4" to="/">
+
+                <Link className="navbar-brand col-lg-2 offset-lg-1" to="/">
                     <img alt="logo" className="logo" src={logo} />
                 </Link>
-                
-                <ul className="navbar-nav col-sm-8 d-flex justify-content-end">
+
+                <ul className="navbar-nav col-lg-5 offset-lg-1">
                     <li className="nav-item">
                         <NavLink activeClassName="selected" to="/pages/partners">Partnerzy</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink activeClassName="selected" to="/pages/contact">Kontakt</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink activeClassName="selected" to="/pages/help">Pomoc</NavLink>
                     </li>
                     <li className="nav-item">
                         <a href="http://localhost/index.php/site/register">Rejestracja</a>
                     </li>
                     <li className="nav-item">
-                        <a className="docas-btn-transparent" href="https://b2ng.bpower2.com/index.php/site/login">Zaloguj się</a>
+                        <NavLink activeClassName="selected" to="/pages/help">Pomoc</NavLink>
                     </li>
+                    <li className="nav-item">
+                        <NavLink activeClassName="selected" to="/pages/help">Demo</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink activeClassName="selected" to="/pages/contact">Kontakt</NavLink>
+                    </li>
+
                 </ul>
+
+                <a className="docas-btn-transparent" href="https://b2ng.bpower2.com/index.php/site/login">Zaloguj się</a>
+
             </nav>
-        </div>
+        </header>
     )
 }
 
