@@ -3,6 +3,7 @@ import '../../styles/home.css';
 import FindForm from '../FindForm';
 import LastForms from '../LastForms';
 import ExploreDocas from '../ExploreDocas';
+import Statistics from '../Statistics';
 import forms from '../../data/forms.json';
 
 const formList = forms;
@@ -14,6 +15,7 @@ class HomePage extends React.Component {
                 <FindForm />
                 <LastForms forms={formList}/>
                 <ExploreDocas />
+                <Statistics />
             </div>
         );
     }

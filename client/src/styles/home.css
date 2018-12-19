@@ -48,7 +48,42 @@
     display: flex;
     justify-content: center;
 }
+.explore-docas {
+    position: relative;
+    margin-top: 147px;
+    overflow: hidden;
+}
+.explore-docas > .row > img {
+    position: absolute;
+    right: -70px;
+    top: 35px;
+}
+.explore-docas-text {
+    width: 475px;
+    margin: 0 0 0 112px;
+}
+.explore-docas-text h2 {
+    font-size: 48px;
+    letter-spacing: .8px;
+    font-weight: bold;
+}
+.explore-docas-text p {
+    font-size: 23px;
+    margin: 56px 0 0 4px;
+    line-height: 37px;
+}
+.explore-docas-btns {
+    margin: 70px 0 0 7px;
+}
+.explore-docas-btns button {
+    height: 61px;
+    width: 200px;
+    margin-right: 12px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
 .macbook {
     display: flex;
     justify-content: center;
+    padding: 32px 0px;
 }
