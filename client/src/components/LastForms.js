@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import ListForm from './ListForms';
 
 class LastForms extends Component {
+    
     state = {
         forms: this.props.forms
     }
-
+    
     findAllForms = () => {
         this.setState({forms: this.props.forms});
     }
@@ -25,7 +26,7 @@ class LastForms extends Component {
                             <button onClick={this.findForm.bind(this, 'zus')} className="btn btn-link">Zus</button>
                             <button onClick={this.findForm.bind(this, 'bank')} className="btn btn-link">Bank</button>
                             <button onClick={this.findForm.bind(this, 'dg')} className="btn btn-link">Działaność gospodarcza</button>
-                            <button className="btn btn-link">inne</button>
+                            <button onClick={this.findForm.bind(this, 'other')} className="btn btn-link">inne</button>
                         </div>
                     <ListForm forms={this.state.forms} />
                 </div>

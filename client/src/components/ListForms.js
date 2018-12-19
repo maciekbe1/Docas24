@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 
 class ListForm extends Component {
+    
+    state = {
+        count: 2
+    }
 
+    showMore = () => {
+        this.setState({ count: this.state.count + 2})
+    }
+    
     render() {
-        const { forms } = this.props
+        
+        const { forms } = this.props;
         return (
             <section className='form-filter'>
-                    {forms.map(form => {
+                    {forms.slice(0, this.state.count).map(form => {
                      return (
                         <div className={form.class} key={form.id}>
                             <div className="square">
@@ -20,6 +29,7 @@ class ListForm extends Component {
                         </div>
                      )
                     })}
+                    <button className="docas-btn-primary" onClick={this.showMore}>Pokaż więcej</button>
             </section>
         );
     }

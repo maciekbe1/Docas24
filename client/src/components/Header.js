@@ -24,7 +24,7 @@ const Header = (props) => {
                         <NavLink activeClassName="selected" to="/pages/help">Pomoc</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink activeClassName="selected" to="/pages/help">Demo</NavLink>
+                        <NavLink activeClassName="selected" to="/pages/demo">Demo</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink activeClassName="selected" to="/pages/contact">Kontakt</NavLink>

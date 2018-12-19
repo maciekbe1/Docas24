@@ -7,7 +7,7 @@ const FindForm = () => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6 block__find--form">
-                    <h1>Znajdź Formularz:</h1>
+                    <h1>Znajdź formularz:</h1>
                     <div className="input-group mb-3">
                       <input type="text" className="form-control docas-input" placeholder="Wpisz jakiego formularza szukasz" aria-label="Recipient's username" aria-describedby="basic-addon2" />
                       <div className="input-group-append">
