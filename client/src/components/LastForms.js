@@ -21,7 +21,7 @@ class LastForms extends Component {
                 <div className="block-last-form">
                     <h2 className="text-center">Najnowsze formularze</h2>
                         <div className="form-btns-filters">
-                            <button onClick={this.findAllForms} className="btn btn-link">Wszystkie</button>
+                            <button onClick={this.findAllForms} className="btn btn-primary">Wszystkie</button>
                             <button onClick={this.findForm.bind(this, 'us')} className="btn btn-link">Urząd skarbowy</button>
                             <button onClick={this.findForm.bind(this, 'zus')} className="btn btn-link">Zus</button>
                             <button onClick={this.findForm.bind(this, 'bank')} className="btn btn-link">Bank</button>

@@ -12,7 +12,7 @@ const FindForm = () => {
                       <input type="text" className="form-control docas-input" placeholder="Wpisz jakiego formularza szukasz" aria-label="Recipient's username" aria-describedby="basic-addon2" />
                       <div className="input-group-append">
                         <span className="input-group-text" id="basic-addon2">
-                        <i className="fas fa-search"></i>
+                        <i className="fas fa-search fa-2x"></i>
                         </span>
                       </div>
                     </div>
