@@ -17,12 +17,18 @@ a:hover {
 .selected {
     color: #0b51ca;
 }
+.btn-primary {
+    background-color: #0b51ca;
+    border-radius: 0;
+}
 .docas-btn-primary {
     color: #fff;
     height: 60px;
     width: 199px;
     box-shadow: 0 25px 42px rgba(69, 137, 254, 0.35);
     background-color: #0b51ca;
+    margin-top: 92px;
+    border: none;   
 }
 .docas-btn-transparent {
     color: #0b51ca;
