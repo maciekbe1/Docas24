@@ -10,16 +10,29 @@
 .block-find-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 192px 0;
 }
 
 .docas-find-form-button {
-    margin: 0 auto;
-    margin-top: 10px;
+    height: 60px;
+    width: 200px;
+    margin: 19px auto;
+    background-color: #0b51ca;
+    border: none;
+    font-size: 18px;
 }
 
 .block-find-form h1 {
-    margin-bottom: 50px;
+    font-size: 58px;
+    margin-bottom: 58px;
+}
+
+.block-last-form {
+    margin-top: 177px;
+}
+
+.block-last-form h2 {
+    font-size: 48px;
 }
 .square {
     width: 570px;

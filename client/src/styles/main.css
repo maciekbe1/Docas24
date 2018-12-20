@@ -34,6 +34,15 @@ a:hover {
     text-align: center;
 }
 .docas-input {
-    height: 40px;
+    height: 60px;
     border: 2px solid #0b51ca;
+    border-right: none;
+    font-size: 24px;
+}
+
+.input-group-text {
+    width: 55px;
+    background: no-repeat;
+    border: 2px solid #0b51ca;
+    border-left: none;
 }
