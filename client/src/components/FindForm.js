@@ -6,7 +6,7 @@ const FindForm = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-lg-6 block__find--form">
+                <div className="col-lg-6 block-find-form">
                     <h1>Znajdź formularz:</h1>
                     <div className="input-group mb-3">
                       <input type="text" className="form-control docas-input" placeholder="Wpisz jakiego formularza szukasz" aria-label="Recipient's username" aria-describedby="basic-addon2" />
@@ -16,7 +16,7 @@ const FindForm = () => {
                         </span>
                       </div>
                     </div>
-                    <button className="docas-btn-primary docas__find-form--button">SZUKAJ</button>
+                    <button className="btn btn-primary docas-find-form-button">SZUKAJ</button>
                 </div>
                 <div className="col-lg-6">
                     <img alt="home" className="home-image" src={home_bg} />

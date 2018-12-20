@@ -18,9 +18,9 @@ class LastForms extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <div className="block__last--form">
+                <div className="block-last-form">
                     <h2 className="text-center">Najnowsze formularze</h2>
-                        <div className="form__btns--filters">
+                        <div className="form-btns-filters">
                             <button onClick={this.findAllForms} className="btn btn-link">Wszystkie</button>
                             <button onClick={this.findForm.bind(this, 'us')} className="btn btn-link">Urząd skarbowy</button>
                             <button onClick={this.findForm.bind(this, 'zus')} className="btn btn-link">Zus</button>

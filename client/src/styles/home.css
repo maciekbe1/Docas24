@@ -7,18 +7,18 @@
 .home {
     margin-top: 100px;
 }
-.block__find--form {
+.block-find-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.docas__find-form--button {
+.docas-find-form-button {
     margin: 0 auto;
     margin-top: 10px;
 }
 
-.block__find--form h1 {
+.block-find-form h1 {
     margin-bottom: 50px;
 }
 .square {
@@ -44,7 +44,7 @@
 .form-filter p {
     margin-left: 15px;
 }
-.form__btns--filters {
+.form-btns-filters {
     display: flex;
     justify-content: center;
 }

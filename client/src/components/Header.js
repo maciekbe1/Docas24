@@ -29,11 +29,8 @@ const Header = (props) => {
                     <li className="nav-item">
                         <NavLink activeClassName="selected" to="/pages/contact">Kontakt</NavLink>
                     </li>
-
                 </ul>
-
-                <a className="docas-btn-transparent" href="https://b2ng.bpower2.com/index.php/site/login">Zaloguj się</a>
-
+                        <a className="btn btn-outline-primary" href="https://b2ng.bpower2.com/index.php/site/login">Zaloguj się</a>
             </nav>
         </header>
     )
