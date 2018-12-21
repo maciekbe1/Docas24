@@ -4,9 +4,31 @@
   font-weight: 400;
   src: url('./fonts/Niramit-Regular.ttf') format('truetype');
 }
-
+html {
+    font-size: 62.5%;
+}
 body {
     font-family: 'Niramit', sans-serif;
+}
+h1 {
+    font-size: 5.8rem;
+}
+h2 {
+    font-size: 4.8rem;
+    letter-spacing: .8px;
+    font-weight: bold;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.4rem;
+}
+h5 {
+    font-size: 2rem
+}
+p {
+    font-size: 1.6rem;
 }
 a {
     color: #000;
@@ -16,6 +38,9 @@ a:hover {
 }
 .selected {
     color: #0b51ca;
+}
+.selected-background {
+    background: #0b51ca;
 }
 .btn-primary {
     background-color: #0b51ca;
@@ -51,4 +76,7 @@ a:hover {
     background: no-repeat;
     border: 2px solid #0b51ca;
     border-left: none;
+}
+.white {
+    color: #ffffff;
 }

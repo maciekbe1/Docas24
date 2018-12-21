@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 class ListForm extends Component {
     
     state = {
-        count: 2
+        count: 6
     }
 
     showMore = () => {
-        this.setState({ count: this.state.count + 2})
+        this.setState({ count: this.state.count + 3})
     }
     
     render() {
@@ -25,7 +25,7 @@ class ListForm extends Component {
                                     <li className="nav-item">Wypełnij</li>
                                 </ul>
                             </div>
-                            <p>{form.name}</p>
+                            <h3>{form.name}</h3>
                         </div>
                      )
                     })}

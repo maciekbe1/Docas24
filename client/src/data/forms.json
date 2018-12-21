@@ -123,5 +123,10 @@
         "id": 25,
         "name": "other 5",
         "class": "other"
+    },
+    {
+        "id": 26,
+        "name": "bank 6",
+        "class": "bank"
     }
 ]

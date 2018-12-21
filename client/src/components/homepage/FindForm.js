@@ -19,7 +19,7 @@ const FindForm = () => {
                     <button className="btn btn-primary docas-find-form-button">SZUKAJ</button>
                 </div>
                 <div className="col-lg-6">
-                    <img alt="home" className="home-image" src={home_bg} />
+                    <img alt="home" className="find-form-image" src={home_bg} />
                 </div>
             </div>
         </div>

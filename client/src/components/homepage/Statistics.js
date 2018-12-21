@@ -13,25 +13,25 @@ class Statistics extends Component {
                         <div className="col-lg-3">
                             <div className="statistics-value">
                                 <h5>Płatność</h5>
-                                <p><span>50</span>zł/msc</p>
+                                <p className="selected"><span>50</span>ZŁ/MSC</p>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="statistics-value">
                                 <h5>Użytkoników</h5>
-                                <span>2000</span>
+                                <span className="selected">2000</span>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="statistics-value">
                                 <h5>Dokumentów</h5>
-                                <span>1500</span>
+                                <span className="selected">1500</span>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="statistics-value">
                                 <h5>Dostępność</h5>
-                                <p><span>365</span>dni</p>
+                                <p className="selected"><span>365</span>DNI</p>
                             </div>
                         </div>
                     </div>
