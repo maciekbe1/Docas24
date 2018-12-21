@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import line_left from '../../images/01_Home_bg_line_3.png';
 
 class Statistics extends Component {
     render() {
         return (
             <div className="container-fluid statistics">
+                <div className="row">
+                    <img alt="lines" src={line_left} />
+                </div>
                 <div className="container">
                     <div className="row statistics-row">
                         <div className="col-lg-3">
