@@ -29,7 +29,9 @@ class ListForm extends Component {
                         </div>
                      )
                     })}
-                    <button className="btn btn-primary docas-show-more-button" onClick={this.showMore}>Załaduj więcej</button>
+                    <div className="docas-show-more col-12">
+                        <button className="btn btn-primary docas-show-more-button" onClick={this.showMore}>Załaduj więcej</button>
+                    </div>
             </section>
         );
     }
