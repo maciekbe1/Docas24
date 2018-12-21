@@ -21,6 +21,15 @@
     border: none;
     font-size: 18px;
 }
+.docas-show-more-button {
+    height: 60px;
+    padding: 0 30px;
+    background-color: #0b51ca;
+    border: none;
+    font-size: 18px;
+    margin: auto 100%;
+    font-size: 20px;
+}
 
 .block-find-form h1 {
     font-size: 58px;

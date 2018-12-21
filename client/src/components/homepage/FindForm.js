@@ -1,5 +1,5 @@
 import React from 'react'
-import home_bg from '../images/01_Home_bg.png';
+import home_bg from '../../images/01_Home_bg.png';
 
 
 const FindForm = () => {

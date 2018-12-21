@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../styles/home.css';
-import FindForm from '../FindForm';
-import LastForms from '../LastForms';
-import ExploreDocas from '../ExploreDocas';
-import Statistics from '../Statistics';
+import '../../styles/homepage.css';
+import FindForm from '../homepage/FindForm';
+import LastForms from '../homepage/LastForms';
+import ExploreDocas from '../homepage/ExploreDocas';
+import Statistics from '../homepage/Statistics';
 import forms from '../../data/forms.json';
 
 const formList = forms;

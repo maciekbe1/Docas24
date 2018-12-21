@@ -29,7 +29,7 @@ class ListForm extends Component {
                         </div>
                      )
                     })}
-                    <button className="show-more docas-btn-primary" onClick={this.showMore}>Pokaż więcej</button>
+                    <button className="btn btn-primary docas-show-more-button" onClick={this.showMore}>Załaduj więcej</button>
             </section>
         );
     }
