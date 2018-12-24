@@ -54,7 +54,7 @@
 .square ul {
     align-items: flex-end;
     margin-inline-start: auto;
-    margin-bottom: 15px;
+    margin-bottom: 52px;
     color: #000;
 }
 .form-filter {
@@ -164,26 +164,50 @@
 /* news coponent */
 .news {
     margin-top: 335px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 }
 .news h2 {
     font-size: 55px;
     text-align: center;
+    margin-bottom: 100px;
 }
 .news .row {
-    justify-content: center;;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.news-content {
+    min-height: 630px;
+    margin: 10px;
 }
 .news-square {
-    width: 570px;
+    /* width: 570px; */
     height: 300px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-color: #d9e8f7;
     border-radius: 5px;
 }
 .news-text {
-    margin: 32px;
+    margin: 32px 0 40px 48px;
+}
+.news-text h3 {
+    font-size: 21px;
+    line-height: 32px;
+    color: #0b51ca;
+}
+.news-text p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 34px;
+}
+.news-content:hover h3 {
+    font-weight: bold;
+}
+.news-content:hover {
+    border-bottom: 1px solid #0b51ca;
 }
 /* review component */
 .block-reviews {
@@ -222,9 +246,11 @@
 }
 
 @media (min-width: 992px) {
-    
+    .news .row {
+        flex-wrap: nowrap;
+    }
 }
 
 @media (min-width: 1200px) {
-    
+
 }

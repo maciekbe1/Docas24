@@ -9,11 +9,11 @@ const Header = (props) => {
 
             <nav className="nav navbar-expand-lg">
 
-                <Link className="navbar-brand col-lg-2 offset-lg-1" to="/">
+                <Link className="navbar-brand col-xl-2 offset-xl-1" to="/">
                     <img alt="logo" className="logo" src={logo} />
                 </Link>
 
-                <ul className="navbar-nav col-lg-5 offset-lg-1">
+                <ul className="navbar-nav col-xl-5 offset-xl-1">
                     <li className="nav-item">
                         <NavLink activeClassName="selected" to="/pages/partners">Partnerzy</NavLink>
                     </li>
@@ -30,7 +30,9 @@ const Header = (props) => {
                         <NavLink activeClassName="selected" to="/pages/contact">Kontakt</NavLink>
                     </li>
                 </ul>
-                        <a className="btn btn-outline-primary log-in" href="https://b2ng.bpower2.com/index.php/site/login">Zaloguj się</a>
+                <div className="nav-log-in col-lg-2">
+                    <a className="btn btn-outline-primary log-in" href="https://b2ng.bpower2.com/index.php/site/login">Zaloguj się</a>
+                </div>
             </nav>
         </header>
     )
