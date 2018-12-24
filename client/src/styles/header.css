@@ -1,9 +1,6 @@
 .header  {
     margin-top:64px;
 }
-nav {
-    height: 60px;
-}
 nav a {
     font-size: 21px;
     line-height: 60px;
@@ -28,4 +25,24 @@ nav a {
     letter-spacing: .8px;
     border: 2px solid #0b51ca;
     color: #0b51ca;
+}
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 992px) {
+    .log-in {
+        margin: 8px 0 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .log-in {
+        margin: 8px 0 0 134px;
+        
+    }
 }
