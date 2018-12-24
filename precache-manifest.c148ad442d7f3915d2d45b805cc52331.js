@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3786422f6d3fbfb8608f",
+    "revision": "71d839fac7228e6f4fa5",
     "url": "/Docas24/static/css/main.976e1764.chunk.css"
   },
   {
-    "revision": "3786422f6d3fbfb8608f",
-    "url": "/Docas24/static/js/main.3786422f.chunk.js"
+    "revision": "71d839fac7228e6f4fa5",
+    "url": "/Docas24/static/js/main.71d839fa.chunk.js"
   },
   {
     "revision": "548b7f2c272c9189ba72",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/Docas24/static/media/Niramit-Regular.da1d2e2f.ttf"
   },
   {
-    "revision": "3858981791d4337c178b970d9859eef4",
+    "revision": "44662d37646daad0796351786a91cffe",
     "url": "/Docas24/index.html"
   }
 ];

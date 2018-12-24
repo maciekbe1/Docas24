@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Docas24/precache-manifest.8df40f365650b1276f64db70d45852ee.js"
+  "/Docas24/precache-manifest.c148ad442d7f3915d2d45b805cc52331.js"
 );
 
 workbox.clientsClaim();

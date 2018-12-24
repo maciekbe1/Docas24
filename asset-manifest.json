@@ -1,7 +1,7 @@
 {
   "main.css": "/Docas24/static/css/main.976e1764.chunk.css",
-  "main.js": "/Docas24/static/js/main.3786422f.chunk.js",
-  "main.js.map": "/Docas24/static/js/main.3786422f.chunk.js.map",
+  "main.js": "/Docas24/static/js/main.71d839fa.chunk.js",
+  "main.js.map": "/Docas24/static/js/main.71d839fa.chunk.js.map",
   "static/js/1.548b7f2c.chunk.js": "/Docas24/static/js/1.548b7f2c.chunk.js",
   "static/js/1.548b7f2c.chunk.js.map": "/Docas24/static/js/1.548b7f2c.chunk.js.map",
   "runtime~main.js": "/Docas24/static/js/runtime~main.4498b6a3.js",
@@ -12,6 +12,6 @@
   "static/media/main.css": "/Docas24/static/media/Niramit-Regular.da1d2e2f.ttf",
   "static/css/main.976e1764.chunk.css.map": "/Docas24/static/css/main.976e1764.chunk.css.map",
   "index.html": "/Docas24/index.html",
-  "precache-manifest.8df40f365650b1276f64db70d45852ee.js": "/Docas24/precache-manifest.8df40f365650b1276f64db70d45852ee.js",
+  "precache-manifest.c148ad442d7f3915d2d45b805cc52331.js": "/Docas24/precache-manifest.c148ad442d7f3915d2d45b805cc52331.js",
   "service-worker.js": "/Docas24/service-worker.js"
 }
