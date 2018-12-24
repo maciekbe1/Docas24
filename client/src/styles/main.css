@@ -53,7 +53,7 @@ a:hover {
     box-shadow: 0 25px 42px rgba(69, 137, 254, 0.35);
     background-color: #0b51ca;
     margin-top: 92px;
-    border: none;   
+    border: none;
 }
 .docas-btn-transparent {
     color: #0b51ca;
@@ -79,4 +79,8 @@ a:hover {
 }
 .white {
     color: #ffffff;
+}
+
+.container-fluid {
+    max-width: 1920px;
 }
