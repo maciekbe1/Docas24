@@ -1,0 +1,15 @@
+.logo-footer {
+    width: 177px;
+}
+footer {
+    height: 395px;
+}
+.p-footer {
+    height: 40px;
+    opacity: 0.7;
+    color: #39436f;
+    font-family: Niramit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}

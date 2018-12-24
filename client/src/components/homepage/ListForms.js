@@ -19,7 +19,7 @@ class ListForm extends Component {
                      return (
                         <div className={form.class + " col-xl-4 col-lg-6"} key={form.id}>
                             <div className="square">
-                                <span class="badge badge-primary">Nowość</span>
+                                <span className="badge badge-primary">Nowość</span>
                                 <ul className="nav square-btns">
                                     <li className="btn-link">Zapisz</li>
                                     <li className="btn-link">Oceń</li>
