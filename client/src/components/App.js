@@ -5,6 +5,7 @@ import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import HelpPage from './pages/HelpPage';
 import Header from './Header';
+import Footer from './Footer'
 import '../styles/main.css';
 
 const App = () => {
@@ -14,9 +15,10 @@ const App = () => {
                 <div>
                 <Header />
                     <Route path="/" exact component={HomePage} />
-                    <Route path="/pages/contact" exact component={ContactPage} />
-                    <Route path="/pages/forms" exact component={FormsPage} />
-                    <Route path="/pages/help" exact component={HelpPage} />
+                    <Route path="/pages/contact" component={ContactPage} />
+                    <Route path="/pages/help" component={HelpPage} />
+                    <Route path="/pages/forms" component={FormsPage} />
+                <Footer />
                 </div>
             </BrowserRouter>
         </div>
