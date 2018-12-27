@@ -1,5 +1,8 @@
+.bg-light {
+    background-color: unset !important;
+}
 .header  {
-    margin-top:64px;
+    margin-top:58px;
 }
 nav a {
     font-size: 21px;
@@ -15,17 +18,34 @@ nav a {
 .nav-item li:last-child {
     padding: 0;
 }
+.nav-docas-input {
+    height: 60px;
+    width: 210px;
+}
+#navbarCollapse {
+    justify-content: center;
+}
+#navbarCollapse input {
+    width: 210px;
+}
 .log-in {
     width: 150px;
     height: 51px;
-    margin: 8px 0 0 134px;
-    line-height: 30px;
+    line-height: 40px;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: .8px;
     border: 2px solid #0b51ca;
     color: #0b51ca;
 }
+
+@media (max-width: 575.98px) {
+    .logo {
+        width: 200px;
+        margin: 0;
+    }
+}
+
 @media (min-width: 576px) {
     
 }
@@ -36,13 +56,13 @@ nav a {
 
 @media (min-width: 992px) {
     .log-in {
-        margin: 8px 0 0;
+        /* margin: 8px 0 0 105%; */
     }
 }
 
 @media (min-width: 1200px) {
     .log-in {
-        margin: 8px 0 0 134px;
+        /* margin: 8px 0 0 134px; */
         
     }
 }

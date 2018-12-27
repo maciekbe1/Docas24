@@ -71,8 +71,14 @@ ul {
 .docas-input {
     height: 60px;
     border: 2px solid #0b51ca;
-    border-right: none;
     font-size: 24px;
+    position: relative;
+}
+
+.fa-search {
+    position: absolute;
+    align-self: center;
+    right: 10px;
 }
 
 .input-group-text {
