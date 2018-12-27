@@ -28,6 +28,15 @@ nav a {
 #navbarCollapse input {
     width: 210px;
 }
+.hamburger--slider {
+    outline: none !important;
+    z-index: 200;
+}
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+    background-color: #0b51ca !important;
+}
 .log-in {
     width: 150px;
     height: 51px;
@@ -39,19 +48,53 @@ nav a {
     color: #0b51ca;
 }
 
+@media (max-width: 1200px) {
+    .header {
+        display: flex;
+        position: relative;
+        height: 128px;
+        box-shadow: 0px 15px 22px rgba(69,137,254,0.35);
+        background-color: #ffffff;
+        border-bottom: 2px solid #0b51ca;
+        margin: 0;
+    }
+    .navbar {
+        flex: 1;
+    }
+    .navbar-collapse {
+        background: rgb(255, 255, 255);
+        position: absolute;
+        top: 0px;
+        right: -15px;
+        z-index: 100;
+        border-bottom: 2px solid rgb(11, 81, 202);
+        box-shadow: rgba(69, 137, 254, 0.35) 0px 15px 22px;
+    }
+    .navbar-nav {
+        padding: 100px 0 20px;
+        width: 400px;
+        text-align: center;
+    }
+    .navbar-nav > li:not(:last-child) {
+        border-bottom: 1px solid #0b51ca;
+    }
+    .navbar-nav > li:last-child {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .navbar-brand,
+    .navbar-nav  {
+        margin: 0;
+    }
+}
+
 @media (max-width: 575.98px) {
     .logo {
         width: 200px;
         margin: 0;
     }
-}
-
-@media (min-width: 576px) {
-    
-}
-
-@media (min-width: 768px) {
-    
 }
 
 @media (min-width: 992px) {

@@ -11,10 +11,10 @@ class ExploreDocas extends Component {
                 </div>
                 <div className="container">
                     <div className="row">
-                        <div className="macbook col-md-6">
+                        <div className="macbook col-xl-6">
                             <img alt="computer" src={computer_bg} />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-xl-6">
                             <div className="explore-docas-text">
                                 <h2>Poznaj Docas24.com</h2>
                                 <p>Serwis internetowy wspierający wypełnianie, składanie i archiwizowanie dokumentów elektronicznych przygotowywanych dla urzędów, banków i innych instytucji.</p>

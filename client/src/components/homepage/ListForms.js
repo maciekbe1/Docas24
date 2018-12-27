@@ -17,7 +17,7 @@ class ListForm extends Component {
             <section className='form-filter'>
                     {forms.slice(0, this.state.count).map(form => {
                      return (
-                        <div className={form.class + " col-xl-4 col-lg-6"} key={form.id}>
+                        <div className={form.class + " col-xl-4 col-md-6"} key={form.id}>
                             <div className="square">
                                 <span className="badge badge-primary">Nowość</span>
                                 <ul className="nav square-btns">
