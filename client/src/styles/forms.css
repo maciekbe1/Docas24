@@ -1,0 +1,30 @@
+.filtered-form {
+    margin-bottom: 82px;
+}
+.filtered-form-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 200px;
+    box-shadow: 0 0 42px rgba(176, 170, 170, 0.35);
+    background-color: #D6E5F7;
+}
+.filtered-form-image {
+    height: 90%;
+}
+.filtered-form-description {
+    color: #666;
+    font-family: Niramit;
+    font-size: 18px;
+    margin-top: 26px;
+}
+.available-forms {
+    margin-top: 200px;
+}
+.available-forms h2 {
+    margin-bottom: 80px;
+}
+.form-details {
+    margin-left: 17px;
+}
