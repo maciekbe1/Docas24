@@ -23,7 +23,7 @@ class FindForm extends React.Component {
                               <input value={this.state.search} onChange={this.onChange} type="text" className="form-control docas-input" placeholder="Wpisz jakiego formularza szukasz" aria-label="Recipient's username" aria-describedby="basic-addon2" />
                               <i className="fas fa-search fa-2x"></i>
                             </div>
-                            <Link to={{ pathname: '/pages/forms', state: { foo: this.state.search} }} className="btn btn-primary docas-find-form-button">SZUKAJ</Link>
+                            <Link to={{ pathname: '/forms', state: this.state.search }} className="btn btn-primary docas-find-form-button">SZUKAJ</Link>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,14 @@ import FilteredForms from '../forms/FilteredForms'
 
 class FormsPage extends React.Component {
     state = {
-        search: this.props.location.state.foo
+        search: ""
+    }
+    componentDidMount(props){
+        if (this.props.location.state !== undefined) {
+            this.setState({search: this.props.location.state});
+        } else {
+            this.setState({search: ''});
+        }
     }
     onChange = e => {
         this.setState({search: e.target.value})
