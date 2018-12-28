@@ -15,21 +15,17 @@ class FormsPage extends React.Component {
             return form.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
         })
         return (
-            <div className="container-fluid find-form">
+            <div className="container-fluid form-search">
                 <div className="row">
-                    <img alt="forms" className="find-form-image" src={forms_bg} />
+                    <img alt="forms" className="form-image" src={forms_bg} />
                 </div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6 block-find-form">
+                        <div className="col-xl-6 offset-xl-0 col-lg-6 offset-lg-3 block-find-form">
                             <h1>Znajdź formularz:</h1>
                             <div className="input-group mb-3">
                               <input value={this.state.search} onChange={this.onChange} type="text" className="form-control docas-input" placeholder="Wpisz jakiego formularza szukasz" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-                              <div className="input-group-append">
-                                <span className="input-group-text" id="basic-addon2">
-                                <i className="fas fa-search fa-2x"></i>
-                                </span>
-                              </div>
+                              <i className="fas fa-search fa-2x"></i>
                             </div>
                             <button className="btn btn-primary docas-find-form-button">SZUKAJ</button>
                         </div>
