@@ -11,39 +11,46 @@ class FilteredForms extends Component {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
             {this.props.filtered.map(form => {
                 return (
-                    <div key={form.id} className="d-flex filtered-form">
-                        <div className="filtered-form-image-container">
-                            <img alt={form.name + form.id} src={form.image} className="filtered-form-image"/>
-                        </div>
-                        <div className="form-details">
-                            <h3 className="filtered-form-header">{form.name}</h3>
-                            <p className="filtered-form-description">{form.description}</p>
-                            <div className="row no-gutters">
-                                <div className="col-lg-4 d-flex">
-                                    <img alt="department" className="" src={departmentImage}/>
-                                    <p>{form.department}</p>
-                                </div>
-                                <div className="col-lg-4 d-flex">
-                                    <img alt="department" className="" src={clockImage}/>
-                                    <p>{form.year}</p>
-                                </div>
-                                <div className="col-lg-4 d-flex">
-                                    <img alt="department" className="" src={stockImage}/>
-                                    <p>{form.type}</p>
-                                </div>
-                                <div className="col-lg-4 d-flex">
-                                    <img alt="department" className="" src={userImage}/>
-                                    <p>{form.category}</p>
+                    <div className="filtered-form-component" key={form.id} >
+                        <div className="d-flex filtered-form">
+                            <div className="filtered-form-image-container">
+                                <img alt={form.name + form.id} src={form.image} className="filtered-form-image"/>
+                            </div>
+                            <div className="form-details d-flex flex-column justify-content-between">
+                                <h3 className="filtered-form-header">{form.name}</h3>
+                                <p className="filtered-form-description">{form.description}</p>
+                                <div className="row no-gutters justify-content-between">
+                                    <div className="d-flex">
+                                        <img alt="department" className="" src={departmentImage}/>
+                                        <p>{form.department}</p>
+                                    </div>
+                                    <div className="d-flex">
+                                        <img alt="department" className="" src={clockImage}/>
+                                        <p>{form.year}</p>
+                                    </div>
+                                    <div className="d-flex">
+                                        <img alt="department" className="" src={stockImage}/>
+                                        <p>{form.type}</p>
+                                    </div>
+                                    <div className="d-flex">
+                                        <img alt="department" className="" src={userImage}/>
+                                        <p>{form.category}</p>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className="d-flex justify-content-end">
+                            <button className="btn docas-btn-outline-primary">ZAPISZ</button>
+                            <button className="btn docas-btn-outline-primary">ocena gwiazdki</button>
+                            <button className="btn btn-primary docas-btn-primary">WYPEŁNIJ</button>
                         </div>
                     </div>
                 )
             })}
-            </div>
+            </React.Fragment>
         );
     }
 

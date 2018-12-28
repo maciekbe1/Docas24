@@ -1,5 +1,16 @@
+.form-search {
+    margin-top: 90px;
+    position: relative;
+}
+.form-image {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    max-width: 985px;
+    width: 100%;
+}
 .filtered-form {
-    margin-bottom: 82px;
+    margin-bottom: 35px;
 }
 .filtered-form-image-container {
     display: flex;
@@ -17,14 +28,40 @@
     color: #666;
     font-family: Niramit;
     font-size: 18px;
-    margin-top: 26px;
+}
+.filtered-form-component {
+    margin-bottom: 85px;
+}
+.filtered-form-component .btn {
+    margin-left: 12px;
 }
 .available-forms {
     margin-top: 200px;
 }
 .available-forms h2 {
-    margin-bottom: 80px;
+    margin-bottom: 65px;
 }
 .form-details {
-    margin-left: 17px;
+    margin-left: 25px;
+    width: 100%;
+}
+.form-details > .row img {
+    height: 16px;
+    width: 16px;
+}
+.form-details > .row p {
+    font-size: 1.5rem;
+    margin: 0 6px;
+}
+
+@media (max-width: 1200px) {
+    .form-image {
+        opacity: .3;
+    }
+}
+
+@media (max-width: 992px) {
+    .available-forms > .row {
+        flex-direction: column-reverse;
+    }
 }
