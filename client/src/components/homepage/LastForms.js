@@ -14,7 +14,7 @@ class LastForms extends Component {
             this.setState({forms: this.props.forms, activeItem: item});
         } else {
             this.setState({activeItem: item, forms: this.props.forms.filter(form => {
-                return form.name === item;
+                return form.category === item;
             })});
         }
     }

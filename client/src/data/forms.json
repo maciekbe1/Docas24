@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "zus 1",
-        "category": "kadry",
+        "category": "zus",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "ZUS",
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "name": "zus 2",
-        "category": "kadry",
+        "category": "zus",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "ZUS",
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "name": "zus 3",
-        "category": "kadry",
+        "category": "zus",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "ZUS",
@@ -35,7 +35,7 @@
     {
         "id": 4,
         "name": "zus 4",
-        "category": "kadry",
+        "category": "zus",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "ZUS",
@@ -46,7 +46,7 @@
     {
         "id": 5,
         "name": "zus 5",
-        "category": "kadry",
+        "category": "zus",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "ZUS",
@@ -57,7 +57,7 @@
     {
         "id": 6,
         "name": "us 1",
-        "category": "kadry",
+        "category": "us",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "urząd skarbowy",
@@ -68,7 +68,7 @@
     {
         "id": 7,
         "name": "us 2",
-        "category": "kadry",
+        "category": "us",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "urząd skarbowy",
@@ -79,7 +79,7 @@
     {
         "id": 8,
         "name": "us 3",
-        "category": "kadry",
+        "category": "us",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "urząd skarbowy",
@@ -90,7 +90,7 @@
     {
         "id": 9,
         "name": "us 4",
-        "category": "kadry",
+        "category": "us",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "urząd skarbowy",
@@ -101,7 +101,7 @@
     {
         "id": 10,
         "name": "us 5",
-        "category": "kadry",
+        "category": "us",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "urząd skarbowy",
@@ -112,7 +112,7 @@
     {
         "id": 11,
         "name": "bank 1",
-        "category": "kadry",
+        "category": "bank",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "Bank Polski",
@@ -123,7 +123,7 @@
     {
         "id": 12,
         "name": "bank 2",
-        "category": "kadry",
+        "category": "bank",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "Bank Polski",
@@ -134,7 +134,7 @@
     {
         "id": 13,
         "name": "bank 3",
-        "category": "kadry",
+        "category": "bank",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "Bank Polski",
@@ -145,7 +145,7 @@
     {
         "id": 14,
         "name": "bank 4",
-        "category": "kadry",
+        "category": "bank",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "Bank Polski",
@@ -156,7 +156,7 @@
     {
         "id": 15,
         "name": "bank 5",
-        "category": "kadry",
+        "category": "bank",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "Bank Polski",
@@ -167,7 +167,7 @@
     {
         "id": 16,
         "name": "dg 1",
-        "category": "kadry",
+        "category": "dg",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "urzad miasta",
@@ -178,7 +178,7 @@
     {
         "id": 17,
         "name": "dg 2",
-        "category": "kadry",
+        "category": "dg",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "urząd skarbowy",
@@ -189,7 +189,7 @@
     {
         "id": 18,
         "name": "dg 3",
-        "category": "kadry",
+        "category": "dg",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "ZUS",
@@ -200,7 +200,7 @@
     {
         "id": 19,
         "name": "dg 4",
-        "category": "kadry",
+        "category": "dg",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "ZUS",
@@ -211,7 +211,7 @@
     {
         "id": 20,
         "name": "dg 5",
-        "category": "kadry",
+        "category": "dg",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "urząd skarbowy",
@@ -222,7 +222,7 @@
     {
         "id": 21,
         "name": "other 1",
-        "category": "kadry",
+        "category": "other",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "ZUS",
@@ -233,7 +233,7 @@
     {
         "id": 22,
         "name": "other 2",
-        "category": "kadry",
+        "category": "other",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "ZUS",
@@ -244,7 +244,7 @@
     {
         "id": 23,
         "name": "other 3",
-        "category": "kadry",
+        "category": "other",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "urząd skarbowy",
@@ -255,7 +255,7 @@
     {
         "id": 24,
         "name": "other 4",
-        "category": "kadry",
+        "category": "other",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "urząd skarbowy",
@@ -266,7 +266,7 @@
     {
         "id": 25,
         "name": "other 5",
-        "category": "kadry",
+        "category": "other",
         "link": "abc",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "bank",
@@ -277,7 +277,7 @@
     {
         "id": 26,
         "name": "bank 6",
-        "category": "kadry",
+        "category": "other",
         "image": "http://formularze.iform.iform.pl/zdjecia/formularze/6425/1529481859zus-koa.jpg",
         "department": "bank",
         "year": 2018,
