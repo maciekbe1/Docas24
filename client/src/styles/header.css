@@ -5,7 +5,7 @@
     margin-top:58px;
 }
 nav a {
-    font-size: 21px;
+    font-size: 2.1rem;
     line-height: 60px;
 }
 .logo {
@@ -41,7 +41,7 @@ nav a {
     width: 150px;
     height: 51px;
     line-height: 40px;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: .8px;
     border: 2px solid #0b51ca;
