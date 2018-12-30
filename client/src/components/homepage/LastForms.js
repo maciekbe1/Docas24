@@ -6,7 +6,7 @@ class LastForms extends Component {
     state = {
         activeItem: 'Wszystkie',
         forms: this.props.forms,
-        items: ['Wszystkie', 'zus', 'us', 'bank', 'dg', 'other']
+        items: ['Wszystkie', 'Prawne i sądowe', 'Rekrutacja i zatrudnienie', 'Firmowe', 'Sprawy obywatelskie', 'Nieruchomości', 'Transport i pojazdy', 'Finanse', 'Inne']
     }
     
     findForm = (item) => {
@@ -14,7 +14,7 @@ class LastForms extends Component {
             this.setState({forms: this.props.forms, activeItem: item});
         } else {
             this.setState({activeItem: item, forms: this.props.forms.filter(form => {
-                return form.category === item;
+                return form.type === item;
             })});
         }
     }

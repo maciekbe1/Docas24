@@ -40,16 +40,10 @@ class Header extends React.Component {
                     <div className="collapse navbar-collapse" id="navbarCollapse">
                         <ul className="navbar-nav offset-xl-2">
                             <li className="nav-item">
-                                <NavLink activeClassName="selected" to="/partners">Partnerzy</NavLink>
-                            </li>
-                            <li className="nav-item">
                                 <a href="https://docas24.bpower2.com/index.php/site/register?group=4abb22c8268736a007580b2adff88ff8">Rejestracja</a>
                             </li>
                             <li className="nav-item">
                                 <NavLink activeClassName="selected" to="/help">Pomoc</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink activeClassName="selected" to="/demo">Demo</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink activeClassName="selected" to="/contact">Kontakt</NavLink>

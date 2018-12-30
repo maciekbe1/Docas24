@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import docImage from '../../images/file.png';
 
 class ListForm extends Component {
     
@@ -17,13 +18,14 @@ class ListForm extends Component {
             <section className='form-filter'>
                     {forms.slice(0, this.state.count).map(form => {
                      return (
-                        <div className={form.category + " col-xl-4 col-md-6"} key={form.id}>
+                        <div className={form.type + " col-xl-4 col-md-6"} key={form.id}>
                             <div className="square">
                                 <span className="badge badge-primary">Nowość</span>
+                                <img alt="document" src={docImage}/>
                                 <ul className="nav square-btns">
-                                    <li className="btn-link">Zapisz</li>
-                                    <li className="btn-link">Oceń</li>
-                                    <li className="btn-primary">Wypełnij</li>
+                                    <li className="btn-primary">
+                                        <a href="https://docas24.bpower2.com/index.php/site/login">Wypełnij</a>
+                                    </li>
                                 </ul>
                             </div>
                             <h3 className="font-weight-bold">{form.name}</h3>

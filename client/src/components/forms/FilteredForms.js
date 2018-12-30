@@ -4,6 +4,7 @@ import departmentImage from "../../images/tag-shape.png";
 import clockImage from "../../images/clock.png";
 import stockImage from "../../images/stock.png";
 import userImage from "../../images/user-silhouette.png";
+import docImage from '../../images/file.png';
 
 
 
@@ -17,7 +18,7 @@ class FilteredForms extends Component {
                     <div className="filtered-form-component" key={form.id} >
                         <div className="d-flex filtered-form">
                             <div className="filtered-form-image-container">
-                                <img alt={form.name + form.id} src={form.image} className="filtered-form-image"/>
+                                <img alt={form.name + form.id} src={docImage} className="filtered-form-image"/>
                             </div>
                             <div className="form-details d-flex flex-column justify-content-between">
                                 <h3 className="filtered-form-header">{form.name}</h3>
@@ -28,24 +29,22 @@ class FilteredForms extends Component {
                                         <p>{form.department}</p>
                                     </div>
                                     <div className="d-flex">
-                                        <img alt="department" className="" src={clockImage}/>
+                                        <img alt="year" className="" src={clockImage}/>
                                         <p>{form.year}</p>
                                     </div>
                                     <div className="d-flex">
-                                        <img alt="department" className="" src={stockImage}/>
+                                        <img alt="type" className="" src={stockImage}/>
                                         <p>{form.type}</p>
                                     </div>
                                     <div className="d-flex">
-                                        <img alt="department" className="" src={userImage}/>
+                                        <img alt="category" className="" src={userImage}/>
                                         <p>{form.category}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="d-flex justify-content-end">
-                            <button className="btn docas-btn-outline-primary">ZAPISZ</button>
-                            <button className="btn docas-btn-outline-primary">ocena gwiazdki</button>
-                            <button className="btn btn-primary docas-btn-primary">WYPEŁNIJ</button>
+                            <a href="https://docas24.bpower2.com/index.php/site/login" className="d-flex justify-content-center align-items-center btn btn-primary docas-btn-primary">WYPEŁNIJ</a>
                         </div>
                     </div>
                 )

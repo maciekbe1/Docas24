@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import newsImage from '../../images/news.png'
+
 
 class News extends Component {
     render() {
@@ -7,7 +9,8 @@ class News extends Component {
                 <h2>Aktualności</h2>
                 <div className="row">
                     <div className="news-content">
-                        <div className="news-square">
+                        <div className="news-square d-flex justify-content-center align-items-center">
+                            <img alt="news" src={newsImage} />
                         </div>
                         <div className="news-text">
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -16,7 +19,8 @@ class News extends Component {
                         </div>
                     </div>
                     <div className="news-content">
-                        <div className="news-square">
+                        <div className="news-square d-flex justify-content-center align-items-center">
+                        <img alt="news" src={newsImage} />
                         </div>
                         <div className="news-text">
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -25,7 +29,8 @@ class News extends Component {
                         </div>
                     </div>
                     <div className="news-content">
-                        <div className="news-square">
+                        <div className="news-square d-flex justify-content-center align-items-center">
+                            <img alt="news" src={newsImage} />
                         </div>
                         <div className="news-text">
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.

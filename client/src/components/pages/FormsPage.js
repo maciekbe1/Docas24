@@ -19,7 +19,7 @@ class FormsPage extends React.Component {
     }
     render() {
         const filtered = forms.filter(form => {
-            return form.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
+            return form.type.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
         })
         return (
             <div className="container-fluid form-search">

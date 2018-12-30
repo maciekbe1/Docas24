@@ -78,6 +78,14 @@
     padding: 10px 18px;
     margin-left: 6px;
     font-size: 2.1rem;
+    cursor: pointer;
+}
+.square-btns a {
+    color: #fff;
+}
+.square img {
+    width: fit-content;
+    margin: 0 auto;
 }
 .form-filter {
     display: flex;
@@ -100,6 +108,7 @@
     display: flex;
     justify-content: center;
     margin: 60px 0 0;
+    flex-wrap: wrap;
 }
 .form-btns-filters .btn {
     font-size: 2.1rem;
@@ -136,7 +145,8 @@
 .explore-docas-btns {
     margin: 70px 0 0 7px;
 }
-.explore-docas-btns button {
+.explore-docas-btns a {
+    line-height: 45px;
     height: 61px;
     width: 200px;
     margin-right: 12px;
@@ -151,6 +161,8 @@
 /* statistics component */
 .statistics {
     position: relative;
+    overflow: hidden;
+    padding-bottom: 50px;
 }
 .statistics img {
     position: absolute;

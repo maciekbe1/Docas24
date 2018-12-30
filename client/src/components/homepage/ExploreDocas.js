@@ -19,8 +19,8 @@ class ExploreDocas extends Component {
                                 <h2>Poznaj Docas24.com</h2>
                                 <p>Serwis internetowy wspierający wypełnianie, składanie i archiwizowanie dokumentów elektronicznych przygotowywanych dla urzędów, banków i innych instytucji.</p>
                                 <div className="explore-docas-btns">
-                                    <button className="btn btn-primary">Zaloguj się</button>
-                                    <button className="btn btn-outline-primary">Demo</button>
+                                    <a href="https://docas24.bpower2.com/index.php/site/login" className="btn btn-primary">Zaloguj się</a>
+                                    <a href="https://docas24.bpower2.com/index.php/site/register?group=4abb22c8268736a007580b2adff88ff8" className="btn btn-outline-primary">Zarejestruj się</a>
                                 </div>
                             </div>
                         </div>

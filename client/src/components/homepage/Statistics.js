@@ -15,7 +15,7 @@ class Statistics extends Component {
                             <p className="selected"><span>50</span>ZŁ/MSC</p>
                         </div>
                         <div className="statistics-value">
-                            <h5>Użytkoników</h5>
+                            <h5>Użytkowników</h5>
                             <span className="selected">2000</span>
                         </div>
                         <div className="statistics-value">
