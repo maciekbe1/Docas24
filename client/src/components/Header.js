@@ -43,7 +43,7 @@ class Header extends React.Component {
                                 <NavLink activeClassName="selected" to="/partners">Partnerzy</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a href="https://docas24.bpower2.com/index.php/site/register">Rejestracja</a>
+                                <a href="https://docas24.bpower2.com/index.php/site/register?group=4abb22c8268736a007580b2adff88ff8">Rejestracja</a>
                             </li>
                             <li className="nav-item">
                                 <NavLink activeClassName="selected" to="/help">Pomoc</NavLink>

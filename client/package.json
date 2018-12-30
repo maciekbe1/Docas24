@@ -2,7 +2,7 @@
   "name": "docas24",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://maciekbe1.github.io/",
+  "homepage": "http://docas24.com/",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import FormsPage from './pages/FormsPage';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
@@ -11,7 +11,7 @@ import '../styles/main.css';
 const App = () => {
     return (
         <div>
-            <BrowserRouter>
+            <HashRouter>
                 <div>
                 <Header />
                     <Route path="/" exact component={HomePage} />
@@ -20,7 +20,7 @@ const App = () => {
                     <Route path="/forms" component={FormsPage} />
                 <Footer />
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     )
 }
