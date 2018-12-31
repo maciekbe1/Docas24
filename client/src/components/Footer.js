@@ -8,7 +8,7 @@ class Footer extends React.Component {
         return(
             <div className="container-fluid">
                 <footer className="row">
-                    <div className="col-xl-4 d-flex flex-column align-items-center">
+                    <div className="col-sm-4 d-flex flex-column align-items-center">
                         <div className="footer-logo">
                             <Link to="/">
                                 <img alt="logo-footer" className="logo-footer" src={logo} />
@@ -16,7 +16,7 @@ class Footer extends React.Component {
                             <p>Język: <span className="text-primary">Polski (POL)</span></p>
                         </div>
                     </div>
-                    <div className="col-xl-4 d-flex flex-column align-items-center">
+                    <div className="col-sm-4 d-flex flex-column align-items-center">
                         <div className="d-flex flex-column">
                         <p className="font-weight-bold">Kontakt</p>
                             <ul>
@@ -27,7 +27,7 @@ class Footer extends React.Component {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-xl-4 d-flex flex-column align-items-center">
+                    <div className="col-sm-4 d-flex flex-column align-items-center">
                     <p>Zgłoś brakujący formularz</p>
                     <a href="https://docas24.bpower2.com/index.php/site/login" className="btn btn-primary report">Zgłoś</a>
                     </div>
