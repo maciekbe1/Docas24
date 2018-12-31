@@ -39,7 +39,7 @@
 }
 .contact-details-info iframe {
     width: 100%;
-    height: 450px;
+    height: 600px;
     border: 0;
 }
 .contact-details-info form {
@@ -49,6 +49,7 @@
     height: 35px;
     margin: 26px 0;
     border: none;
+    border-bottom: 2px solid #4589fe;
     background: transparent;
 }
 .contact-details-info form input[type="text"].col-6 {
@@ -64,30 +65,65 @@
     height: 200px;
     padding: 10px;
     resize: none;
+    border: 2px solid #4589fe;
 }
 .contact-details-info form input[type="text"],
 .contact-details-info form textarea {
     font-size: 1.6rem;
-    border: 2px solid #4589fe;
 }
-.contact-details-info form input[type="text"]:focus,
+.contact-details-info form input[type="text"]:focus {
+    border-bottom: 2px solid #0b51ca;
+    outline: none;
+}
 .contact-details-info form textarea:focus {
     border: 2px solid #0b51ca;
 }
 .form-checkbox-btns {
-    display: flex;
-    flex-direction: column;
     padding: 25px 0 0 5px;
 }
-.form-checkbox-btns input[type="checkbox"] {
+.form-checkbox-btn {
+    display: flex;
+    flex-direction: column;
+}
+.form-checkbox-btn input[type="checkbox"] {
     display: none;
 }
-.form-checkbox-btns p {
+.form-checkbox-btn p {
     display: inline-block;
     margin-left: 10px;
 }
-.form-checkbox-btns i {
+.form-checkbox-btn i {
     color: #0b51ca;
+}
+.contact-details-info .docas-btn-primary {
+    margin-top: 25px;
+}
+.contact-details-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px auto;
+}
+.contact-details-blocks > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 252px;
+    max-width: 348px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 37px rgba(243,216,255,0.35);
+}
+.contact-details-blocks h5 {
+    margin-top: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.contact-details-blocks span {
+    color: #0b51ca;
+    font-size: 2rem;
+}
+.contact-details-blocks p {
+    font-weight: normal;
 }
 @media (max-width: 1200px) {
     .contact img {
