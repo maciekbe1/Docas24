@@ -8,6 +8,7 @@ footer {
     width: 100px;
     height: 40px;
     font-size: 1.6rem !important;
+    line-height: 30px;
 }
 .p-footer {
     height: 40px;
