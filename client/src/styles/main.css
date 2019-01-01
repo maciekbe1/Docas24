@@ -45,6 +45,7 @@ ul {
 }
 .btn-primary {
     background-color: #0b51ca;
+    border: none;
     border-radius: 0;
 }
 .docas-btn-primary {
