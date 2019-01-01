@@ -1,0 +1,189 @@
+.help {
+    position: relative;
+}
+.help img {
+    position: absolute;
+    top: 148px;
+    right: 185px;
+    width: 419px;
+}
+.help-and-support {
+    margin-top: 280px;
+}
+.help-and-support h2 {
+    font-size: 6.2rem;
+    line-height: 7.5rem;
+    font-weight: bold;
+}
+.help-and-support p {
+    font-size: 2.1rem;
+    line-height: 3.6rem;
+    margin-top: 38px;
+}
+.help-btns {
+    margin: 26px 40px;
+}
+.help-btns .btn {
+    margin: 0 8px;
+}
+.video-tutorials {
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 295px;
+    overflow: hidden;
+}
+.video-tutorials img {
+    position: absolute;
+    top: 62px;
+    right: -110px;
+}
+.video-tutorials-btns-filters {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 0;
+    flex-wrap: wrap;
+}
+.video-tutorials-btns-filters .btn {
+    font-size: 2.1rem;
+}
+.video-tutorials-btns-filters .btn-link {
+    font-size: 2.1rem;
+    color: black;
+    text-decoration: none;
+}
+.video-tutorials-btns-filters .btn-link:hover {
+    border-bottom: 2px solid #0b51ca;
+    border-radius: 0;
+}
+.video-tutorials-filter {
+    margin-top: 60px;
+}
+.video-tutorials-filter i {
+    color: #0b51ca;
+}
+.first-video {
+    width: 100%;
+}
+.first-video-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9e8f7;
+    height: 70rem;
+    width: 100%;
+    border-radius: 20px;
+}
+.first-video h3 {
+    margin-top: 50px;
+}
+.next-video {
+    width: 33.33%;
+    padding: 5px;
+    margin-top: 85px;
+}
+.next-video h5 {
+    margin-top: 25px;
+}
+.next-video-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9e8f7;
+    height: 29rem;
+    width: 100%;
+    border-radius: 20px;
+}
+.questions {
+    margin: 185px 0 200px;
+    position: relative;
+    overflow: hidden;
+}
+.questions .row > img {
+    position: absolute;
+    top: 52px;
+    left: -70px;
+}
+.question {
+    margin-bottom: 35px;
+}
+.questions h2 {
+    margin-bottom: 55px;
+}
+.card,
+.card-header {
+    border: none;
+}
+.card {
+    box-shadow: 0px 10px 38px rgba(51,153,255,0.25);
+}
+.card-body {
+    padding: 2.25rem 1.25rem 0;
+    font-size: 18px;
+    line-height: 28px;
+}
+.accordion h2 {
+    font-size: unset;
+}
+.card-header {
+    background: #0b51ca;
+    padding: 0;
+}
+.card-header button {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-header button span {
+    font-size: 2.4rem;
+    font-weight: normal;
+    width: 90%;
+    overflow: hidden;
+    text-align: left;
+}
+.card-header button:hover,
+.card-header button:focus {
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width: 1200px) {
+    .help img {
+        opacity: .4;
+    }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+    .help img {
+        right: unset;
+    }
+    .next-video {
+        width: 100%;
+        height: 70rem;
+        padding: 0;
+    }
+    .next-video-content {
+        height: 70rem;
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .help-and-support {
+        margin-top: 150px;
+    }
+    .help img {
+        width: 95%;
+    }
+    .first-video {
+        text-align: center;
+    }
+    .first-video-content,
+    .next-video,
+    .next-video-content {
+        height: 40rem;
+        width: 100%;
+        text-align: center;
+    }
+}
