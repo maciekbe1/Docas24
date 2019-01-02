@@ -47,18 +47,19 @@ class ContactPage extends React.Component {
                 </div>
                 <div className="container contact-details-blocks">
                     <div className="address">
-                        <h5>Adres</h5>
-                        <p>ul. Wrocławska</p>
-                        <p>00-000 Wrocław</p>
+                        <h5>Nazwa firmy</h5>
+                        <p>MP NEW sp. z o.o. w LEŻAJSKU</p>
                     </div>
                     <div className="email">
-                        <h5>Email</h5>
-                        <p>kontakt@docas24.com</p>
+                        <h5>Adres</h5>
+                        <p>ul. Ogrodowa 22</p>
+                        <p>Leżajsk 37-300</p>
                     </div>
                     <div className="phone-number">
-                        <h5>Kontakt telefoniczny</h5>
-                        <span>+48 (0) 0000000</span>
-                        <p>Poniedziałek - Piątek 8-17</p>
+                        <h5>Informacje</h5>
+                        <p>NIP 8161705454</p>
+                        <p>KRS 0000682921</p>
+                        <p>REGON 367543704</p>
                     </div>
                 </div>
             </React.Fragment>
