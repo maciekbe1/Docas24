@@ -17,9 +17,17 @@ class Header extends React.Component {
         console.log(this.state.active)
         if (this.state.active) {
             this.setState({active: ''})
+            
         } else {
             this.setState({active: 'is-active'})
         }
+    }
+    disableMenu = () => {
+        this.setState({active: ''});
+        const btn = document.querySelector(".hamburger--slider");
+        const nav = document.querySelector(".navbar-collapse");
+        btn.setAttribute("aria-expanded", "false");
+        nav.classList.remove("show");
     }
     render() {
         return (
@@ -40,16 +48,16 @@ class Header extends React.Component {
                     <div className="collapse navbar-collapse" id="navbarCollapse">
                         <ul className="navbar-nav offset-xl-2">
                             <li className="nav-item">
-                                <a href="https://docas24.bpower2.com/index.php/site/register?group=4abb22c8268736a007580b2adff88ff8">Rejestracja</a>
+                                <a href="https://app.docas24.com/index.php/site/register?group=4abb22c8268736a007580b2adff88ff8">Rejestracja</a>
                             </li>
                             <li className="nav-item">
-                                <NavLink activeClassName="selected" to="/help">Pomoc</NavLink>
+                                <NavLink activeClassName="selected" to="/help" onClick={this.disableMenu}>Pomoc</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink activeClassName="selected" to="/contact">Kontakt</NavLink>
+                                <NavLink activeClassName="selected" to="/contact" onClick={this.disableMenu}>Kontakt</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="btn btn-outline-primary log-in" href="https://docas24.bpower2.com/index.php/site/login">Zaloguj się</a>
+                                <a className="btn btn-outline-primary log-in" href="http://app.docas24.com/index.php/site/login">Zaloguj się</a>
                             </li>
                         </ul>
                     </div>

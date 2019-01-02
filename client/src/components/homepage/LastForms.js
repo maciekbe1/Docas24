@@ -21,7 +21,7 @@ class LastForms extends Component {
     
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid last-form">
                 <div className="block-last-form">
                     <h2 className="text-center">Najnowsze formularze</h2>
                         <div className="form-btns-filters">
