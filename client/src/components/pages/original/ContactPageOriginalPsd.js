@@ -1,4 +1,5 @@
 import React from 'react';
+import contact_bg from '../../images/04_Contact_bg.png';
 import lines from '../../images/01_Home_bg_line_2.png';
 import '../../styles/contact.css';
 import Form from '../contact/Form';
@@ -15,6 +16,19 @@ class ContactPage extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <div className="container-fluid contact">
+                    <div className="row">
+                        <img src={contact_bg} alt="contact" />
+                    </div>
+                    <div className="container p-0">
+                        <div className="row">
+                            <div className="col-lg-7 contact-us">
+                                <h2>Skontaktuj się z Nami</h2>
+                                <p>Lorem ipsum dolor sit amet, con sectetu adipiscing elit. In sagittis egestas ante, sed viverra nunc.Lorem ipsum dolor sit amet, con sectetu adipiscing elit. In sagittis egestas ante, sed viverra viverra nunc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="container-fluid contact-details">
                     <div className="row">
                         <img src={lines} className="col-12" alt="lines" />

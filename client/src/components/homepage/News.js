@@ -13,9 +13,8 @@ class News extends Component {
                             <img alt="news" src={newsImage} />
                         </div>
                         <div className="news-text">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Facilis, numquam!</h3>
-                            <p>A good content strategy can help engage your consumers and position your company as an effective publisher in your industry. In turn, this will play a role in increasing brand recognition, traffic to your website, lead conversions, and customer loyalty</p>
+                            <h3>Nowe formularze - 28.12.2018 r.</h3>
+                            <p>Dodaliśmy nowe formularze - wnioski dla pracowników. Od dziś możesz w łatwy sposób tworzyć różnego rodzaju wnioski dotyczące urlopów i zmian godzin pracy.</p>
                         </div>
                     </div>
                     <div className="news-content">
@@ -23,9 +22,8 @@ class News extends Component {
                         <img alt="news" src={newsImage} />
                         </div>
                         <div className="news-text">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Facilis, numquam!</h3>
-                            <p>A good content strategy can help engage your consumers and position your company as an effective publisher in your industry. In turn, this will play a role in increasing brand recognition, traffic to your website, lead conversions, and customer loyalty</p>
+                            <h3>Automatyczne wypełnianie danych</h3>
+                            <p>Nuży Cię ciągłe wpisywanie tych samych danych osobowych w różnego rodzaju dokumentach? W Docas24 wystarczy, że uzupełnisz je jeden raz, a następnie automatycznie pojawią się w kolejnych formularzach.</p>
                         </div>
                     </div>
                     <div className="news-content">
@@ -33,9 +31,8 @@ class News extends Component {
                             <img alt="news" src={newsImage} />
                         </div>
                         <div className="news-text">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Facilis, numquam!</h3>
-                            <p>A good content strategy can help engage your consumers and position your company as an effective publisher in your industry. In turn, this will play a role in increasing brand recognition, traffic to your website, lead conversions, and customer loyalty</p>
+                            <h3>Witamy na Docas24.com!</h3>
+                            <p>Witamy na Docas24 - nowym serwisie, który w szybki i intuicyjny sposób pomoże Ci kompleksowo zarządzać dokumentami - od ich wypełnienia, przez podpisanie aż po archiwizację. Zapraszamy do skorzystania z naszych usług.</p>
                         </div>
                     </div>
                 </div>

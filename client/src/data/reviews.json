@@ -1,38 +1,26 @@
 [
     {
         "id" : 1,
-        "text": "Our approach has empowered local, national, and global brands to grow their businesses and achieve a competitive advantage  and we can do the same for you.",
-        "auth": "Mahfuz Riad - 1",
-        "spec": "Ui Designer & CEO"
-    },
-    {
-        "id" : 2,
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "auth": "Arkadiusz Kowalski - 2",
+        "text": "Docas24 to serwis, który ułatwia pracę z dokumentami. Tworzenie konkretnego szablonu dokumentu to dosłownie chwila. Z czystym sumieniem polecam!",
+        "auth": "Rafał",
         "spec": "CEO"
     },
     {
+        "id" : 2,
+        "text": "Serwis Docas24 to narzędzie, którego brakowało na rynku. Dzięki niemu można wygenerować wiele potrzebnych dokumentów bez konieczności ciągłego powielania tych samych danych. Prawdziwa oszczędność czasu!",
+        "auth": "Karolina",
+        "spec": ""
+    },
+    {
         "id" : 3,
-        "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "auth": "Matheus Ship - 3",
-        "spec": "Ui Designer"
+        "text": "Serwis bardzo jasny i przejrzysty. Pomaga w bardzo szybkim czasie tworzyć i uzupełniać dokumenty.",
+        "auth": "Maciej",
+        "spec": ""
     },
     {
         "id" : 4,
-        "text": "Best aplication ever",
-        "auth": "Jan Kwiecień - 4",
-        "spec": "Prezes Saturday Comercial"
-    },
-    {
-        "id" : 5,
-        "text": "Must have in business",
-        "auth": "Joseph Green - 5",
-        "spec": "Ceo of Canadian Fishes"
-    },
-    {
-        "id" : 6,
-        "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "auth": "Krzysztof Dac - 6",
-        "spec": "Prezes zarządu Amifez sp. z.o.o "
+        "text": "Docas24 zauważalnie skrócił czas mojej pracy. Dzieki niemu szybciej potrafię utworzyć różnego rodzaju dokumenty, wnioski, umowy itp. Polecam skorzystać z usług tego serwisu.",
+        "auth": "Bożena",
+        "spec": "Księgowa"
     }
 ]

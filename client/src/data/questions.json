@@ -1,52 +1,42 @@
 [
     {
         "id" : 1,
-        "title": "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit?"
+        "title": "Czym jest serwis Docas24.com?",
+        "text": "Docas24.com to serwis internetowy wspierający wypełnianie, składanie i archiwizowanie dokumentów elektronicznych przygotowywanych dla urzędów, banków i innych instytucji."
     },
     {
         "id" : 2,
-        "title": "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit?"
+        "title": "Czy muszę się zarejestrować w serwisie?",
+        "text": "Aby móc korzystać ze wszystkich usług oferowanych przez serwis, niezbędna jest rejestracja na stronie www.docas24.com. Rejestracja jest darmowa."
     },
     {
         "id" : 3,
-        "title": "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit?"
+        "title": "Jak dokonać rejestracji?",
+        "text": "Aby dokonać rejestracji w serwisie należy kliknąć napis \"Rejestracja\". W następnym kroku należy podać wszystkie wymagane dane. Po kliknięciu przycisku „Zarejestruj” zostanie wysłany e-mail z linkiem aktywującym. Po kliknięciu w link można korzystać z usług serwisu."
     },
     {
         "id" : 4,
-        "title": "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit?"
+        "title": "Co mam zrobić gdy zapomniałem hasła?",
+        "text": "W przypadku gdy zapomnisz swojego hasła, kliknij w napis „Przypomnij hasło” widoczny na stronie logowania  i podać swój adres e-mail, który był użyty w procesie rejestracji. Na podany adres wysłane zostanie nowe hasło."
     },
     {
         "id" : 5,
-        "title": "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit?"
+        "title": "W jaki sposób mogę wypełnić formularz?",
+        "text": "Aby wypełnić formularze należy przejść do modułu “Docas” a następnie wybrać opcję “Wypełnij” dostępną pod przyciskiem “Akcje”. Formularze na liście możesz przeglądać, wyszukiwać oraz sortować aby w łatwy sposób znaleźć interesujący cię wzór."
     },
     {
         "id" : 6,
-        "title": "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit?"
+        "title": "Czy mogę wydrukować wybrany formularz?",
+        "text": "Tak, po zapisaniu wypełnionego formularza dostępna jest opcja zapisania pliku w formacie PDF na dysku oraz wydrukowania go."
     },
     {
         "id" : 7,
-        "title": "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit?"
+        "title": "Jak automatycznie uzupełniać swoje dane w formularzach?",
+        "text": "W celu automatycznego uzupełniania formularzy swoimi danymi należy uzupełnić dane w zakładce profil. Aby to zrobić przejdź do modułu “Konto użytkownika” lub wybierz z bocznego menu napis “Moje konto”."
     },
     {
         "id" : 8,
-        "title": "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit?"
-    },
-    {
-        "id" : 9,
-        "title": "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit?"
-    },
-    {
-        "id" : 10,
-        "title": "This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis blanditiis facere laborum suscipit eaque at magnam saepe provident ipsa, unde non explicabo velit inventore dolorem. Possimus esse, incidunt impedit?"
-    }    
+        "title": "Jak chronione są moje dane?",
+        "text": "Dane osobowe są wykorzystywane przez firmę MP NEW sp. z o.o. w LEŻAJSKU wyłącznie do umożliwienia tworzenia i zarządzania dokumentami dostępnymi w serwisie www.docas24.com oraz pod warunkiem wyrażenia zgody przez Klienta – w celu informowania o nowych usługach oraz promocjach oferowanych przez serwis www.docas24.com i nie będą udostępniane innym podmiotom. Każdy Klient ma prawo wglądu do swoich danych osobowych: możliwość sprawdzenia, poprawiania, aktualizacji i usunięcia."
+    }   
 ]

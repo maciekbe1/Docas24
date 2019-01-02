@@ -11,11 +11,7 @@ const HelpSupport = () => {
                     <div className="row">
                         <div className="col-lg-7 help-and-support">
                             <h2>Pomoc i wsparcie</h2>
-                            <p>Lorem ipsum dolor sit amet, con sectetu adipiscing elit. In sagittis egestas ante, sed viverra nunc.Lorem ipsum dolor sit amet, con sectetu adipiscing elit. In sagittis egestas ante, sed viverra viverra nunc.</p>
-                        </div>
-                        <div className="text-center d-flex help-btns">
-                            <button className="btn docas-btn-primary">Video</button>
-                            <button className="btn docas-btn-outline-primary">FAQ</button>
+                            <p>Poniżej znajdziesz listę najczęściej zadawanych pytań. Staraliśmy się przewidzieć wszystkie możliwości.</p>
                         </div>
                     </div>
                 </div>
