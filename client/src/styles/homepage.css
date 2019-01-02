@@ -11,6 +11,9 @@
     right: 180px;
     max-width: 820px;
 }
+.last-form {
+    max-width: 1920px;
+}
 .block-find-form {
     display: flex;
     flex-direction: column;
@@ -24,6 +27,7 @@
     border: none;
     font-size: 1.8rem;
     line-height: 55px;
+    box-shadow: 0 25px 42px rgba(69, 137, 254, 0.35);
 }
 .docas-show-more {
     text-align: center;
@@ -36,6 +40,7 @@
     background-color: #0b51ca;
     border: none;
     font-size: 2rem;
+    box-shadow: 0 25px 42px rgba(69, 137, 254, 0.35);
 }
 .block-find-form h1 {
     margin-bottom: 58px;
@@ -146,7 +151,7 @@
     margin: 70px 0 0 7px;
 }
 .explore-docas-btns a {
-    line-height: 45px;
+    line-height: 50px;
     height: 61px;
     width: 200px;
     margin-right: 12px;
@@ -267,6 +272,7 @@
     height: 74px;
     box-shadow: 0 45px 62px rgba(51, 153, 255, 0.35);
     background-color: #ffffff;
+    transition: .3s;
 }
 .review-btn:hover {
     background-color: #0b51ca;
