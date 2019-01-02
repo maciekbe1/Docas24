@@ -21,7 +21,7 @@ class ContactPage extends React.Component {
                     </div>
                     <div className="container p-0 contact-details-info">
                         <div className="row">
-                            <h3 className="col-12 text-center">Dane kontaktowe</h3>
+                            <h3 className="col-12 text-center">Skontaktuj sie z nami</h3>
                             <div className="col-lg-6">
                                 <Map />
                             </div>
@@ -31,7 +31,8 @@ class ContactPage extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="container contact-details-blocks">
+                <h3 className="col-12 text-center">Dane kontaktowe</h3>
+                <div className="container contact-details-blocks">                
                     <div className="address">
                         <h5>Nazwa firmy</h5>
                         <p>MP NEW sp. z o.o. w LEŻAJSKU</p>

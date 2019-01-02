@@ -4,6 +4,9 @@
 footer {
     height: 395px;
 }
+footer a {
+    color: #000;
+}
 .report {
     width: 100px;
     height: 40px;

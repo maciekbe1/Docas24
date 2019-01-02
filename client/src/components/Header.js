@@ -48,7 +48,7 @@ class Header extends React.Component {
                     <div className="collapse navbar-collapse" id="navbarCollapse">
                         <ul className="navbar-nav offset-xl-2">
                             <li className="nav-item">
-                                <a href="https://app.docas24.com/index.php/site/register?group=4abb22c8268736a007580b2adff88ff8">Rejestracja</a>
+                                <a href="http://app.docas24.com/register">Rejestracja</a>
                             </li>
                             <li className="nav-item">
                                 <NavLink activeClassName="selected" to="/help" onClick={this.disableMenu}>Pomoc</NavLink>

@@ -23,6 +23,7 @@
 .contact-details {
     position: relative;
     margin-top: 100px;
+    margin-bottom: 50px;
     overflow: hidden;
 }
 .contact-details h3 {
@@ -106,7 +107,7 @@
 .contact-details-blocks {
     display: flex;
     justify-content: space-between;
-    margin: 120px auto;
+    margin: 50px auto;
 }
 .contact-details-blocks > div {
     display: flex;
