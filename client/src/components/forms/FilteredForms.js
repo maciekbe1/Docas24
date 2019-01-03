@@ -6,8 +6,6 @@ import stockImage from "../../images/stock.png";
 import userImage from "../../images/user-silhouette.png";
 import docImage from '../../images/file.png';
 
-
-
 class FilteredForms extends Component {
 
     render() {
