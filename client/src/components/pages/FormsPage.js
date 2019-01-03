@@ -3,6 +3,7 @@ import forms from '../../data/forms.json';
 import forms_bg from '../../images/02_Forms_bg.png';
 import FilteredForms from '../forms/FilteredForms';
 import FormsCategories from '../forms/FormsCategories';
+import FormsDropdownFilter from '../forms/FormsDropdownFilter';
 
 class FormsPage extends React.Component {
     constructor(props) {
@@ -40,8 +41,9 @@ class FormsPage extends React.Component {
         this.setState({search: e.target.value})
     }
     onChangeCategory = (e) => {
-    //    const filterCategory = forms.filter(form => form.category === e.target.innerHTML);
+       const filterCategory = forms.filter(form => form.category === e.target.innerHTML);
         this.setState({search: e.target.innerHTML})
+        console.log(filterCategory)
     }
 
     render() {
@@ -71,7 +73,7 @@ class FormsPage extends React.Component {
                             <h2 className="text-center">Dostępne formularze</h2>
                             <FilteredForms filtered={filtered} />
                         </div>
-                        <div className="col-lg-3 categories">
+                        {/* <div className="col-lg-3 categories">
                             <h5>Kategorie Formularzy</h5>
                             {this.state.category.map((item, index) => {
                                  return (
@@ -79,7 +81,13 @@ class FormsPage extends React.Component {
                                         <FormsCategories category={item} count={this.state.count[index]} action={this.onChangeCategory} />
                                     </div>
                             )})}
-                        </div>
+                            {forms.map((item, index) => {
+                                return (
+                                   <div className="form-dropdown-filter" key={index}>
+                                       <FormsDropdownFilter category={item.category} year={item.year} type={item.type} department={item.department} />
+                                   </div>
+                           )})}
+                                </div>*/}
                     </div>
                 </div>
             </div>

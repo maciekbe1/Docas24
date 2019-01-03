@@ -107,6 +107,35 @@ ul {
 .white {
     color: #ffffff;
 }
+/* .social-media .fa-facebook-square {
+    color: #0b51ca;
+    transition: .3s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.social-media .fa-facebook-square:hover {
+    transform: scale(1.1);
+
+} */
+
+.social-media .fa-facebook-square {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    color: #4867AA;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+  }
+
+  .social-media .fa-facebook-square:hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(-3px, -3px);
+  }
 
 @media (max-width: 1600px) {
     html {
