@@ -1,11 +1,18 @@
 import React from 'react'
 import forms from '../../data/forms.json';
 import forms_bg from '../../images/02_Forms_bg.png';
-import FilteredForms from '../forms/FilteredForms'
+import FilteredForms from '../forms/FilteredForms';
+import FormsCategories from '../forms/FormsCategories';
 
 class FormsPage extends React.Component {
-    state = {
-        search: ""
+    constructor(props) {
+        super(props);
+        this.state = {
+            search: "",
+            category: [],
+            count: [],
+        };
+        this.onChangeCategory = this.onChangeCategory.bind(this);
     }
     componentDidMount(props){
         if (this.props.location.state !== undefined) {
@@ -13,10 +20,30 @@ class FormsPage extends React.Component {
         } else {
             this.setState({search: ''});
         }
+
+        const formsCategory = forms;
+        let categories = [];
+        formsCategory.forEach(form => {
+            categories.push(form.category)
+        })
+
+        let unique = [...new Set(categories)];
+        this.setState({category: unique});
+
+        var uniqueCount = forms;
+        var  countCategories = {};
+        uniqueCount.forEach((i) => { countCategories[i.category] = ( countCategories[i.category] || 0 ) + 1;});
+        this.setState({count: Object.values(countCategories)});
+
     }
     onChange = e => {
         this.setState({search: e.target.value})
     }
+    onChangeCategory = (e) => {
+    //    const filterCategory = forms.filter(form => form.category === e.target.innerHTML);
+        this.setState({search: e.target.innerHTML})
+    }
+
     render() {
         const filtered = forms.filter(form => {
             return form.type.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
@@ -44,8 +71,14 @@ class FormsPage extends React.Component {
                             <h2 className="text-center">Dostępne formularze</h2>
                             <FilteredForms filtered={filtered} />
                         </div>
-                        <div className="col-lg-3">
-                            <p>Kategoria</p>
+                        <div className="col-lg-3 categories">
+                            <h5>Kategorie Formularzy</h5>
+                            {this.state.category.map((item, index) => {
+                                 return (
+                                    <div className="form-category" key={index}>
+                                        <FormsCategories category={item} count={this.state.count[index]} action={this.onChangeCategory} />
+                                    </div>
+                            )})}
                         </div>
                     </div>
                 </div>

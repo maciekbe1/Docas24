@@ -9,6 +9,11 @@ class FindForm extends React.Component {
     onChange = e => {
         this.setState({search: e.target.value})
     }
+    handleKeyPress(target) {
+        if(target.charCode === 13){
+            document.querySelector(".docas-find-form-button").click();
+        }
+    }
     render(){
         return (
             <div className="container-fluid find-form">
@@ -20,7 +25,7 @@ class FindForm extends React.Component {
                         <div className="col-lg-6 block-find-form">
                             <h1>Znajdź formularz:</h1>
                             <div className="input-group mb-3">
-                              <input value={this.state.search} onChange={this.onChange} type="text" className="form-control docas-input" placeholder="Wpisz jakiego formularza szukasz" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                              <input value={this.state.search} onChange={this.onChange} onKeyPress={this.handleKeyPress} type="text" className="form-control docas-input" placeholder="Wpisz jakiego formularza szukasz" aria-label="Recipient's username" aria-describedby="basic-addon2" />
                               <i className="fas fa-search fa-2x"></i>
                             </div>
                             <Link to={{ pathname: '/forms', state: this.state.search }} className="btn btn-primary docas-find-form-button">SZUKAJ</Link>

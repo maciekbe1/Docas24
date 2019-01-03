@@ -53,6 +53,21 @@
     font-size: 1.5rem;
     margin: 0 6px;
 }
+.categories {
+    padding-left: 30px;
+}
+.form-category {
+    margin: 20px 0 0 10px;
+}
+.form-category button {
+    background: no-repeat;
+    border: none;
+    font-size: 18px;
+}
+.form-category span {
+    font-size: 18px;
+    margin-left: 7px;
+}
 
 @media (max-width: 1200px) {
     .form-image {
