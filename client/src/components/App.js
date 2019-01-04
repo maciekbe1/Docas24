@@ -5,15 +5,17 @@ import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import HelpPage from './pages/HelpPage';
 import Header from './Header';
-import Footer from './Footer'
-import '../styles/main.css';
+import SocialMedia from './SocialMedia';
+import Footer from './Footer';
 
+import '../styles/main.css';
 const App = () => {
     return (
         <div>
             <HashRouter>
                 <div>
                 <Header />
+                <SocialMedia />
                     <Route path="/" exact component={HomePage} />
                     <Route path="/contact" component={ContactPage} />
                     <Route path="/help" component={HelpPage} />

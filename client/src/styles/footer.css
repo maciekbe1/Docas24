@@ -25,6 +25,9 @@ footer a {
 .footer-logo p {
     padding: 50px 0;
 }
+.footer-social-media {
+    display: none;
+}
 
 @media (max-width: 1200px) {
     footer {
@@ -56,6 +59,31 @@ footer a {
 @media (max-width: 768px) {
     footer {
         margin: 100px 0 50px 0;
+    }
+    .logo-footer {
+        width: 140px;
+    }
+}
+@media all and (max-device-width: 1366px) {
+    .social-media {
+        display: none;
+    }
+    .footer-social-media {
+        margin-top: 30px;
+        display: block;
+    }
+    .social-media-footer i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fab {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
     }
 }
 

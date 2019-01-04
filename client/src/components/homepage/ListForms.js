@@ -28,7 +28,7 @@ class ListForm extends Component {
                                     </li>
                                 </ul>
                             </div>
-                            <h3 className="font-weight-bold">{form.name}</h3>
+                            <h3 className="font-weight-bold">{form.type}</h3>
                         </div>
                      )
                     })}

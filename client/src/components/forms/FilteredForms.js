@@ -19,7 +19,7 @@ class FilteredForms extends Component {
                                 <img alt={form.name + form.id} src={docImage} className="filtered-form-image"/>
                             </div>
                             <div className="form-details d-flex flex-column justify-content-between">
-                                <h3 className="filtered-form-header">{form.name}</h3>
+                                <h3 className="filtered-form-header">{form.type}</h3>
                                 <p className="filtered-form-description">{form.description}</p>
                                 <div className="row no-gutters justify-content-between">
                                     <div className="d-flex">

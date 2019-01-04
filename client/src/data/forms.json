@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "nazwa formularza - 1",
-        "category": "zus",
+        "category": "Podania",
         "link": "abc",
         "image": "",
         "department": "ZUS",
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "name": "nazwa formularza 2",
-        "category": "zus",
+        "category": "Oświadczenia",
         "link": "abc",
         "image": "",
         "department": "ZUS",
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "name": "nazwa formularza - 3",
-        "category": "zus",
+        "category": "Umowy",
         "link": "abc",
         "image": "",
         "department": "ZUS",
@@ -35,7 +35,7 @@
     {
         "id": 4,
         "name": "nazwa formularza - 4",
-        "category": "zus",
+        "category": "Upoważnienia",
         "link": "abc",
         "image": "",
         "department": "ZUS",
@@ -46,7 +46,7 @@
     {
         "id": 5,
         "name": "nazwa formularza - 5",
-        "category": "zus",
+        "category": "Wnioski",
         "link": "abc",
         "image": "",
         "department": "ZUS",
@@ -57,10 +57,10 @@
     {
         "id": 6,
         "name": "nazwa formularza - 6",
-        "category": "us",
+        "category": "Wyjaśnienia",
         "link": "abc",
         "image": "",
-        "department": "Urząd skarbowy",
+        "department": "PIT",
         "year": 2018,
         "type": "Rekrutacja i zatrudnienie",
         "description": "Opis - to jest opis wniosku"
@@ -68,10 +68,10 @@
     {
         "id": 7,
         "name": "nazwa formularza - 7",
-        "category": "us",
+        "category": "Zaświadczenia",
         "link": "abc",
         "image": "",
-        "department": "Urząd skarbowy",
+        "department": "PIT",
         "year": 2018,
         "type": "Rekrutacja i zatrudnienie",
         "description": "Opis - to jest opis wniosku"
@@ -79,10 +79,10 @@
     {
         "id": 8,
         "name": "nazwa formularza - 8",
-        "category": "us",
+        "category": "Reklamacje",
         "link": "abc",
         "image": "",
-        "department": "Urząd skarbowy",
+        "department": "PIT",
         "year": 2018,
         "type": "Rekrutacja i zatrudnienie",
         "description": "Opis - to jest opis wniosku"
@@ -90,10 +90,10 @@
     {
         "id": 9,
         "name": "nazwa formularza - 9",
-        "category": "us",
+        "category": "Porozumienia",
         "link": "abc",
         "image": "",
-        "department": "Urząd skarbowy",
+        "department": "PIT",
         "year": 2018,
         "type": "Rekrutacja i zatrudnienie",
         "description": "Opis - to jest opis wniosku"
@@ -101,10 +101,10 @@
     {
         "id": 10,
         "name": "nazwa formularza - 10",
-        "category": "us",
+        "category": "Zawiadomienia",
         "link": "abc",
         "image": "",
-        "department": "Urząd skarbowy",
+        "department": "PIT",
         "year": 2018,
         "type": "Prawne i sądowe",
         "description": "Opis - to jest opis wniosku"
@@ -112,10 +112,10 @@
     {
         "id": 11,
         "name": "nazwa formularza - 11",
-        "category": "bank",
+        "category": "Faktury",
         "link": "abc",
         "image": "",
-        "department": "Bank Polski",
+        "department": "VAT",
         "year": 2018,
         "type": "Firmowe",
         "description": "Opis - to jest opis wniosku"
@@ -123,10 +123,10 @@
     {
         "id": 12,
         "name": "nazwa formularza - 12",
-        "category": "bank",
+        "category": "Formularze urzędowe: KRS, PIT, VAT, ZUS, PIP, GUS, US",
         "link": "abc",
         "image": "",
-        "department": "Bank Polski",
+        "department": "VAT",
         "year": 2018,
         "type": "Firmowe",
         "description": "Opis - to jest opis wniosku"
@@ -134,10 +134,10 @@
     {
         "id": 13,
         "name": "nazwa formularza - 13",
-        "category": "bank",
+        "category": "Podania",
         "link": "abc",
         "image": "",
-        "department": "Bank Polski",
+        "department": "VAT",
         "year": 2018,
         "type": "Firmowe",
         "description": "Opis - to jest opis wniosku"
@@ -145,10 +145,10 @@
     {
         "id": 14,
         "name": "nazwa formularza - 14",
-        "category": "bank",
+        "category": "Oświadczenia",
         "link": "abc",
         "image": "",
-        "department": "Bank Polski",
+        "department": "VAT",
         "year": 2018,
         "type": "Firmowe",
         "description": "Opis - to jest opis wniosku"
@@ -156,10 +156,10 @@
     {
         "id": 15,
         "name": "nazwa formularza - 15",
-        "category": "bank",
+        "category": "Umowy",
         "link": "abc",
         "image": "",
-        "department": "Bank Polski",
+        "department": "VAT",
         "year": 2018,
         "type": "Firmowe",
         "description": "Opis - to jest opis wniosku"
@@ -167,10 +167,10 @@
     {
         "id": 16,
         "name": "nazwa formularza - 16",
-        "category": "dg",
+        "category": "Upoważnienia",
         "link": "abc",
         "image": "",
-        "department": "urzad miasta",
+        "department": "PIP",
         "year": 2018,
         "type": "Sprawy obywatelskie",
         "description": "Opis - to jest opis wniosku"
@@ -178,10 +178,10 @@
     {
         "id": 17,
         "name": "nazwa formularza - 17",
-        "category": "dg",
+        "category": "Wnioski",
         "link": "abc",
         "image": "",
-        "department": "Urząd skarbowy",
+        "department": "PIP",
         "year": 2018,
         "type": "Sprawy obywatelskie",
         "description": "Opis - to jest opis wniosku"
@@ -189,10 +189,10 @@
     {
         "id": 18,
         "name": "nazwa formularza - 18",
-        "category": "dg",
+        "category": "Wyjaśnienia",
         "link": "abc",
         "image": "",
-        "department": "ZUS",
+        "department": "PIP",
         "year": 2018,
         "type": "Sprawy obywatelskie",
         "description": "Opis - to jest opis wniosku"
@@ -200,10 +200,10 @@
     {
         "id": 19,
         "name": "nazwa formularza - 19",
-        "category": "dg",
+        "category": "Zaświadczenia",
         "link": "abc",
         "image": "",
-        "department": "ZUS",
+        "department": "PIP",
         "year": 2018,
         "type": "Sprawy obywatelskie",
         "description": "Opis - to jest opis wniosku"
@@ -211,10 +211,10 @@
     {
         "id": 20,
         "name": "nazwa formularza - 20",
-        "category": "dg",
+        "category": "Reklamacje",
         "link": "abc",
         "image": "",
-        "department": "Urząd skarbowy",
+        "department": "PIP",
         "year": 2018,
         "type": "Sprawy obywatelskie",
         "description": "Opis - to jest opis wniosku"
@@ -222,10 +222,10 @@
     {
         "id": 21,
         "name": "nazwa formularza - 21",
-        "category": "kategoria formularza",
+        "category": "Porozumienia",
         "link": "abc",
         "image": "",
-        "department": "ZUS",
+        "department": "GUS",
         "year": 2018,
         "type": "Nieruchomości",
         "description": "Opis - to jest opis wniosku"
@@ -233,10 +233,10 @@
     {
         "id": 22,
         "name": "nazwa formularza - 22",
-        "category": "kategoria formularza",
+        "category": "Zawiadomienia",
         "link": "abc",
         "image": "",
-        "department": "ZUS",
+        "department": "GUS",
         "year": 2018,
         "type": "Nieruchomości",
         "description": "Opis - to jest opis wniosku"
@@ -244,10 +244,10 @@
     {
         "id": 23,
         "name": "nazwa formularza - 23",
-        "category": "kategoria formularza",
+        "category": "Faktury",
         "link": "abc",
         "image": "",
-        "department": "Urząd skarbowy",
+        "department": "GUS",
         "year": 2018,
         "type": "Nieruchomości",
         "description": "Opis - to jest opis wniosku"
@@ -255,10 +255,10 @@
     {
         "id": 24,
         "name": "nazwa formularza - 24",
-        "category": "kategoria formularza",
+        "category": "Formularze urzędowe: KRS, PIT, VAT, ZUS, PIP, GUS, US",
         "link": "abc",
         "image": "",
-        "department": "Urząd skarbowy",
+        "department": "GUS",
         "year": 2018,
         "type": "Nieruchomości",
         "description": "Opis - to jest opis wniosku"
@@ -266,10 +266,10 @@
     {
         "id": 25,
         "name": "nazwa formularza - 25",
-        "category": "kategoria formularza",
+        "category": "Podania",
         "link": "abc",
         "image": "",
-        "department": "bank",
+        "department": "GUS",
         "year": 2018,
         "type": "Nieruchomości",
         "description": "Opis - to jest opis wniosku"
@@ -277,9 +277,9 @@
     {
         "id": 26,
         "name": "nazwa formularza - 26",
-        "category": "kategoria formularza",
+        "category": "Oświadczenia",
         "image": "",
-        "department": "bank",
+        "department": "US",
         "year": 2018,
         "type": "Transport i pojazdy",
         "description": "Opis - to jest opis wniosku"
@@ -287,9 +287,9 @@
     {
         "id": 27,
         "name": "nazwa formularza - 27",
-        "category": "kategoria formularza",
+        "category": "Umowy",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Transport i pojazdy",
         "description": "Opis - to jest opis wniosku"
@@ -297,9 +297,9 @@
     {
         "id": 28,
         "name": "nazwa formularza - 28",
-        "category": "kategoria formularza",
+        "category": "Upoważnienia",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Transport i pojazdy",
         "description": "Opis - to jest opis wniosku"
@@ -307,9 +307,9 @@
     {
         "id": 29,
         "name": "nazwa formularza - 29",
-        "category": "kategoria formularza",
+        "category": "Wnioski",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Transport i pojazdy",
         "description": "Opis - to jest opis wniosku"
@@ -317,9 +317,9 @@
     {
         "id": 30,
         "name": "nazwa formularza - 30",
-        "category": "kategoria formularza",
+        "category": "Wyjaśnienia",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Transport i pojazdy",
         "description": "Opis - to jest opis wniosku"
@@ -327,9 +327,9 @@
     {
         "id": 31,
         "name": "nazwa formularza - 31",
-        "category": "kategoria formularza",
+        "category": "Zaświadczenia",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Finanse",
         "description": "Opis - to jest opis wniosku"
@@ -337,9 +337,9 @@
     {
         "id": 32,
         "name": "nazwa formularza - 32",
-        "category": "kategoria formularza",
+        "category": "Reklamacje",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Finanse",
         "description": "Opis - to jest opis wniosku"
@@ -347,9 +347,9 @@
     {
         "id": 33,
         "name": "nazwa formularza - 33",
-        "category": "kategoria formularza",
+        "category": "Porozumienia",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Finanse",
         "description": "Opis - to jest opis wniosku"
@@ -357,9 +357,9 @@
     {
         "id": 34,
         "name": "nazwa formularza - 34",
-        "category": "kategoria formularza",
+        "category": "Zawiadomienia",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Finanse",
         "description": "Opis - to jest opis wniosku"
@@ -367,9 +367,9 @@
     {
         "id": 35,
         "name": "nazwa formularza - 35",
-        "category": "kategoria formularza",
+        "category": "Faktury",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Finanse",
         "description": "Opis - to jest opis wniosku"
@@ -377,9 +377,9 @@
     {
         "id": 36,
         "name": "nazwa formularza - 36",
-        "category": "kategoria formularza",
+        "category": "Formularze urzędowe: KRS, PIT, VAT, ZUS, PIP, GUS, US",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Transport i pojazdy",
         "description": "Opis - to jest opis wniosku"
@@ -387,9 +387,9 @@
     {
         "id": 37,
         "name": "nazwa formularza - 37",
-        "category": "kategoria formularza",
+        "category": "Podania",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Inne",
         "description": "Opis - to jest opis wniosku"
@@ -397,9 +397,9 @@
     {
         "id": 38,
         "name": "nazwa formularza - 38",
-        "category": "kategoria formularza",
+        "category": "Oświadczenia",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Inne",
         "description": "Opis - to jest opis wniosku"
@@ -407,9 +407,9 @@
     {
         "id": 39,
         "name": "nazwa formularza - 39",
-        "category": "kategoria formularza",
+        "category": "Umowy",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Inne",
         "description": "Opis - to jest opis wniosku"
@@ -417,9 +417,9 @@
     {
         "id": 40,
         "name": "nazwa formularza - 40",
-        "category": "kategoria formularza",
+        "category": "Upoważnienia",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Inne",
         "description": "Opis - to jest opis wniosku"
@@ -427,9 +427,9 @@
     {
         "id": 41,
         "name": "nazwa formularza - 41",
-        "category": "kategoria formularza",
+        "category": "Wnioski",
         "image": "",
-        "department": "bank",
+        "department": "KRS",
         "year": 2018,
         "type": "Inne",
         "description": "Opis - to jest opis wniosku"

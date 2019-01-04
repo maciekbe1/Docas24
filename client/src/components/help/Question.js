@@ -8,7 +8,7 @@ class ListForm extends Component {
         };
     }
     onExpand = () => {
-        var currentState = this.state.expanded
+        const currentState = this.state.expanded
         this.setState({expanded: !currentState})
     }
     render() {
