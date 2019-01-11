@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import newsImage from '../../images/news.png'
+import newsHello from '../../images/news-hello.jpeg';
+import newsForms from '../../images/news-forms.jpeg';
+import newsAuto from '../../images/news-auto.jpeg';
 
 
 class News extends Component {
@@ -10,7 +12,7 @@ class News extends Component {
                 <div className="row">
                     <div className="news-content">
                         <div className="news-square d-flex justify-content-center align-items-center">
-                            <img alt="news" src={newsImage} />
+                            <img alt="news" src={newsForms} />
                         </div>
                         <div className="news-text">
                             <h3>Nowe formularze - 28.12.2018 r.</h3>
@@ -19,7 +21,7 @@ class News extends Component {
                     </div>
                     <div className="news-content">
                         <div className="news-square d-flex justify-content-center align-items-center">
-                        <img alt="news" src={newsImage} />
+                        <img alt="news" src={newsAuto} />
                         </div>
                         <div className="news-text">
                             <h3>Automatyczne wypełnianie danych</h3>
@@ -28,7 +30,7 @@ class News extends Component {
                     </div>
                     <div className="news-content">
                         <div className="news-square d-flex justify-content-center align-items-center">
-                            <img alt="news" src={newsImage} />
+                            <img alt="news" src={newsHello} />
                         </div>
                         <div className="news-text">
                             <h3>Witamy na Docas24.com!</h3>
