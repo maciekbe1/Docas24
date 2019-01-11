@@ -2,13 +2,39 @@ import React from 'react'
 import forms from '../../data/forms.json';
 import forms_bg from '../../images/02_Forms_bg.png';
 import FilteredForms from '../forms/FilteredForms';
+import Formsfilters from '../forms/FormsFilters';
 
 class FormsPage extends React.Component {
     state = {
         search: "",
         f: 0,
-        l: 5
+        l: 5,
+        forms: forms,
+        category: '',
+        type: '',
+        year: '',
+        department: ''
     };
+    
+    filterItems = (val, type) => {
+        switch (type) {
+            case 'category':
+                this.setState({category: val});
+                break;
+            case 'type':
+                this.setState({type: val});
+                break;
+            case 'year':
+                this.setState({year: val});
+                break;
+            case 'department':
+                this.setState({department: val});
+                break;
+            default:
+                break;
+       }
+     }
+     
     onChange = e => {
         this.setState({search: e.target.value, f: 0, l: 5})
     }
@@ -21,7 +47,30 @@ class FormsPage extends React.Component {
     }
 
     render() {
-        const filtered = forms.filter(form => {
+        let filteredItems = this.state.forms;
+        let state = this.state;
+        ["category", "type", "year", "department"].forEach(function(filterBy) {
+          let filterValue = state[filterBy];
+          if (filterValue) {
+            filteredItems = filteredItems.filter(function(item) {
+              return item[filterBy] === filterValue;
+            });
+          }
+        });
+        let categoryArray = this.state.forms.map(function(item) { return item.category });
+        let typeArray = this.state.forms.map(function(item) { return item.type });
+        let yearArray = this.state.forms.map(function(item) { return item.year });
+        let departmentArray = this.state.forms.map(function(item) { return item.department });
+        categoryArray.unshift("");
+        typeArray.unshift("");
+        yearArray.unshift("");
+        departmentArray.unshift("");
+        categoryArray = [...new Set(categoryArray)];
+        typeArray = [...new Set(typeArray)];
+        yearArray = [...new Set(yearArray)];
+        departmentArray = [...new Set(departmentArray)];
+        
+        const filtered = filteredItems.filter(form => {
             return form.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
         })
         return (
@@ -46,6 +95,20 @@ class FormsPage extends React.Component {
                         <div className="col-lg-9">
                             <h2 className="text-center">Dostępne formularze</h2>
                             <FilteredForms f={this.state.f} l={this.state.l} filtered={filtered} />
+                        </div>
+                        
+                        <div className="col-lg-3 categories">
+                            <h5>Kategorie Formularzy</h5>
+                            <div className="form-category">
+                                <Formsfilters
+                                    data={this.state.forms}
+                                    categoryOptions={categoryArray}
+                                    typeOptions={typeArray}
+                                    yearOptions={yearArray}
+                                    departmentOptions={departmentArray}
+                                    changeOption={this.filterItems}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

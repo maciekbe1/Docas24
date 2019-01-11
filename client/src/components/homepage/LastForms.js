@@ -6,9 +6,14 @@ class LastForms extends Component {
     state = {
         activeItem: 'Wszystkie',
         forms: this.props.forms,
-        items: ['Wszystkie', 'Prawne i sądowe', 'Rekrutacja i zatrudnienie', 'Firmowe', 'Sprawy obywatelskie', 'Nieruchomości', 'Transport i pojazdy', 'Finanse', 'Inne']
+        items: []
     }
-    
+    componentDidMount(){
+        let items = this.state.forms.map(function(item) { return item.type });
+        items.unshift("Wszystkie");
+        items = [...new Set(items)];
+        this.setState({items: items})
+    }
     findForm = (item) => {
         if (item === 'Wszystkie') {
             this.setState({forms: this.props.forms, activeItem: item});

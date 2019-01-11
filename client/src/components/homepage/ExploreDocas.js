@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import computer_bg from '../../images/01_Home_computer.png';
+import computer_bg from '../../images/01_Home_computer_with_bg.png';
 import line_right from '../../images/01_Home_bg_line_2.png';
 
 class ExploreDocas extends Component {

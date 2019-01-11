@@ -76,6 +76,10 @@
     width: 50px;
     align-items: center;
 }
+.filter-option {
+   display: flex;
+   flex-direction: column;
+}
 @media (max-width: 1200px) {
     .form-image {
         opacity: .3;
