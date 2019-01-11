@@ -24,11 +24,11 @@ class ListForm extends Component {
                                 <img alt="document" src={docImage}/>
                                 <ul className="nav square-btns">
                                     <li className="btn-primary">
-                                        <a href="https://docas24.bpower2.com/index.php/site/login">Wypełnij</a>
+                                        <a rel="noopener noreferrer" target="_blank" href={form.link}>Wypełnij</a>
                                     </li>
                                 </ul>
                             </div>
-                            <h3 className="font-weight-bold">{form.type}</h3>
+                            <h3 className="font-weight-bold">{form.name}</h3>
                         </div>
                      )
                     })}

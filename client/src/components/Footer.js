@@ -54,10 +54,10 @@ class Footer extends React.Component {
                     <div className="footer-social-media container">
                         <div className="row">
                             <div className="col-4 d-flex justify-content-center">
-                                <a href="https://www.facebook.com/" className="facebook"><i className="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/docas24/" className="facebook"><i className="fab fa-facebook-f"></i></a>
                             </div>
                             <div className="col-4 d-flex justify-content-center">
-                                <a href="https://twitter.com/" className="twitter"><i className="fab fa-twitter"></i></a>
+                                <a href="https://twitter.com/docas24" className="twitter"><i className="fab fa-twitter"></i></a>
                             </div>
                             <div className="col-4 d-flex justify-content-center">
                                 <a href="https://www.linkedin.com/" className="LinkedIn"><i className="fab fa-linkedin-in"></i></a>

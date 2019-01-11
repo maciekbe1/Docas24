@@ -14,7 +14,6 @@ class Header extends React.Component {
     }
     
     activeClass = () => {
-        console.log(this.state.active)
         if (this.state.active) {
             this.setState({active: ''})
             

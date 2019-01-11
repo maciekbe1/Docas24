@@ -2,18 +2,15 @@ import React from 'react'
 import forms from '../../data/forms.json';
 import forms_bg from '../../images/02_Forms_bg.png';
 import FilteredForms from '../forms/FilteredForms';
-import FormsCategories from '../forms/FormsCategories';
-import FormsDropdownFilter from '../forms/FormsDropdownFilter';
 
 class FormsPage extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            search: "",
-            category: [],
-            count: [],
-        };
-        this.onChangeCategory = this.onChangeCategory.bind(this);
+    state = {
+        search: "",
+        f: 0,
+        l: 5
+    };
+    onChange = e => {
+        this.setState({search: e.target.value, f: 0, l: 5})
     }
     componentDidMount(props){
         if (this.props.location.state !== undefined) {
@@ -21,34 +18,11 @@ class FormsPage extends React.Component {
         } else {
             this.setState({search: ''});
         }
-
-        const formsCategory = forms;
-        let categories = [];
-        formsCategory.forEach(form => {
-            categories.push(form.category)
-        })
-
-        let unique = [...new Set(categories)];
-        this.setState({category: unique});
-
-        var uniqueCount = forms;
-        var  countCategories = {};
-        uniqueCount.forEach((i) => { countCategories[i.category] = ( countCategories[i.category] || 0 ) + 1;});
-        this.setState({count: Object.values(countCategories)});
-
-    }
-    onChange = e => {
-        this.setState({search: e.target.value})
-    }
-    onChangeCategory = (e) => {
-       const filterCategory = forms.filter(form => form.category === e.target.innerHTML);
-        this.setState({search: e.target.innerHTML})
-        console.log(filterCategory)
     }
 
     render() {
         const filtered = forms.filter(form => {
-            return form.type.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
+            return form.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
         })
         return (
             <div className="container-fluid form-search">
@@ -71,23 +45,8 @@ class FormsPage extends React.Component {
                     <div className="row">
                         <div className="col-lg-9">
                             <h2 className="text-center">Dostępne formularze</h2>
-                            <FilteredForms filtered={filtered} />
+                            <FilteredForms f={this.state.f} l={this.state.l} filtered={filtered} />
                         </div>
-                        {/* <div className="col-lg-3 categories">
-                            <h5>Kategorie Formularzy</h5>
-                            {this.state.category.map((item, index) => {
-                                 return (
-                                    <div className="form-category" key={index}>
-                                        <FormsCategories category={item} count={this.state.count[index]} action={this.onChangeCategory} />
-                                    </div>
-                            )})}
-                            {forms.map((item, index) => {
-                                return (
-                                   <div className="form-dropdown-filter" key={index}>
-                                       <FormsDropdownFilter category={item.category} year={item.year} type={item.type} department={item.department} />
-                                   </div>
-                           )})}
-                                </div>*/}
                     </div>
                 </div>
             </div>

@@ -68,7 +68,14 @@
     font-size: 18px;
     margin-left: 7px;
 }
-
+.pagination li {
+    display: flex;
+    height: 50px;
+    font-size: 2rem;
+    justify-content: center;
+    width: 50px;
+    align-items: center;
+}
 @media (max-width: 1200px) {
     .form-image {
         opacity: .3;
