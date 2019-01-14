@@ -8,14 +8,18 @@ class RadioButton extends React.Component {
         };
     }
     onChecked = () => {
-        var currentState = this.state.check
-        this.setState({check: !currentState})
+        var currentState = this.state.check;
+        this.setState({check: !currentState});
+    }
+    onHandleClick = () => {
+        this.onChecked();
+        this.props.action();
     }
     render() {
         return (
             <div className="form-checkbox-btn">
                 <span>
-                    <i className={this.state.check ? "fas fa-check-circle fa-2x" : "far fa-circle fa-2x"} onClick={this.onChecked}></i>
+                    <i className={this.state.check ? "fas fa-check-circle fa-2x" : "far fa-circle fa-2x"} onClick={this.onHandleClick}></i>
                     <p>{this.props.text}</p>
                     <input type="checkbox" />
                 </span>
