@@ -9,13 +9,13 @@
         "id" : 2,
         "text": "Serwis Docas24 to narzędzie, którego brakowało na rynku. Dzięki niemu można wygenerować wiele potrzebnych dokumentów bez konieczności ciągłego powielania tych samych danych. Prawdziwa oszczędność czasu!",
         "auth": "Karolina",
-        "spec": ""
+        "spec": "Manager"
     },
     {
         "id" : 3,
         "text": "Serwis bardzo jasny i przejrzysty. Pomaga w bardzo szybkim czasie tworzyć i uzupełniać dokumenty.",
         "auth": "Maciej",
-        "spec": ""
+        "spec": "Programista"
     },
     {
         "id" : 4,
