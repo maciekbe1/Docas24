@@ -60,7 +60,7 @@ class Footer extends React.Component {
                                 <a href="https://twitter.com/docas24" className="twitter"><i className="fab fa-twitter"></i></a>
                             </div>
                             <div className="col-4 d-flex justify-content-center">
-                                <a href="https://www.linkedin.com/" className="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/company/docas24/" className="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>

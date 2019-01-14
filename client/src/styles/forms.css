@@ -1,12 +1,16 @@
 .form-search {
-    margin-top: 90px;
     position: relative;
 }
-.form-image {
+.filtered-form-component {
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+    padding: 15px;
+}
+.form-page-main-image {
     position: absolute;
     top: 50px;
-    right: 30px;
-    max-width: 985px;
+    right: 8%;
+    max-width: 800px;
     width: 100%;
 }
 .filtered-form {
@@ -22,21 +26,20 @@
     background-color: #D6E5F7;
 }
 .filtered-form-image {
-    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
 }
 .filtered-form-description {
     color: #666;
     font-family: Niramit;
     font-size: 1.8rem;
 }
-.filtered-form-component {
+.available-forms {
     margin-bottom: 85px;
 }
 .filtered-form-component .btn {
     margin-left: 12px;
-}
-.available-forms {
-    margin-top: 200px;
 }
 .available-forms h2 {
     margin-bottom: 65px;
@@ -80,8 +83,11 @@
    display: flex;
    flex-direction: column;
 }
+.tags {
+    width: 100%;
+}
 @media (max-width: 1200px) {
-    .form-image {
+    .form-page-main-image {
         opacity: .3;
     }
 }

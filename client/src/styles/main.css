@@ -50,8 +50,8 @@ ul {
 }
 .docas-btn-primary {
     color: #fff;
-    height: 60px;
-    width: 200px;
+    height: 50px;
+    width: 150px;
     box-shadow: 0 25px 42px rgba(69, 137, 254, 0.35);
     background-color: #0b51ca;
     border: none;
@@ -90,12 +90,6 @@ ul {
     border: 2px solid #0b51ca;
     font-size: 2.4rem;
     position: relative;
-}
-
-.fa-search {
-    position: absolute;
-    align-self: center;
-    right: 10px;
 }
 
 .input-group-text {

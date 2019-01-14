@@ -7,8 +7,8 @@ import Formsfilters from '../forms/FormsFilters';
 class FormsPage extends React.Component {
     state = {
         search: "",
-        f: 0,
-        l: 5,
+        firstForm: 0,
+        lastForm: 5,
         forms: forms,
         category: '',
         type: '',
@@ -36,7 +36,7 @@ class FormsPage extends React.Component {
      }
      
     onChange = e => {
-        this.setState({search: e.target.value, f: 0, l: 5})
+        this.setState({search: e.target.value, firstForm: 0, lastForm: 5})
     }
     componentDidMount(props){
         if (this.props.location.state !== undefined) {
@@ -76,7 +76,7 @@ class FormsPage extends React.Component {
         return (
             <div className="container-fluid form-search">
                 <div className="row">
-                    <img alt="forms" className="form-image" src={forms_bg} />
+                    <img alt="forms" className="form-page-main-image" src={forms_bg} />
                 </div>
                 <div className="container">
                     <div className="row">
@@ -94,7 +94,7 @@ class FormsPage extends React.Component {
                     <div className="row">
                         <div className="col-lg-9">
                             <h2 className="text-center">Dostępne formularze</h2>
-                            <FilteredForms f={this.state.f} l={this.state.l} filtered={filtered} />
+                            <FilteredForms firstForm={this.state.firstForm} lastForm={this.state.lastForm} filtered={filtered} />
                         </div>
                         
                         <div className="col-lg-3 categories">

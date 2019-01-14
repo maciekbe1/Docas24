@@ -13,7 +13,7 @@ class SocialMedia extends Component {
                         <a href="https://twitter.com/docas24" rel="noopener noreferrer" target="_blank" className="twitter"><span>Tweeter</span><i className="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank" className="LinkedIn"><span>Linkedin</span><i className="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/company/docas24/" rel="noopener noreferrer" target="_blank" className="LinkedIn"><span>Linkedin</span><i className="fab fa-linkedin-in"></i></a>
                     </li>
                 </ul>
         );

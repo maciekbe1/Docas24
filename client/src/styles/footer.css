@@ -56,15 +56,7 @@ footer a {
     }
 }
 
-@media (max-width: 768px) {
-    footer {
-        margin: 100px 0 50px 0;
-    }
-    .logo-footer {
-        width: 140px;
-    }
-}
-@media all and (max-device-width: 1366px) {
+@media all and (max-device-width: 992px) {
     .social-media {
         display: none;
     }
@@ -84,6 +76,15 @@ footer a {
         justify-content: center;
         align-items: center;
         border-radius: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin: 100px 0 50px 0;
+    }
+    .logo-footer {
+        width: 140px;
     }
 }
 
