@@ -60,7 +60,8 @@ ul {
 }
 .docas-btn-primary:hover {
     color: #fff;
-    box-shadow: 0 25px 42px rgba(69, 137, 254, 0.35);
+    /* box-shadow: 0 25px 42px rgba(69, 137, 254, 0.35); */
+    background-color:#0069d9
 }
 .docas-btn-outline-primary {
     color: #0b51ca;

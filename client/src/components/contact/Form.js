@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import RadioButton from './RadioButton';
-import ReCaptcha from 'react-recaptcha';
+// import ReCaptcha from 'react-recaptcha';
 
 class Form extends Component {
     state = {

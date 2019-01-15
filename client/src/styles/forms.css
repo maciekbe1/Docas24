@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     width: 160px;
-    height: 200px;
+    /* height: 200px; */
     box-shadow: 0 0 42px rgba(176, 170, 170, 0.35);
     background-color: #D6E5F7;
 }
@@ -101,5 +101,9 @@
 @media (max-width: 768px) {
     .available-forms {
         margin-top: 0;
+    }
+    .filtered-form {
+        flex-direction: column;
+        align-items: center;
     }
 }

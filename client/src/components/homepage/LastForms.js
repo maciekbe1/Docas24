@@ -6,7 +6,8 @@ class LastForms extends Component {
     state = {
         activeItem: 'Wszystkie',
         forms: this.props.forms,
-        items: []
+        items: [],
+        formCount: 6
     }
     componentDidMount(){
         let items = this.state.forms.map(function(item) { return item.type });
@@ -16,7 +17,7 @@ class LastForms extends Component {
     }
     findForm = (item) => {
         if (item === 'Wszystkie') {
-            this.setState({forms: this.props.forms, activeItem: item});
+            this.setState({forms: this.props.forms, activeItem: item, formCount: 6});
         } else {
             this.setState({activeItem: item, forms: this.props.forms.filter(form => {
                 return form.type === item;
@@ -36,7 +37,7 @@ class LastForms extends Component {
                                 )
                             })}
                         </div>
-                    <ListForm forms={this.state.forms} />
+                    <ListForm formCount={this.state.formCount} forms={this.state.forms} />
                 </div>
             </div>
         );

@@ -5,21 +5,34 @@ import Modal from './Modal'
 class ListForm extends Component {
     
     state = {
-        count: 6,
+        count: this.props.formCount,
         activeModal: false
     }
-
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.formCount !== this.state.count) {
+            this.setState({count: nextProps.formCount})
+        }
+    }
     showMore = () => {
         this.setState({ count: this.state.count + 3})
     }
-    
     showModal = () => {
         this.setState({activeModal: true})
     }
     closeModal = () => {
         this.setState({activeModal: false})
     }
-    
+    showMoreButtonCondition = () => {
+        let show = "d-inline";
+        if (this.state.count >= this.props.forms.length) {
+            show = "d-none";
+        }
+        if (this.props.forms.length > 6 ) {
+            return (
+                <button className={`${show} btn btn-primary docas-show-more-button`} onClick={this.showMore}>Załaduj więcej</button>
+            );
+        }
+    }
     render() {
         const { forms } = this.props;
         return (
@@ -49,7 +62,9 @@ class ListForm extends Component {
                      )
                     })}
                     <div className="docas-show-more col-12">
-                        <button className="btn btn-primary docas-show-more-button" onClick={this.showMore}>Załaduj więcej</button>
+                        {
+                            this.showMoreButtonCondition(this)
+                        }
                     </div>
             </section>
         );

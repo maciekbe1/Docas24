@@ -71,8 +71,20 @@ class FormsPage extends React.Component {
         departmentArray = [...new Set(departmentArray)];
         
         const filtered = filteredItems.filter(form => {
-            return form.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
-        })
+            const tags = () => {
+                return form.tags.find((element) => {
+                    return element.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
+                });
+            }
+            const names = () => {
+                return form.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
+            }
+            if (names()) {
+                return names();
+            } else {
+                return tags();
+            }
+        });
         return (
             <div className="container-fluid form-search">
                 <div className="row">

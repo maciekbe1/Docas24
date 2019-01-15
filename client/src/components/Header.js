@@ -31,9 +31,6 @@ class Header extends React.Component {
     render() {
         return (
             <header className="header container-fluid">
-
-
-                
                 <nav className="navbar navbar navbar-light bg-light navbar-expand-xl">
                     <Link className="navbar-brand offset-xl-1" to="/">
                         <img alt="logo" className="logo" src={logo} />
@@ -47,13 +44,16 @@ class Header extends React.Component {
                     <div className="collapse navbar-collapse" id="navbarCollapse">
                         <ul className="navbar-nav offset-xl-2">
                             <li className="nav-item">
-                                <a href="http://app.docas24.com/register">Rejestracja</a>
-                            </li>
-                            <li className="nav-item">
                                 <NavLink activeClassName="selected" to="/help" onClick={this.disableMenu}>Pomoc</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink activeClassName="selected" to="/contact" onClick={this.disableMenu}>Kontakt</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink activeClassName="selected" to="/forms" onClick={this.disableMenu}>Formularze</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <a href="http://app.docas24.com/register">Rejestracja</a>
                             </li>
                             <li className="nav-item">
                                 <a className="btn btn-outline-primary log-in" href="http://app.docas24.com/index.php/site/login">Zaloguj się</a>

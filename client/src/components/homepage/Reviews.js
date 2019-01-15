@@ -27,10 +27,12 @@ class Reviews extends Component {
                 <TinySlider settings={settings} ref={ts => this.ts = ts}>
                     {this.state.reviews.map((review) => {
                         return (
-                            <div key={review.id} className="review-text">
-                                <h3>{review.auth}</h3>
-                                <h5 className="selected">{review.spec}</h5>
-                                <h3>{review.text}</h3>
+                            <div key={review.id} className="review-text-box">
+                                <div className="review-text">
+                                    <h3>{review.auth}</h3>
+                                    <h5 className="selected">{review.spec}</h5>
+                                    <h4>{review.text}</h4>
+                                </div>
                             </div>
                         )
                     })}
