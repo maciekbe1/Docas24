@@ -316,6 +316,11 @@
         width: 730px;
     }
 }
+@media (max-width: 1400px) {
+    .find-form-image {
+        opacity: .3;
+    }
+}
 @media (max-width: 1200px) {
     .find-form-image {
         right: 15px;

@@ -58,6 +58,7 @@
 }
 .categories {
     padding-left: 30px;
+    margin-bottom: 40px;
 }
 .form-category {
     margin: 20px 0 0 10px;
@@ -83,9 +84,30 @@
    display: flex;
    flex-direction: column;
 }
+
+.filter-option .filter {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .filter-option .filter label {
+    font-size: 1.8rem;
+ }
+
+ .filter-option .filter select {
+    font-size: 1.6rem;
+    height: 40px;
+    max-width: 300px;
+ }
+
+ .filter-option .filter option {
+    font-size: 1.6rem;
+ }
+
 .tags {
     width: 100%;
 }
+
 @media (max-width: 1200px) {
     .form-page-main-image {
         opacity: .3;
