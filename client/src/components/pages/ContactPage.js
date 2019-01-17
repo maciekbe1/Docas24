@@ -32,7 +32,7 @@ class ContactPage extends React.Component {
                     </div>
                 </div>
                 <h3 className="col-12 text-center">Dane kontaktowe</h3>
-                <div className="container contact-details-blocks">                
+                <div className="container contact-details-blocks">
                     <div className="address">
                         <h5>Nazwa firmy</h5>
                         <p>MP NEW sp. z o.o. w LEŻAJSKU</p>
