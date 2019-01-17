@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import FormsPage from './pages/FormsPage';
 import ContactPage from './pages/ContactPage';
+import ThankYou from './pages/ThankYou';
 import HomePage from './pages/HomePage';
 import HelpPage from './pages/HelpPage';
 import Header from './Header';
@@ -18,6 +19,7 @@ const App = () => {
                 <SocialMedia />
                     <Route path="/" exact component={HomePage} />
                     <Route path="/contact" component={ContactPage} />
+                    <Route path="/success" component={ThankYou} />
                     <Route path="/help" component={HelpPage} />
                     <Route path="/forms" component={FormsPage} />
                 <Footer />
