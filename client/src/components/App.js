@@ -8,6 +8,7 @@ import HelpPage from './pages/HelpPage';
 import Header from './Header';
 import SocialMedia from './SocialMedia';
 import Footer from './Footer';
+import Admin from './admin/Admin';
 
 import '../styles/main.css';
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
                     <Route path="/success" component={ThankYou} />
                     <Route path="/help" component={HelpPage} />
                     <Route path="/forms" component={FormsPage} />
+                    <Route path="/admin" component={Admin} />
                 <Footer />
                 </div>
             </HashRouter>
