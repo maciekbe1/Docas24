@@ -55,7 +55,7 @@ class Header extends React.Component {
                             <li className="nav-item">
                                 <a href="http://app.docas24.com/register">Rejestracja</a>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item d-flex align-items-center">
                                 <a className="btn btn-outline-primary log-in" href="http://app.docas24.com/index.php/site/login">Zaloguj się</a>
                             </li>
                         </ul>

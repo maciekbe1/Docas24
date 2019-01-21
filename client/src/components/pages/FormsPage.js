@@ -106,11 +106,11 @@ class FormsPage extends React.Component {
                     <div className="row">
                         <div className="col-lg-9">
                             <h2 className="text-center">Dostępne formularze</h2>
-                            <FilteredForms firstForm={this.state.firstForm} lastForm={this.state.lastForm} filtered={filtered} />
+                            <FilteredForms activePageNumber={1} firstForm={this.state.firstForm} lastForm={this.state.lastForm} filtered={filtered} />
                         </div>
                         
                         <div className="col-lg-3 categories">
-                            <h5>Kategorie Formularzy</h5>
+                            <h5>Filtry Formularzy</h5>
                             <div className="form-category">
                                 <Formsfilters
                                     data={this.state.forms}

@@ -77,11 +77,14 @@ footer a {
         align-items: center;
         border-radius: 50%;
     }
+    .dotation-image {
+        width: 33rem;
+    }
 }
 
 @media (max-width: 768px) {
     footer {
-        margin: 100px 0 50px 0;
+        margin: 50px 0 50px 0;
     }
     .logo-footer {
         width: 140px;

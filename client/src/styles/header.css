@@ -63,17 +63,16 @@ nav a {
         flex: 1;
     }
     .navbar-collapse {
+        width: 100%;
         background: rgb(255, 255, 255);
         position: absolute;
         top: 0px;
-        right: -15px;
         z-index: 100;
         border-bottom: 2px solid rgb(11, 81, 202);
         box-shadow: rgba(69, 137, 254, 0.35) 0px 15px 22px;
     }
     .navbar-nav {
         padding: 100px 0 20px;
-        width: 400px;
         text-align: center;
     }
     .navbar-nav > li:not(:last-child) {
@@ -81,6 +80,10 @@ nav a {
     }
     .navbar-nav > li:last-child {
         margin-top: 50px;
+    }
+    .nav-item {
+        padding: 0;
+        justify-content: center;
     }
 }
 

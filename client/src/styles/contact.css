@@ -131,6 +131,24 @@
 .contact-details-blocks p {
     font-weight: normal;
 }
+.company-info {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.contact-info-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-info-column h5 {
+    margin-bottom: 3rem;
+}
+.contact-image-column {
+    text-align: center;
+}
+.contact-image-column img {
+    width: 60%;
+}
 @media (max-width: 1200px) {
     .contact img {
         opacity: .4;
@@ -147,6 +165,17 @@
     }
     .contact-details-blocks {
         padding: 0;
+    }
+    .contact-image-column img {
+        display: none;
+    }
+    .contact-info-column {
+        flex: none;
+        max-width: none;
+        border-radius: 10px;
+        box-shadow: 0 0 37px rgba(243,216,255,0.35);
+        margin: 0 auto;
+        width: 90%;
     }
 }
 @media (max-width: 576px) {

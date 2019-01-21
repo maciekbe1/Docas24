@@ -4,6 +4,13 @@
   font-weight: 400;
   src: url('./fonts/Niramit-Regular.ttf') format('truetype');
 }
+button, input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  line-height: normal;
+}
 html {
     font-size: 62.5%;
 }

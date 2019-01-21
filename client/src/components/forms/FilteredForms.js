@@ -11,37 +11,41 @@ class FilteredForms extends Component {
     state = {
         firstForm: this.props.firstForm,
         lastForm: this.props.lastForm,
-        num: 0
+        activePageNumber: this.props.activePageNumber
     }
     componentWillReceiveProps(nextProps) {
-      if (nextProps.firstForm !== this.state.firstForm || nextProps.lastForm !== this.state.lastForm ) {
-        this.setState({ firstForm: nextProps.firstForm, lastForm: nextProps.lastForm });
+      if (nextProps.firstForm !== this.state.firstForm || nextProps.lastForm !== this.state.lastForm || nextProps.activePageNumber !== this.state.activePageNumber) {
+        this.setState({ firstForm: nextProps.firstForm, lastForm: nextProps.lastForm, activePageNumber: nextProps.activePageNumber });
       }
     }
     filteredFormPagination = () => {
-        const { filtered } = this.props    
-        if (filtered.length > 5) {
+        // const { filtered } = this.props    
+        // if (filtered.length > 5) {
             return <Pagination 
                         firstPage={this.handlerFirst} 
                         lastPage={this.handlerLast}
-                        coutPage={Math.ceil(this.props.filtered.length / 5)}
+                        lengthPage={Math.ceil(this.props.filtered.length / 5)}
                         pager={this.handlerPages}
-                        num={this.state.num}
+                        activePageNumber={this.state.activePageNumber}
                     />
-        }
+        // }
     }
     handlerFirst = () => {
-        this.setState({firstForm: 0, lastForm: 5})
+        this.setState({firstForm: 0, lastForm: 5, activePageNumber: 1})
     }
     handlerLast = () => {
         const { filtered } = this.props
-        this.setState({firstForm: filtered.length - (filtered.length % 5), lastForm: filtered.length})
+        this.setState({
+            firstForm: filtered.length - (filtered.length % 5), 
+            lastForm: filtered.length,
+            activePageNumber: Math.ceil(this.props.filtered.length / 5)
+        })
     }
     handlerPages = (event) => {
         this.setState({
             firstForm: (Number(event.target.textContent) * 5) - 5, 
             lastForm: Number(event.target.textContent) * 5,
-            num: Number(event.target.textContent)
+            activePageNumber: Number(event.target.textContent)
         })
     }
     render() {
@@ -89,7 +93,13 @@ class FilteredForms extends Component {
                     </div>
                 )
             })}
-            { this.filteredFormPagination(this) }
+            <Pagination 
+                        firstPage={this.handlerFirst} 
+                        lastPage={this.handlerLast}
+                        lengthPage={Math.ceil(this.props.filtered.length / 5)}
+                        pager={this.handlerPages}
+                        activePageNumber={this.state.activePageNumber}
+                    />
             </React.Fragment>
         );
     }

@@ -1,5 +1,6 @@
 import React from 'react';
 import lines from '../../images/01_Home_bg_line_2.png';
+import contactImg from '../../images/04_Contact_bg.png'
 import '../../styles/contact.css';
 import Form from '../contact/Form';
 import Map from '../contact/Map';
@@ -47,6 +48,23 @@ class ContactPage extends React.Component {
                         <p>NIP 8161705454</p>
                         <p>KRS 0000682921</p>
                         <p>REGON 367543704</p>
+                    </div>
+                </div>
+                <div className="container company-info">
+                    <div className="row">
+                        <div className="col-6 contact-image-column">
+                            <img alt="contact" src={contactImg}/>
+                        </div>
+                        <div className="col-6 contact-info-column">
+                            <h5>Firma <span className="font-weight-bold">MP NEW SP. Z O.O. W LEŻAJSKU</span> realizuje projekt w ramach działania 1.4.1 Wsparcie MŚP, poddziałanie 1.4.1 Dotacje Bezpośrednie, Regionalny Program Operacyjny Województwa Podkarpackiego na lata 2014-2020.</h5>
+
+                            <h5><span className="font-weight-bold">Tytuł projektu:</span> Stworzenie serwisu internetowego wspierającego wypełnianie, składanie i archiwizowanie dokumentów elektronicznych przygotowywanych dla urzędów, banków i innych instytucji.</h5>
+
+                            <h5><span className="font-weight-bold">Budżet projektu:</span> 623 188,00 PLN, dofinansowanie ze środków UE wynosi 332 512,50 PLN.</h5>
+
+                            <h5><span className="font-weight-bold">Okres realizacji projektu:</span> 01/01/2018 – 30/03/2019.</h5>
+                        </div>
+
                     </div>
                 </div>
             </React.Fragment>

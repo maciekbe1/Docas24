@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../images/docas_logo.png';
 import { Link, NavLink } from 'react-router-dom';
 import '../styles/footer.css';
+import euroDotation from '../images/ue_dof_grafika.png'
 
 class Footer extends React.Component {
     render() {
@@ -38,6 +39,9 @@ class Footer extends React.Component {
                                         <NavLink activeClassName="selected" to="/contact">Kontakt</NavLink>
                                     </li>
                                     <li className="p-footer">
+                                        <NavLink activeClassName="selected" to="/forms">Formularze</NavLink>
+                                    </li>
+                                    <li className="p-footer">
                                         <a className="" href="http://app.docas24.com/index.php/site/login">Zaloguj się</a>
                                     </li>
                                     <li className="p-footer">
@@ -50,6 +54,10 @@ class Footer extends React.Component {
                             <p>Zgłoś brakujący formularz</p>
                             <a href="https://app.docas24.com/index.php/site/login" className="btn btn-primary report">Zgłoś</a>
                         </div>
+                    </div>
+                    <div className="container text-center">
+                    <img className="dotation-image" alt="dotation" src={euroDotation}/>
+                        <p>Projekt współfinansowany ze środków Regionalnego Programu Operacyjnego Województwa Podkarpackiego na lata 2014-2020.</p>
                     </div>
                     <div className="footer-social-media container">
                         <div className="row">

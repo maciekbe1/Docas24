@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class Pagination extends Component {
+class Pagination extends PureComponent {
     pages = () =>  {
         let items = [];
-        for (let i = 0; i < this.props.coutPage; i++) {
+        for (let i = 0; i < this.props.lengthPage; i++) {
           items.push(i);
         }
         return items.map((item, index) => {
-            return <li className="page-link" key={index} onClick={this.props.pager}>{item+1}</li>
+            return <li className={index+1 === this.props.activePageNumber ? "active-page page-link" : "page-link"} key={index} onClick={this.props.pager}>{item+1}</li>
         });
     }
     render() {

@@ -80,6 +80,10 @@
     width: 50px;
     align-items: center;
 }
+.active-page {
+    background-color: #0b51ca;
+    color: #fff;
+}
 .filter-option {
    display: flex;
    flex-direction: column;
