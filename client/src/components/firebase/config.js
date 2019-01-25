@@ -1,3 +1,5 @@
+import firebase from "firebase";
+
 const config = {
     apiKey: "AIzaSyBqCMYCXyQECaqNEYgElgtTOv2K8WtDaCo",
     authDomain: "docas24-69429.firebaseapp.com",
@@ -6,5 +8,7 @@ const config = {
     storageBucket: "docas24-69429.appspot.com",
     messagingSenderId: "831684098973"
 };
+
+!firebase.apps.length && firebase.initializeApp(config);
 
 export {config};

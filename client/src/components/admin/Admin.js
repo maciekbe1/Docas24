@@ -22,10 +22,7 @@ class Admin extends React.Component {
             }
         });
     }
-
     render() {
-        // var adaRef = firebase.database().ref("https://docas24-69429.firebaseio.com/forms");
-        // console.log(adaRef)
         if (!this.state.loggedAs) {
             return (
                 <Login />

@@ -1,61 +1,19 @@
 import React from 'react';
 import firebase from "firebase";
-import forms from "../../data/forms.json";
+// import FirebaseForms from '../firebase/FirebaseForms';
+import FirebaseNews from '../firebase/FirebaseNews';
 
 class AdminPanel extends React.Component {
     state = {
-        login: ''
+        login: '',
+        documents: []
     }
 
     componentWillMount() {
         const email = this.props.login;
         const login = email.substring(0, email.indexOf('@'))
         this.setState({login})
-
-        const db = firebase.firestore();
-        db.settings({
-            // timestampsInSnapshots: true
-        });
-
-
-        // odczytywanie z bazy danych !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-        // const docRef = db.collection('forms').get()
-        // .then(snapshot => {
-        //   if (snapshot.empty) {
-        //     console.log('No matching documents.');
-        //     return;
-        //   }
-        //   snapshot.forEach(doc => {
-        //     console.log(doc.id, '=>', doc.data());
-        //   });
-        // })
-        // .catch(err => {
-        //   console.log('Error getting documents', err);
-        // });
-
-
-
-        // dodawanie do bazy wpisow !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! nie usuwac
-
-        // forms.forEach(form => {
-        //     // console.log(form.tags)
-        //         const userRef = db.collection("forms").add({
-        //     id: form.id,
-        //     name: form.name,
-        //     category: form.category,
-        //     link: form.link,
-        //     image: form.image,
-        //     department: form.department,
-        //     year: form.year,
-        //     type: form.type,
-        //     description: form.description,
-        //     tags: form.tags
-        //   });
-        // })
-
     }
-
 
     userLogout = () => {
         firebase.auth().signOut().then(function() {
@@ -84,17 +42,17 @@ class AdminPanel extends React.Component {
                     <div className="row add-content">
                         <div className="col-md-3 offset-md-1 content-menu">
                             <div className="list-group" id="list-tab" role="tablist">
-                                <a className="list-group-item list-group-item-action active" id="list-forms-list" data-toggle="list" href="#list-forms" role="tab" aria-controls="forms">Formularze</a>
-                                <a className="list-group-item list-group-item-action" id="list-news-list" data-toggle="list" href="#list-news" role="tab" aria-controls="news">Aktualności</a>
+                                {/*<a className="list-group-item list-group-item-action active" id="list-forms-list" data-toggle="list" href="#list-forms" role="tab" aria-controls="forms">Formularze</a>*/}
+                                <a className="list-group-item list-group-item-action active" id="list-news-list" data-toggle="list" href="#list-news" role="tab" aria-controls="news">Aktualności</a>
                             </div>
                         </div>
                         <div className="col-md-7 content">
                             <div className="tab-content" id="nav-tabContent">
-                                <div className="tab-pane fade show active" id="list-forms" role="tabpanel" aria-labelledby="list-forms-list">
-                                1
-                                </div>
-                                <div className="tab-pane fade" id="list-news" role="tabpanel" aria-labelledby="list-news-list">
-                                2
+                                {/*<div className="tab-pane fade show active" id="list-forms" role="tabpanel" aria-labelledby="list-forms-list">
+                                    <FirebaseForms />
+                                </div>*/}
+                                <div className="tab-pane fade show active" id="list-news" role="tabpanel" aria-labelledby="list-news-list">
+                                    <FirebaseNews/>
                                 </div>
                             </div>
                         </div>

@@ -8,8 +8,33 @@ import News from '../homepage/News';
 import Reviews from '../homepage/Reviews';
 import forms from '../../data/forms.json';
 import reviews from '../../data/reviews.json';
+import firebase from "firebase";
 
 class HomePage extends React.Component {
+    state = {
+        news : [],
+        isLoading: true
+    }
+
+    componentWillMount() {
+        const db = firebase.firestore();
+        db.collection('news')
+        .orderBy('date', 'desc')
+        .limit(3)
+        .get().then((snapshot) => {
+            let documents = [];
+            snapshot.docs.forEach(doc => {
+                let items = doc;
+                documents.push(items)
+            });
+
+          this.setState({
+              news : documents,
+              isLoading: false
+            })
+
+        });
+    }
     render() {
         return (
             <div className="home">
@@ -17,7 +42,7 @@ class HomePage extends React.Component {
                 <LastForms forms={forms}/>
                 <ExploreDocas />
                 <Statistics />
-                <News />
+                <News news={this.state.news} />
                 <Reviews reviews={reviews}/>
             </div>
         );

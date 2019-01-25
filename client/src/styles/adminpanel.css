@@ -51,3 +51,74 @@
     font-size: 1.6rem;
 }
 
+.firebase-add-btn {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #0b51ca;
+    padding: 10px;
+}
+
+.fa-plus-square {
+    color: #4589fe;
+}
+
+.firebase-add-btn:hover .fa-plus-square {
+    color: #0b51ca;
+}
+
+.firebase-article {
+    border: 1px solid #0b51ca;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.firebase-btns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.firebase-btns .far {
+    color: #4589fe;
+    margin: 5px;
+}
+
+.firebase-btns .far:hover {
+    color: #0b51ca;
+}
+
+.firebase-modal-add-article .modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.firebase-modal-delete-article .modal-body,
+.firebase-modal-add-article .modal-body label {
+    font-size: 2rem;
+}
+
+.firebase-modal-add-article .modal-body input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    border: 2px solid #4589fe;
+    outline: none;
+}
+
+.firebase-modal-add-article .modal-body textarea {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    border: 2px solid #4589fe;
+    outline: none;
+}
+
+.login-form input:focus {
+    border-bottom: 2px solid #0b51ca;
+    outline: none;
+}
+
+.article-details span {
+    /* padding: 20px; */
+}
