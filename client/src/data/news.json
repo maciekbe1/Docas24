@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Witamy na Docas24.com!",
+        "text": "Witamy na Docas24 - nowym serwisie, który w szybki i intuicyjny sposób pomoże Ci kompleksowo zarządzać dokumentami - od ich wypełnienia, przez podpisanie aż po archiwizację. Zapraszamy do skorzystania z naszych usług.",
+        "img": "news-hello.jpeg"
+    },
+    {
+        "title": "Automatyczne wypełnianie danych",
+        "text": "Nuży Cię ciągłe wpisywanie tych samych danych osobowych w różnego rodzaju dokumentach? W Docas24 wystarczy, że uzupełnisz je jeden raz, a następnie automatycznie pojawią się w kolejnych formularzach.",
+        "img": "news-auto.jpeg"
+    },
+    {
+        "title": "Nowe formularze - 28.12.2018 r.",
+        "text": "Dodaliśmy nowe formularze - wnioski dla pracowników. Od dziś możesz w łatwy sposób tworzyć różnego rodzaju wnioski dotyczące urlopów i zmian godzin pracy.",
+        "img": "news-forms.jpeg"
+    },
+    {
+        "title": "test",
+        "text": "test",
+        "img": "news-auto.jpeg"
+    }
+]
