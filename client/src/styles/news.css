@@ -1,0 +1,9 @@
+.news-image {
+    margin: 20px 0;
+}
+.news-image img {
+    width: 300px;
+}
+.news-text {
+    width: 100%;
+}

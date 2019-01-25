@@ -1,42 +1,30 @@
 import React, { Component } from 'react';
-import newsHello from '../../images/news-hello.jpeg';
-import newsForms from '../../images/news-forms.jpeg';
-import newsAuto from '../../images/news-auto.jpeg';
+import { Link } from 'react-router-dom';
 
 
 class News extends Component {
     render() {
+        const { news } = this.props
         return (
             <div className="container-fluid news">
                 <h2>Aktualności</h2>
                 <div className="row">
-                    <div className="news-content">
-                        <div className="news-square d-flex justify-content-center align-items-center">
-                            <img alt="news" src={newsForms} />
-                        </div>
-                        <div className="news-text">
-                            <h3>Nowe formularze - 28.12.2018 r.</h3>
-                            <p>Dodaliśmy nowe formularze - wnioski dla pracowników. Od dziś możesz w łatwy sposób tworzyć różnego rodzaju wnioski dotyczące urlopów i zmian godzin pracy.</p>
-                        </div>
-                    </div>
-                    <div className="news-content">
-                        <div className="news-square d-flex justify-content-center align-items-center">
-                        <img alt="news" src={newsAuto} />
-                        </div>
-                        <div className="news-text">
-                            <h3>Automatyczne wypełnianie danych</h3>
-                            <p>Nuży Cię ciągłe wpisywanie tych samych danych osobowych w różnego rodzaju dokumentach? W Docas24 wystarczy, że uzupełnisz je jeden raz, a następnie automatycznie pojawią się w kolejnych formularzach.</p>
-                        </div>
-                    </div>
-                    <div className="news-content">
-                        <div className="news-square d-flex justify-content-center align-items-center">
-                            <img alt="news" src={newsHello} />
-                        </div>
-                        <div className="news-text">
-                            <h3>Witamy na Docas24.com!</h3>
-                            <p>Witamy na Docas24 - nowym serwisie, który w szybki i intuicyjny sposób pomoże Ci kompleksowo zarządzać dokumentami - od ich wypełnienia, przez podpisanie aż po archiwizację. Zapraszamy do skorzystania z naszych usług.</p>
-                        </div>
-                    </div>
+                    {news.map(article => {
+                        return (
+                            <div className="news-content" key={article.id}>
+                                <div className="news-square d-flex justify-content-center align-items-center">
+                                    <img alt="news" src={require(`../../images/${article.data().img}`)} />
+                                </div>
+                                <div className="news-text">
+                                    <h3>{article.data().title}</h3>
+                                    <p>{article.data().text}</p>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className="docas-show-more col-12">
+                    <Link to="/news" className="d-inline-block btn btn-primary docas-show-more-button">Załaduj więcej</Link>
                 </div>
             </div>
         );

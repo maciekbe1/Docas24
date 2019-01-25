@@ -11,33 +11,21 @@ class FilteredForms extends Component {
     state = {
         firstForm: this.props.firstForm,
         lastForm: this.props.lastForm,
-        activePageNumber: this.props.activePageNumber
+        activePageNumber: this.props.activePageNumber,
+        filteredLength: this.props.filtered.length
     }
     componentWillReceiveProps(nextProps) {
-      if (nextProps.firstForm !== this.state.firstForm || nextProps.lastForm !== this.state.lastForm || nextProps.activePageNumber !== this.state.activePageNumber) {
-        this.setState({ firstForm: nextProps.firstForm, lastForm: nextProps.lastForm, activePageNumber: nextProps.activePageNumber });
+      if (nextProps.firstForm !== this.state.firstForm || nextProps.lastForm !== this.state.lastForm || nextProps.activePageNumber !== this.state.activePageNumber || nextProps.filtered.length !== this.state.filteredLength) {
+        this.setState({ firstForm: nextProps.firstForm, lastForm: nextProps.lastForm, activePageNumber: nextProps.activePageNumber, filteredLength: nextProps.filtered.length });
       }
-    }
-    filteredFormPagination = () => {
-        // const { filtered } = this.props    
-        // if (filtered.length > 5) {
-            return <Pagination 
-                        firstPage={this.handlerFirst} 
-                        lastPage={this.handlerLast}
-                        lengthPage={Math.ceil(this.props.filtered.length / 5)}
-                        pager={this.handlerPages}
-                        activePageNumber={this.state.activePageNumber}
-                    />
-        // }
     }
     handlerFirst = () => {
         this.setState({firstForm: 0, lastForm: 5, activePageNumber: 1})
     }
     handlerLast = () => {
-        const { filtered } = this.props
         this.setState({
-            firstForm: filtered.length - (filtered.length % 5), 
-            lastForm: filtered.length,
+            firstForm: this.state.filteredLength === 5 ? 0 : this.state.filteredLength - (this.state.filteredLength % 5), 
+            lastForm: this.state.filteredLength,
             activePageNumber: Math.ceil(this.props.filtered.length / 5)
         })
     }

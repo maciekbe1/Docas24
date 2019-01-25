@@ -53,7 +53,10 @@ class Header extends React.Component {
                                 <NavLink activeClassName="selected" to="/forms" onClick={this.disableMenu}>Formularze</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a href="http://app.docas24.com/register">Rejestracja</a>
+                                <NavLink activeClassName="selected" to="/news" onClick={this.disableMenu}>Aktualności</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink activeClassName="selected" to="/register" onClick={this.disableMenu}>Rejestracja</NavLink>
                             </li>
                             <li className="nav-item d-flex align-items-center">
                                 <a className="btn btn-outline-primary log-in" href="http://app.docas24.com/index.php/site/login">Zaloguj się</a>

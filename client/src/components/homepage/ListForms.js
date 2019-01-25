@@ -49,10 +49,10 @@ class ListForm extends Component {
         }
     }
     render() {
-        const { forms } = this.props;
+        // const { forms } = this.props;
         return (
             <section className='form-filter'>
-                    {forms.slice(0, this.state.count).map(form => {
+                    {this.props.forms.slice(0, this.state.count).map(form => {
                      return (
                         <div className={"col-xl-4 col-md-6"} key={form.id}>
                             <div className="square">

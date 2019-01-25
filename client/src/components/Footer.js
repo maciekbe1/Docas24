@@ -45,7 +45,7 @@ class Footer extends React.Component {
                                         <a className="" href="http://app.docas24.com/index.php/site/login">Zaloguj się</a>
                                     </li>
                                     <li className="p-footer">
-                                        <a className="" href="http://app.docas24.com/register">Rejestracja</a>
+                                        <NavLink activeClassName="selected" to="/register">Rejestracja</NavLink>
                                     </li>
                                 </ul>
                             </div>

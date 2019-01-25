@@ -5,10 +5,12 @@ import ContactPage from './pages/ContactPage';
 import ThankYou from './pages/ThankYou';
 import HomePage from './pages/HomePage';
 import HelpPage from './pages/HelpPage';
+import NewsPage from './pages/NewsPage';
 import Header from './Header';
 import SocialMedia from './SocialMedia';
 import Footer from './Footer';
 import Admin from './admin/Admin';
+import RegisterPage from './pages/RegisterPage';
 
 import '../styles/main.css';
 const App = () => {
@@ -24,6 +26,8 @@ const App = () => {
                     <Route path="/help" component={HelpPage} />
                     <Route path="/forms" component={FormsPage} />
                     <Route path="/admin" component={Admin} />
+                    <Route path="/news" component={NewsPage} />
+                    <Route path="/register" component={RegisterPage} />     
                 <Footer />
                 </div>
             </HashRouter>

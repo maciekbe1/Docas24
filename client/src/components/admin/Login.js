@@ -7,14 +7,13 @@ class Login extends React.Component {
         password: ''
     }
 
-    userLogin = () => {
-
+    userLogin = (e) => {
+        e.preventDefault()
         let email = this.state.email + "@gmail.com";
         let password = this.state.password;
 
         firebase.auth().signInWithEmailAndPassword(email, password)
         .catch(function(error) {
-        // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
         if (errorCode === 'auth/wrong-password') {
@@ -22,7 +21,6 @@ class Login extends React.Component {
         } else {
             alert(errorMessage);
         }
-        console.log(error);
         });
 
     }
@@ -37,15 +35,17 @@ class Login extends React.Component {
 
     render() {
         return (
-            <div className="container login">
-                <div className="row">
-                    <div className="login-form">
-                        <input onChange={this.emailValue} name="login" type="text" placeholder="login" />
-                        <input onChange={this.passwordValue} name="password" type="password" placeholder="hasło" />
-                        <button onClick={this.userLogin} className="btn docas-btn-primary login-btn">Zaloguj</button>
+            <form onSubmit={this.userLogin}>
+                <div className="container login">
+                    <div className="row">
+                        <div className="login-form">
+                            <input onChange={this.emailValue} name="login" type="text" placeholder="login" />
+                            <input onChange={this.passwordValue} name="password" type="password" placeholder="hasło" />
+                            <button onClick={this.userLogin} className="btn docas-btn-primary login-btn">Zaloguj</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
         );
     }
 }
