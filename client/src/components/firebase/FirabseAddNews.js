@@ -1,29 +1,36 @@
 import React from 'react';
 import firebase from 'firebase';
 
+import FileBase64 from 'react-file-base64';
+
 class FirebaseAddNews extends React.Component {
     state = {
         title: '',
         text: '',
         img: '',
         isRequred: false,
+        files: []
     }
 
-    onTitleHandler = (e) => {
+    onTitleHandle = (e) => {
         this.setState({title: e.target.value})
     }
 
-    onTextHandler = (e) => {
+    onTextHandle = (e) => {
         this.setState({text: e.target.value})
     }
 
-    onImgHandler = (e) => {
-        this.setState({img: e.target.value})
-    }
+    getFiles(files){
+        const arr = []
+        files.map((file,i) => {
+            return arr.push(file.name, file.base64)
+        })
+        this.setState({ img: arr })
+      }
 
-    onArticleHandler = () => {
+    onArticleHandle = () => {
         const db = firebase.firestore();
-        if (this.state.title && this.state.text) {
+        if (this.state.title && this.state.text && this.state.img) {
             db.collection("news").add({
                 title: this.state.title,
                 text: this.state.text,
@@ -54,17 +61,24 @@ class FirebaseAddNews extends React.Component {
                                 </button>
                             </div>
                             <div className="modal-body">
+
                                 <label htmlFor="title">Tytuł:</label>
-                                <input onChange={this.onTitleHandler} name="title" required />
+                                <input onChange={this.onTitleHandle} name="title" required />
+
                                 <label htmlFor="text">Tekst:</label>
-                                <textarea onChange={this.onTextHandler} name="text" required />
+                                <textarea onChange={this.onTextHandle} name="text" required />
+
                                 <label htmlFor="img">Zdjęcie:</label>
-                                <input onChange={this.onImgHandler} name="img" required />
+                                <FileBase64 multiple={ true } onDone={ this.getFiles.bind(this) } />
+                                <div className="text-center">
+                                    {this.state.img ? <img alt="img" src={this.state.img[1]} /> : null}
+                                </div>
+
                                 <p className={this.state.isRequred ? 'text-danger' : 'text-danger d-none'}>Proszę uzupełnic wszystkie pola</p>
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary close-add-article" data-dismiss="modal">Zamknij</button>
-                                <button type="button" className="btn btn-primary" onClick={this.onArticleHandler}>Zapisz</button>
+                                <button type="button" className="btn btn-primary" onClick={this.onArticleHandle}>Zapisz</button>
                             </div>
                         </div>
                     </div>

@@ -10,9 +10,7 @@ class FirebaseNews extends React.Component {
         isLoading: true,
         element: '',
         id: '',
-        title: '',
-        text: '',
-        img: ''
+        document: ''
     }
 
     componentWillMount() {
@@ -35,7 +33,6 @@ class FirebaseNews extends React.Component {
               documents : documents,
               isLoading: false
             })
-
         });
     }
 
@@ -49,19 +46,25 @@ class FirebaseNews extends React.Component {
     }
 
     onElemDetailsHandle = (e) => {
-        const id = e.target.parentNode.parentNode.parentNode.id;
-        const elem  = e.target.parentNode.parentNode.parentNode;
-        const title = document.querySelector('.adminNewsTitle').innerHTML
-        const text = document.querySelector('.adminNewsText').innerHTML
-        const img = document.querySelector('.adminNewsImg').innerHTML
-
         this.setState({
-            element: elem,
-            id: id,
-            title: title,
-            text: text,
-            img: img
+            id: e.target.parentNode.parentNode.id
         })
+        const db = firebase.firestore();
+        db.collection('news')
+        .doc(e.target.parentNode.parentNode.id)
+        .get().then(doc => {
+            if (!doc.exists) {
+              console.log('No such document!');
+            } else {
+              console.log('Document data:', doc.data());
+              this.setState({
+                  document: doc.data()
+                })
+            }
+          })
+          .catch(err => {
+            console.log('Error getting document', err);
+          });
     }
 
     render() {
@@ -76,8 +79,8 @@ class FirebaseNews extends React.Component {
                     <FirebaseAddNews />
                     {this.state.documents.map(doc => {
                         return (
-                            <div className="firebase-article" id={doc.id} key={doc.id}>
-                                <div className="firebase-btns">
+                            <div className="firebase-article" key={doc.id}>
+                                <div  id={doc.id} className="firebase-btns">
                                     <span onClick={this.onElemDetailsHandle} className="firebase-edit-btn firebase-edit-btn" data-toggle="modal" data-target="#firebaseEditArticle"><i className="far fa-edit fa-3x"></i></span>
                                     <span onClick={this.onElemDetailsHandle} className="firebase-delete-btn" data-toggle="modal" data-target="#firebaseDeleteArticle"><i className="far fa-trash-alt fa-3x"></i></span>
                                 </div>
@@ -89,12 +92,12 @@ class FirebaseNews extends React.Component {
                                     <div className="adminNewsText">{doc.data().text}</div>
 
                                     <span>Zdjęcie:</span>
-                                    <div className="adminNewsImg">{doc.data().img}</div>
+                                    <div className="adminNewsImg"><img alt="news-img" src={doc.data().img[1]} /></div>
                                 </div>
                             </div>
                         )
                     })}
-                    <FirebaseEditNews state={this.state} />
+                    <FirebaseEditNews document={this.state.document} id={this.state.id} />
                     <FirebaseDeleteNews element={this.state.element} id={this.state.id} />
                 </div>
             )

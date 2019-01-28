@@ -79,6 +79,9 @@
 
 .firebase-btns .far {
     color: #4589fe;
+}
+
+.firebase-btns span {
     margin: 5px;
 }
 
