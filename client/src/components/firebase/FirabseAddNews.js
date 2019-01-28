@@ -32,10 +32,10 @@ class FirebaseAddNews extends React.Component {
         const db = firebase.firestore();
         if (this.state.title && this.state.text && this.state.img) {
             db.collection("news").add({
+                date: firebase.firestore.FieldValue.serverTimestamp(),
                 title: this.state.title,
                 text: this.state.text,
-                img: this.state.img,
-                date: firebase.firestore.FieldValue.serverTimestamp()
+                img: this.state.img
             });
 
             document.querySelector('.close-add-article').click();
