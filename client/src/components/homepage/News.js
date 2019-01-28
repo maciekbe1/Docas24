@@ -13,7 +13,7 @@ class News extends Component {
                         return (
                             <div className="news-content" key={article.id}>
                                 <div className="news-square d-flex justify-content-center align-items-center">
-                                    <img alt="news" src={require(`../../images/${article.data().img}`)} />
+                                    <img alt="news" src={article.data().img[1]} />
                                 </div>
                                 <div className="news-text">
                                     <h3>{article.data().title}</h3>

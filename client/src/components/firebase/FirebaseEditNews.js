@@ -1,5 +1,7 @@
 import React from 'react';
 import firebase from "firebase";
+import FileBase64 from 'react-file-base64';
+
 
 class FirebaseEditNews extends React.Component {
     state = {
@@ -11,26 +13,22 @@ class FirebaseEditNews extends React.Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        if(nextProps.state.title !== this.props.state.title) {
+        if(nextProps.document.title !== this.props.document.title) {
             this.setState({
-                title: nextProps.state.title,
-                text: nextProps.state.text,
-                img: nextProps.state.img,
-                id: nextProps.state.id
+                title: nextProps.document.title,
+                text: nextProps.document.text,
+                img: [nextProps.document.img[0], nextProps.document.img[1]],
+                id: nextProps.id
             })
         }
     }
 
-    onTitleHandler = (e) => {
+    onTitleHandle = (e) => {
         this.setState({title: e.target.value})
     }
 
-    onTextHandler = (e) => {
+    onTextHandle = (e) => {
         this.setState({text: e.target.value})
-    }
-
-    onImgHandler = (e) => {
-        this.setState({img: e.target.value})
     }
 
     onEditArticleHandle = () => {
@@ -43,8 +41,15 @@ class FirebaseEditNews extends React.Component {
                 img: this.state.img,
             });
         document.querySelector('.close-edit-article').click();
-
     }
+
+    getFiles(files){
+        const arr = []
+        files.map((file,i) => {
+            return arr.push(file.name, file.base64)
+        })
+        this.setState({ img: arr })
+      }
 
     render() {
         return (
@@ -60,13 +65,17 @@ class FirebaseEditNews extends React.Component {
                             </div>
                             <div className="modal-body">
                                 <label htmlFor="title">Tytuł:</label>
-                                <input onChange={e => this.onTitleHandler(e)} value={this.state.title} name="title" />
+                                <input onChange={this.onTitleHandle} value={this.state.title} name="title" />
 
                                 <label htmlFor="text">Tekst:</label>
-                                <textarea onChange={this.onTextHandler} value={this.state.text} name="text" />
+                                <textarea onChange={this.onTextHandle} value={this.state.text} name="text" />
 
                                 <label htmlFor="img">Zdjęcie:</label>
-                                <input onChange={this.onImgHandler} value={this.state.img} name="img" />
+                                <FileBase64 multiple={ true } onDone={ this.getFiles.bind(this) } />
+                                <div className="text-center">
+                                    <img alt="img" src={this.state.img[1]} />
+                                </div>
+
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary close-edit-article" data-dismiss="modal">Zamknij</button>
