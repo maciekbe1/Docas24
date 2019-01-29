@@ -11,13 +11,53 @@ import SocialMedia from './SocialMedia';
 import Footer from './Footer';
 import Admin from './admin/Admin';
 import RegisterPage from './pages/RegisterPage';
+import IdleTimer from 'react-idle-timer';
+import firebase from "firebase";
 
 import '../styles/main.css';
-const App = () => {
-    return (
+class App extends React.Component {
+    constructor(props) {
+        super(props)
+        this.idleTimer = null
+        this.onAction = this.onAction.bind(this)
+        this.onActive = this.onActive.bind(this)
+        this.onIdle = this.onIdle.bind(this)
+        this.state = {
+            loggedAs: ''
+        }
+      }
+
+      onAction = (e) => {
+        // console.log('user did something', e)
+      }
+
+      onActive = (e) => {
+        // console.log('user is active', e)
+        // console.log('time remaining', this.idleTimer.getRemainingTime())
+      }
+
+      onIdle = (e) => {
+        // console.log('user is idle', e)
+        // console.log('last active', this.idleTimer.getLastActiveTime())
+        firebase.auth().signOut().then(function() {
+            console.log('Wylogowano')
+          }).catch(function(error) {
+            console.log(error)
+          });
+      }
+      render() {
+              return (
         <div>
             <HashRouter>
                 <div>
+                <IdleTimer
+                    ref={ref => { this.idleTimer = ref }}
+                    element={document}
+                    onActive={this.onActive}
+                    onIdle={this.onIdle}
+                    onAction={this.onAction}
+                    debounce={1000}
+                    timeout={1000 * 60 * 10} />
                 <Header />
                 <SocialMedia />
                     <Route path="/" exact component={HomePage} />
@@ -27,11 +67,13 @@ const App = () => {
                     <Route path="/forms" component={FormsPage} />
                     <Route path="/admin" component={Admin} />
                     <Route path="/news" component={NewsPage} />
-                    <Route path="/register" component={RegisterPage} />     
+                    <Route path="/register" component={RegisterPage} />
                 <Footer />
                 </div>
             </HashRouter>
         </div>
     )
+      }
+
 }
 export default App;
