@@ -42,6 +42,12 @@ class Footer extends React.Component {
                                         <li className="p-footer">
                                             <NavLink activeClassName="selected" to="/forms">Formularze</NavLink>
                                         </li>
+                                        <li className="p-footer">
+                                            <NavLink activeClassName="selected" to="/regulations">Regulamin</NavLink>
+                                        </li>
+                                        <li className="p-footer">
+                                            <NavLink activeClassName="selected" to="/payments">Pakiety Premium</NavLink>
+                                        </li>
                                     </ul>
                                     <ul className="col-6">
                                         <li className="p-footer">
@@ -52,6 +58,9 @@ class Footer extends React.Component {
                                         </li>
                                         <li className="p-footer">
                                             <NavLink activeClassName="selected" to="/register">Rejestracja</NavLink>
+                                        </li>
+                                        <li className="p-footer">
+                                            <NavLink activeClassName="selected" to="/privacy-policy">Polityka Prywatności</NavLink>
                                         </li>
                                     </ul>
                                 </div>

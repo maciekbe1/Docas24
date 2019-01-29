@@ -11,6 +11,9 @@ import SocialMedia from './SocialMedia';
 import Footer from './Footer';
 import Admin from './admin/Admin';
 import RegisterPage from './pages/RegisterPage';
+import Regulations from './pages/Regulations'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import Payments from './pages/Payments'
 import IdleTimer from 'react-idle-timer';
 import firebase from "firebase";
 
@@ -68,6 +71,9 @@ class App extends React.Component {
                     <Route path="/admin" component={Admin} />
                     <Route path="/news" component={NewsPage} />
                     <Route path="/register" component={RegisterPage} />
+                    <Route path="/regulations" component={Regulations} />
+                    <Route path="/privacy-policy" component={PrivacyPolicy} />
+                    <Route path="/payments" component={Payments} />
                 <Footer />
                 </div>
             </HashRouter>
