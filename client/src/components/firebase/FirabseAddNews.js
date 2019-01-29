@@ -71,7 +71,7 @@ class FirebaseAddNews extends React.Component {
                                 <label htmlFor="img">Zdjęcie:</label>
                                 <FileBase64 multiple={ true } onDone={ this.getFiles.bind(this) } />
                                 <div className="text-center">
-                                    {this.state.img ? <img alt="img" src={this.state.img[1]} /> : null}
+                                    {this.state.img ? <img className="w-100" alt="img" src={this.state.img[1]} /> : null}
                                 </div>
 
                                 <p className={this.state.isRequred ? 'text-danger' : 'text-danger d-none'}>Proszę uzupełnic wszystkie pola</p>

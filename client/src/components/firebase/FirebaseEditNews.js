@@ -73,7 +73,7 @@ class FirebaseEditNews extends React.Component {
                                 <label htmlFor="img">Zdjęcie:</label>
                                 <FileBase64 multiple={ true } onDone={ this.getFiles.bind(this) } />
                                 <div className="text-center">
-                                    <img alt="img" src={this.state.img[1]} />
+                                    <img className="w-100" alt="img" src={this.state.img[1]} />
                                 </div>
 
                             </div>
