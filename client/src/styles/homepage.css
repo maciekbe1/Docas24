@@ -31,7 +31,7 @@
     text-align: center;
 }
 .docas-show-more-button {
-    line-height: 4rem;
+    line-height: 60px;
     height: 60px;
     width: 200px;
     margin-top: 10px;
@@ -227,6 +227,11 @@
 .news-content {
     max-width: 570px;
     margin: 10px;
+    position: relative;
+}
+.news-content .read-more-article {
+    position: absolute;
+    bottom: 10px;
 }
 .news-square {
     height: 300px;
@@ -248,9 +253,6 @@
 }
 .news-content:hover h3 {
     font-weight: bold;
-}
-.news-content:hover {
-    border-bottom: 1px solid #0b51ca;
 }
 .news img {
     width: 100%;

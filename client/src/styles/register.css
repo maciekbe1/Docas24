@@ -1,3 +1,26 @@
 .docas-register-from {
     width: 500px;
 }
+.register-image{
+    width: 100%;
+}
+.register-button {
+    margin-top: 20px;
+}
+.docas-register-from input {
+    padding: 5px;
+}
+.register-success img {
+    width: 100px;
+}
+.register-success h4, .register-success h2 {
+    margin: 20px 0;
+}
+@media (max-width: 992px) {
+    .register-image {
+        position: absolute;
+        bottom: 0;
+        opacity: 0.1;
+        width: 90%;
+    }
+}

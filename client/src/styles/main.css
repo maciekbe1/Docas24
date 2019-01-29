@@ -110,14 +110,29 @@ ul {
 .white {
     color: #ffffff;
 }
-
+.margin-inline-start {
+    margin-inline-start: auto;
+}
 .send-message-success > .row {
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 250px 0;
 }
-
+.pagination li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 2rem;
+}
+.page-link-style {
+    width: 50px;
+}
+.pag-container {
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 1600px) {
     html {
         font-size: 50% !important;

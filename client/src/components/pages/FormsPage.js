@@ -7,8 +7,6 @@ import Formsfilters from '../forms/FormsFilters';
 class FormsPage extends React.Component {
     state = {
         search: "",
-        firstForm: 0,
-        lastForm: 5,
         forms: forms,
         category: '',
         type: '',
@@ -36,7 +34,7 @@ class FormsPage extends React.Component {
      }
      
     onChange = e => {
-        this.setState({search: e.target.value, firstForm: 0, lastForm: 5})
+        this.setState({search: e.target.value})
     }
     componentDidMount(props){
         if (this.props.location.state !== undefined) {
@@ -106,7 +104,7 @@ class FormsPage extends React.Component {
                     <div className="row">
                         <div className="col-lg-9">
                             <h2 className="text-center">Dostępne formularze</h2>
-                            <FilteredForms activePageNumber={1} firstForm={this.state.firstForm} lastForm={this.state.lastForm} filtered={filtered} />
+                            <FilteredForms filtered={filtered} />
                         </div>
                         
                         <div className="col-lg-3 categories">

@@ -17,14 +17,15 @@ class News extends Component {
                                 </div>
                                 <div className="news-text">
                                     <h3>{article.data().title}</h3>
-                                    <p>{article.data().text}</p>
+                                    <p>{article.data().text.split(" ").join(" ").slice(0, 200)}...</p>
                                 </div>
+                                <Link to={`/news/${article.id}`} className="btn btn-outline-primary read-more-article">Przeczytaj</Link>
                             </div>
                         )
                     })}
                 </div>
                 <div className="docas-show-more col-12">
-                    <Link to="/news" className="d-inline-block btn btn-primary docas-show-more-button">Załaduj więcej</Link>
+                    <Link to="/news" className="d-inline-block btn btn-primary docas-show-more-button">Pokaż więcej</Link>
                 </div>
             </div>
         );

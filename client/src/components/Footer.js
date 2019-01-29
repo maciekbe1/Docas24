@@ -30,34 +30,41 @@ class Footer extends React.Component {
                         </div>
                         <div className="col-sm-3 d-flex flex-column align-items-center">
                             <div className="d-flex flex-column">
-                                <p className="font-weight-bold">Skrócone Menu</p>
-                                <ul>
-                                    <li className="p-footer">
-                                        <NavLink activeClassName="selected" to="/help">Pomoc</NavLink>
-                                    </li>
-                                    <li className="p-footer">
-                                        <NavLink activeClassName="selected" to="/contact">Kontakt</NavLink>
-                                    </li>
-                                    <li className="p-footer">
-                                        <NavLink activeClassName="selected" to="/forms">Formularze</NavLink>
-                                    </li>
-                                    <li className="p-footer">
-                                        <a className="" href="http://app.docas24.com/index.php/site/login">Zaloguj się</a>
-                                    </li>
-                                    <li className="p-footer">
-                                        <NavLink activeClassName="selected" to="/register">Rejestracja</NavLink>
-                                    </li>
-                                </ul>
+                                <p className="font-weight-bold text-center">Skrócone Menu</p>
+                                <div className="row">
+                                    <ul className="col-6">
+                                        <li className="p-footer">
+                                            <NavLink activeClassName="selected" to="/help">Pomoc</NavLink>
+                                        </li>
+                                        <li className="p-footer">
+                                            <NavLink activeClassName="selected" to="/contact">Kontakt</NavLink>
+                                        </li>
+                                        <li className="p-footer">
+                                            <NavLink activeClassName="selected" to="/forms">Formularze</NavLink>
+                                        </li>
+                                    </ul>
+                                    <ul className="col-6">
+                                        <li className="p-footer">
+                                            <NavLink activeClassName="selected" to="/news">Aktualności</NavLink>
+                                        </li>
+                                        <li className="p-footer">
+                                            <a className="" href="http://app.docas24.com/index.php/site/login">Zaloguj się</a>
+                                        </li>
+                                        <li className="p-footer">
+                                            <NavLink activeClassName="selected" to="/register">Rejestracja</NavLink>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-sm-3 d-flex flex-column align-items-center">
+                        <div className="col-sm-3 d-flex flex-column align-items-center font-weight-bold">
                             <p>Zgłoś brakujący formularz</p>
                             <a href="https://app.docas24.com/index.php/site/login" className="btn btn-primary report">Zgłoś</a>
                         </div>
                     </div>
                     <div className="container text-center">
                     <img className="dotation-image" alt="dotation" src={euroDotation}/>
-                        <p>Projekt współfinansowany ze środków Regionalnego Programu Operacyjnego Województwa Podkarpackiego na lata 2014-2020.</p>
+                        <p className="p-footer">Projekt współfinansowany ze środków Regionalnego Programu Operacyjnego Województwa Podkarpackiego na lata 2014-2020.</p>
                     </div>
                     <div className="footer-social-media container">
                         <div className="row">
