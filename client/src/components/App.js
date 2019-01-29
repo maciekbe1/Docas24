@@ -16,6 +16,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import Payments from './pages/Payments'
 import IdleTimer from 'react-idle-timer';
 import firebase from "firebase";
+import ScrollToTop from './ScrollToTop'
 
 import '../styles/main.css';
 class App extends React.Component {
@@ -52,6 +53,7 @@ class App extends React.Component {
               return (
         <div>
             <HashRouter>
+            <ScrollToTop>
                 <div>
                 <IdleTimer
                     ref={ref => { this.idleTimer = ref }}
@@ -76,6 +78,7 @@ class App extends React.Component {
                     <Route path="/payments" component={Payments} />
                 <Footer />
                 </div>
+                </ScrollToTop>
             </HashRouter>
         </div>
     )
