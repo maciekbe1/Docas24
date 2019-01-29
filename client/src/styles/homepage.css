@@ -237,12 +237,12 @@
     margin: 32px 0 40px 48px;
 }
 .news-text h3 {
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     line-height: 32px;
     color: #0b51ca;
 }
 .news-text p {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     line-height: 28px;
     margin-top: 34px;
 }
@@ -261,6 +261,7 @@
 .block-reviews {
     margin-top: 100px;
     margin-bottom: 120px;
+    max-width: 1920px;
 }
 .block-reviews h2 {
     margin-bottom: 100px;
