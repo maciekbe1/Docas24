@@ -4,3 +4,6 @@
 .modal-footer .btn {
     font-size: 2rem;
 }
+.moda-tag-list {
+    flex-wrap: wrap;
+}

@@ -22,7 +22,7 @@ const Modal = ({ handleClose, activeModal, formName, formCategory, formType, for
                         <li><p><span className="font-weight-bold">Kategoria:</span> {formCategory}</p></li>
                         <li><p><span className="font-weight-bold">Typ:</span> {formType}</p></li>
                         <li><p><span className="font-weight-bold">Opis:</span> {formDescription}</p></li>
-                        <li className="d-flex"><p><span className="font-weight-bold">Tagi:</span></p><ul className="d-flex">
+                        <li className="d-flex"><p><span className="font-weight-bold">Tagi:</span></p><ul className="d-flex moda-tag-list">
                             {
                                 formTag.map((tag, index) =>{
                                     return <li key={index}><p>#{tag}</p></li>
