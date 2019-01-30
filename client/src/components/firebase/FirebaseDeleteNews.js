@@ -1,11 +1,12 @@
 import React from 'react';
 import firebase from "firebase";
+import {newsEnvironment} from '../firebase/config';
 
 class FirebaseDeleteNews extends React.Component {
 
     onConfirmHandle = () => {
         const db = firebase.firestore();
-        db.collection('news').doc(this.props.id).delete();
+        db.collection(newsEnvironment).doc(this.props.id).delete();
         document.querySelector('.close-delete-article').click();
     }
 

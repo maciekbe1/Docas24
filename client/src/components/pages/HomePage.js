@@ -9,6 +9,7 @@ import Reviews from '../homepage/Reviews';
 import forms from '../../data/forms.json';
 import reviews from '../../data/reviews.json';
 import firebase from "firebase";
+import {newsEnvironment} from '../firebase/config'
 
 class HomePage extends React.Component {
     state = {
@@ -17,8 +18,9 @@ class HomePage extends React.Component {
     }
 
     componentWillMount() {
+
         const db = firebase.firestore();
-        db.collection('news')
+        db.collection(newsEnvironment)
         .orderBy('date', 'desc')
         .limit(3)
         .get().then((snapshot) => {
