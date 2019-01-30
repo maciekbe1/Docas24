@@ -5,6 +5,7 @@ import Article from '../news/Article';
 
 import firebase from "firebase";
 import '../../styles/news.css'
+import {newsEnvironment} from '../firebase/config';
 
 class NewsPage extends Component {
     state = {
@@ -14,7 +15,7 @@ class NewsPage extends Component {
     }
     componentWillMount() {
         const db = firebase.firestore();
-        db.collection('news')
+        db.collection(newsEnvironment)
         .orderBy('date', 'desc')
         .get().then((snapshot) => {
             let documents = [];
@@ -37,6 +38,11 @@ class NewsPage extends Component {
     articleSelectedHandler = (id) => {
         this.props.history.push( `/news/${id.id}` );
     }
+    onChangeText = (html) => {
+        const tmp = document.createElement('div');
+        tmp.innerHTML = html;
+        return tmp.textContent.slice(0, 200) || tmp.innerText.slice(0, 200);
+    }
     artilcesRender = () => {
         if (this.props.history.location.pathname === '/news') {
             return (
@@ -57,7 +63,7 @@ class NewsPage extends Component {
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <p>{latest.data().text.split(" ").join(" ").slice(0, 200)}...</p>
+                                                    <p>{this.onChangeText(latest.data().text)}...</p>
                                                 </div>
                                                 <div className="d-flex justify-content-end">
                                                     <Link to={`${this.props.match.url}/${latest.id}`} className="btn btn-outline-primary read-more-article">Przeczytaj</Link>
@@ -84,18 +90,18 @@ class NewsPage extends Component {
             {this.artilcesRender()}
 
                     {
-                        this.props.history.location.pathname === '/news' ? 
+                        this.props.history.location.pathname === '/news' ?
                         this.state.news.slice(2+(currentPage - 1)*displayNews, 2+(currentPage*displayNews)).map((article, index) => {
                             return (
                                 <div className="row articles-row" key={index}>
-                                
+
                                     <div className="col-md-4 articles-image d-flex justify-content-center align-items-center">
                                         <img alt="news" src={article.data().img[1]} />
                                     </div>
-                                    
+
                                     <div className="col-md-8 article-text">
                                         <h3>{article.data().title}</h3>
-                                        <p>{article.data().text.split(" ").join(" ").slice(0, 200)}...</p>
+                                        <p>{this.onChangeText(article.data().text)}...</p>
                                         <div className="d-flex justify-content-end">
                                             <Link to={`${this.props.match.url}/${article.id}`} className="btn btn-outline-primary read-more-article" onClick={() => this.articleSelectedHandler(article)}>Przeczytaj</Link>
                                         </div>
@@ -106,7 +112,7 @@ class NewsPage extends Component {
                     ) : null
                 }
                 {
-                    this.props.history.location.pathname === '/news' ? 
+                    this.props.history.location.pathname === '/news' ?
                     <div className={this.state.newsLength  <= displayNews ? "d-none" : "pag-container"}>
                         <Pagination
                             total={total}
@@ -191,7 +197,7 @@ class NewsPage extends Component {
                     </div>
                         : null
                 }
-                
+
                 <Route path={this.props.match.url + '/:id'} component={Article} />
             </div>
         );

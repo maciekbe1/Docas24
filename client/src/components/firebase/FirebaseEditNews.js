@@ -1,7 +1,8 @@
 import React from 'react';
 import firebase from "firebase";
 import FileBase64 from 'react-file-base64';
-
+import {newsEnvironment} from '../firebase/config';
+import ReactQuill from 'react-quill';
 
 class FirebaseEditNews extends React.Component {
     state = {
@@ -33,7 +34,7 @@ class FirebaseEditNews extends React.Component {
 
     onEditArticleHandle = () => {
         const db = firebase.firestore();
-        db.collection('news')
+        db.collection(newsEnvironment)
             .doc(this.state.id)
             .update({
                 title: this.state.title,
@@ -49,6 +50,10 @@ class FirebaseEditNews extends React.Component {
             return arr.push(file.name, file.base64)
         })
         this.setState({ img: arr })
+      }
+
+      handleChange(value) {
+        this.setState({ text: value })
       }
 
     render() {
@@ -68,7 +73,8 @@ class FirebaseEditNews extends React.Component {
                                 <input onChange={this.onTitleHandle} value={this.state.title} name="title" />
 
                                 <label htmlFor="text">Tekst:</label>
-                                <textarea onChange={this.onTextHandle} value={this.state.text} name="text" />
+                                <ReactQuill value={this.state.text} onChange={this.handleChange.bind(this)} modules={this.modules} formats={this.formats}/>
+
 
                                 <label htmlFor="img">Zdjęcie:</label>
                                 <FileBase64 multiple={ true } onDone={ this.getFiles.bind(this) } />

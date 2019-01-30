@@ -11,4 +11,6 @@ const config = {
 
 !firebase.apps.length && firebase.initializeApp(config);
 
-export {config};
+const newsEnvironment = window.location.hostname === 'localhost' ? 'news-dev' : 'news'
+
+export {config, newsEnvironment};

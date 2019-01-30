@@ -3,6 +3,8 @@ import firebase from "firebase";
 import FirebaseAddNews from './FirabseAddNews';
 import FirebaseDeleteNews from './FirebaseDeleteNews';
 import FirebaseEditNews from './FirebaseEditNews';
+import {newsEnvironment} from '../firebase/config';
+import ReactHtmlParser from 'react-html-parser';
 
 class FirebaseNews extends React.Component {
     state = {
@@ -20,7 +22,7 @@ class FirebaseNews extends React.Component {
 
     onUpdateNews = () => {
         const db = firebase.firestore();
-        db.collection('news')
+        db.collection(newsEnvironment)
         .orderBy('date', 'desc')
         .get().then((snapshot) => {
             let documents = [];
@@ -38,8 +40,8 @@ class FirebaseNews extends React.Component {
 
     onCheckNews = () => {
         const db = firebase.firestore();
-        db.collection('news').onSnapshot(querySnapshot => {
-            setTimeout(() => { this.onUpdateNews() }, 1000);
+        db.collection(newsEnvironment).onSnapshot(querySnapshot => {
+            setTimeout(() => { this.onUpdateNews() }, 2000);
         }, err => {
             console.log(`Encountered error: ${err}`);
         });
@@ -50,7 +52,7 @@ class FirebaseNews extends React.Component {
             id: e.target.parentNode.parentNode.id
         })
         const db = firebase.firestore();
-        db.collection('news')
+        db.collection(newsEnvironment)
         .doc(e.target.parentNode.parentNode.id)
         .get().then(doc => {
             if (!doc.exists) {
@@ -111,11 +113,12 @@ class FirebaseNews extends React.Component {
                                                     <span>Tytuł:</span>
                                                     <p className="adminNewsTitle">{doc.data().title}</p>
 
-                                                    <span>Tekst:</span>
-                                                    <p className="adminNewsText">{doc.data().text}</p>
+                                                    <span>Podgląd:</span>
+                                                    <div className="article-details-preview">
+                                                        <div className="adminNewsImg article-image float-left"><img alt="news-img" src={doc.data().img[1]} /></div>
+                                                        <div className="adminNewsText">{ReactHtmlParser(doc.data().text)}</div>
+                                                    </div>
 
-                                                    <span>Zdjęcie:</span>
-                                                    <div className="adminNewsImg"><img alt="news-img" src={doc.data().img[1]} /></div>
                                                 </div>
                                             </div>
                                         </div>
