@@ -53,31 +53,31 @@ class App extends React.Component {
               return (
         <div>
             <HashRouter>
-            <ScrollToTop>
-                <div>
-                <IdleTimer
-                    ref={ref => { this.idleTimer = ref }}
-                    element={document}
-                    onActive={this.onActive}
-                    onIdle={this.onIdle}
-                    onAction={this.onAction}
-                    debounce={1000}
-                    timeout={1000 * 60 * 10} />
-                <Header />
-                <SocialMedia />
-                    <Route path="/" exact component={HomePage} />
-                    <Route path="/contact" component={ContactPage} />
-                    <Route path="/success" component={ThankYou} />
-                    <Route path="/help" component={HelpPage} />
-                    <Route path="/forms" component={FormsPage} />
-                    <Route path="/admin" component={Admin} />
-                    <Route path="/news" component={NewsPage} />
-                    <Route path="/register" component={RegisterPage} />
-                    <Route path="/regulations" component={Regulations} />
-                    <Route path="/privacy-policy" component={PrivacyPolicy} />
-                    <Route path="/payments" component={Payments} />
-                <Footer />
-                </div>
+                <ScrollToTop>
+                    <div>
+                    <IdleTimer
+                        ref={ref => { this.idleTimer = ref }}
+                        element={document}
+                        onActive={this.onActive}
+                        onIdle={this.onIdle}
+                        onAction={this.onAction}
+                        debounce={1000}
+                        timeout={1000 * 60 * 10} />
+                    <Header />
+                    <SocialMedia />
+                        <Route path="/" exact component={HomePage} />
+                        <Route path="/contact" component={ContactPage} />
+                        <Route path="/success" component={ThankYou} />
+                        <Route path="/help" component={HelpPage} />
+                        <Route path="/forms" component={FormsPage} />
+                        <Route path="/admin" component={Admin} />
+                        <Route path="/news" component={NewsPage} />
+                        <Route path="/register" component={RegisterPage} />
+                        <Route path="/regulations" component={Regulations} />
+                        <Route path="/privacy-policy" component={PrivacyPolicy} />
+                        <Route path="/payments" component={Payments} />
+                    <Footer />
+                    </div>
                 </ScrollToTop>
             </HashRouter>
         </div>

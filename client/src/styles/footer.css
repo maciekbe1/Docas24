@@ -4,8 +4,9 @@
 footer {
     min-height: 230px;
 }
-footer a {
+.shortcut-menu a {
     color: #39436f;
+    border-bottom: 1px solid #39436f;
 }
 .report {
     width: 100px;
@@ -20,7 +21,6 @@ footer a {
     font-family: Niramit;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 28px;
 }
 .footer-logo p {
     padding: 50px 0;
@@ -61,7 +61,6 @@ footer a {
         display: none;
     }
     .footer-social-media {
-        margin-top: 30px;
         display: block;
     }
     .social-media-footer i {
@@ -84,7 +83,7 @@ footer a {
 
 @media (max-width: 768px) {
     footer {
-        margin: 50px 0 50px 0;
+        margin: 50px 0 20px 0;
     }
     .logo-footer {
         width: 140px;

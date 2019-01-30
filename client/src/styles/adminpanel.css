@@ -145,3 +145,6 @@
 .firebaseNews .card-header .mb-0 span {
     font-size: 1.6rem;
 }
+.ql-container{
+    min-height: 150px;
+}    

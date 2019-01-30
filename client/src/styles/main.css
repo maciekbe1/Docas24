@@ -45,7 +45,7 @@ ul {
     padding: 0;
 }
 .selected {
-    color: #0b51ca;
+    color: #0b51ca !important;
 }
 .selected-background {
     background: #0b51ca;

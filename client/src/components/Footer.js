@@ -31,38 +31,34 @@ class Footer extends React.Component {
                         <div className="col-sm-3 d-flex flex-column align-items-center">
                             <div className="d-flex flex-column">
                                 <p className="font-weight-bold text-center">Skrócone Menu</p>
-                                <div className="row">
-                                    <ul className="col-6">
-                                        <li className="p-footer">
+                                <div className="row justify-content-center shortcut-menu">
+                                        <span className="p-footer mx-2">
                                             <NavLink activeClassName="selected" to="/help">Pomoc</NavLink>
-                                        </li>
-                                        <li className="p-footer">
+                                        </span>
+                                        <span className="p-footer mx-2">
                                             <NavLink activeClassName="selected" to="/contact">Kontakt</NavLink>
-                                        </li>
-                                        <li className="p-footer">
+                                        </span>
+                                        <span className="p-footer mx-2">
                                             <NavLink activeClassName="selected" to="/forms">Formularze</NavLink>
-                                        </li>
-                                        <li className="p-footer">
+                                        </span>
+                                        <span className="p-footer mx-2">
                                             <NavLink activeClassName="selected" to="/regulations">Regulamin</NavLink>
-                                        </li>
-                                        <li className="p-footer">
+                                        </span>
+                                        <span className="p-footer mx-2">
                                             <NavLink activeClassName="selected" to="/payments">Pakiety Premium</NavLink>
-                                        </li>
-                                    </ul>
-                                    <ul className="col-6">
-                                        <li className="p-footer">
+                                        </span>
+                                        <span className="p-footer mx-2">
                                             <NavLink activeClassName="selected" to="/news">Aktualności</NavLink>
-                                        </li>
-                                        <li className="p-footer">
+                                        </span>
+                                        <span className="p-footer mx-2">
                                             <a className="" href="http://app.docas24.com/index.php/site/login">Zaloguj się</a>
-                                        </li>
-                                        <li className="p-footer">
+                                        </span>
+                                        <span className="p-footer mx-2">
                                             <NavLink activeClassName="selected" to="/register">Rejestracja</NavLink>
-                                        </li>
-                                        <li className="p-footer">
+                                        </span>
+                                        <span className="p-footer mx-2">
                                             <NavLink activeClassName="selected" to="/privacy-policy">Polityka Prywatności</NavLink>
-                                        </li>
-                                    </ul>
+                                        </span>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +69,7 @@ class Footer extends React.Component {
                     </div>
                     <div className="container text-center">
                     <img className="dotation-image" alt="dotation" src={euroDotation}/>
-                        <p className="p-footer">Projekt współfinansowany ze środków Regionalnego Programu Operacyjnego Województwa Podkarpackiego na lata 2014-2020.</p>
+                        <p className="p-footer h-100">Projekt współfinansowany ze środków Regionalnego Programu Operacyjnego Województwa Podkarpackiego na lata 2014-2020.</p>
                     </div>
                     <div className="footer-social-media container">
                         <div className="row">

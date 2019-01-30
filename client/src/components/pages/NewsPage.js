@@ -65,7 +65,7 @@ class NewsPage extends Component {
                                                 <div>
                                                     <p>{this.onChangeText(latest.data().text)}...</p>
                                                 </div>
-                                                <div className="d-flex justify-content-end">
+                                                <div className="d-flex justify-content-end header-read-more">
                                                     <Link to={`${this.props.match.url}/${latest.id}`} className="btn btn-outline-primary read-more-article">Przeczytaj</Link>
                                                 </div>
                                             </div>

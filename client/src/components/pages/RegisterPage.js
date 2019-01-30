@@ -34,9 +34,10 @@ class RegisterPage extends React.Component {
         const email = this.state.email
         //http://app.docas24.com/index.php/site/register?group=9a5fd6494582c5acad1660e53ab942a0
         //http://localhost/api/registerDocasUser?groupId=5c16f5ad165ad5a46d17f0acfed84dfe'
+        //https://app.docas24.com/index.php/api/registerDocasUser?groupId={hash_grupy}
         axios({
             method: 'post',
-            url: 'http://app.docas24.com/index.php/site/register?group=9a5fd6494582c5acad1660e53ab942a0',
+            url: 'https://app.docas24.com/index.php/api/registerDocasUser?groupId=9a5fd6494582c5acad1660e53ab942a0',
             data: {
                 "user": {"login": login, "password": password, "password_repeat": password_repeat, "email": email},
                 "userInfo": {}

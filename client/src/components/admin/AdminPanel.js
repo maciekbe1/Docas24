@@ -39,7 +39,7 @@ class AdminPanel extends React.Component {
                         </span>
                         <button onClick={this.userLogout} className="btn docas-btn-primary login-btn">wyloguj</button>
                     </div>
-                    <div className="row add-content">
+                    <div className="add-content">
                         <div className="col-md-3 offset-md-1 content-menu">
                             <div className="list-group" id="list-tab" role="tablist">
                                 {/*<a className="list-group-item list-group-item-action active" id="list-forms-list" data-toggle="list" href="#list-forms" role="tab" aria-controls="forms">Formularze</a>*/}

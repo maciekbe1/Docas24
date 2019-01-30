@@ -21,10 +21,13 @@ class News extends Component {
                                     <img alt="news" src={article.data().img[1]} />
                                 </div>
                                 <div className="news-text">
-                                    <h3>{article.data().title}</h3>
-                                   <div className="article-text"><p>{this.onChangeText(article.data().text)}...</p></div>
+                                    <h3 className="px-3">{article.data().title}</h3>
+                                  <p className="text-justify px-3">{this.onChangeText(article.data().text)}...</p>
+                                   
                                 </div>
-                                <Link to={`/news/${article.id}`} className="btn btn-outline-primary read-more-article">Przeczytaj</Link>
+                                <div className="d-flex justify-content-end">
+                                    <Link to={`/news/${article.id}`} className="btn btn-outline-primary read-more-article">Przeczytaj</Link>
+                                </div>
                             </div>
                         )
                     })}
