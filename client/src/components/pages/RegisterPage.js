@@ -11,7 +11,8 @@ class RegisterPage extends React.Component {
         password: "",
         password_repeat: "",
         email: "",
-        send: false
+        send: false,
+        postMessage: {}
     }
     loginHander = (e) => {
         this.setState({login: e.target.value})
@@ -25,6 +26,28 @@ class RegisterPage extends React.Component {
     emailHander = (e) => {
         this.setState({email: e.target.value})
     }
+    handlePasswordError = () => {
+        const { password, password_repeat } = this.state
+        if (password.length !== 0) {
+            if (password !== password_repeat) {
+                return <div className="text-danger"><p>hasła nie są zgodne</p></div>
+            } else {
+                return null
+            }
+        }
+    }
+    handleEmailError = () => {
+        const { postMessage } = this.state
+        if ("email" in postMessage) {
+            return <div className="text-danger"><p>{ postMessage.email }</p></div>
+        }
+    }
+    handleLoginError = () => {
+        const { postMessage } = this.state
+        if ("login" in postMessage) {
+            return <div className="text-danger"><p>{ postMessage.login }</p></div>
+        }
+    }
     handleSubmit = (e) => {
         var self = this;
         e.preventDefault();
@@ -35,19 +58,28 @@ class RegisterPage extends React.Component {
         //http://app.docas24.com/index.php/site/register?group=9a5fd6494582c5acad1660e53ab942a0
         //http://localhost/api/registerDocasUser?groupId=5c16f5ad165ad5a46d17f0acfed84dfe'
         //https://app.docas24.com/index.php/api/registerDocasUser?groupId={hash_grupy}
-        axios({
-            method: 'post',
-            url: 'https://app.docas24.com/index.php/api/registerDocasUser?groupId=9a5fd6494582c5acad1660e53ab942a0',
-            data: {
-                "user": {"login": login, "password": password, "password_repeat": password_repeat, "email": email},
-                "userInfo": {}
-            }
-        })
-        .then(function (response) {
-            console.log(response)
-            self.setState({send: true})
-        })
-        .catch(errors => console.log(errors));
+        //https://app.docas24.com/index.php/api/registerDocasUser?groupId=9a5fd6494582c5acad1660e53ab942a0
+        if (password === password_repeat) {
+            axios({
+                method: 'post',
+                url: 'https://app.docas24.com/index.php/api/registerDocasUser?groupId=9a5fd6494582c5acad1660e53ab942a0',
+                data: {
+                    "user": {"login": login, "password": password, "password_repeat": password_repeat, "email": email},
+                    "userInfo": {}
+                }
+            })
+            .then(function (response) {
+                console.log(response)
+                if (response.data.code === 200) {
+                    self.setState({send: true})
+                } else {
+                    self.setState({postMessage: response.data.message})
+                }
+            })
+            .catch(errors => console.log(errors));
+        } else {
+            console.log("passwords is not valid");
+        }
     }
     render() {
         return (
@@ -59,12 +91,21 @@ class RegisterPage extends React.Component {
                             <form onSubmit={this.handleSubmit} className="d-flex flex-column docas-register-from">
                                 <label><h3>Login</h3></label>
                                 <input className="docas-input" type="text" onChange={this.loginHander}/>
+                                {
+                                    ("login" in this.state.postMessage) ? this.handleLoginError() : null
+                                }
                                 <label><h3>Hasło</h3></label>
                                 <input className="docas-input" type="password" onChange={this.passwordHander}/>
                                 <label><h3>Powtórz hasło</h3></label>
                                 <input className="docas-input" type="password" onChange={this.password_repeatHander}/>
+                                {
+                                    this.handlePasswordError()
+                                }
                                 <label><h3>Email</h3></label>
-                                <input className="docas-input" type="text" onChange={this.emailHander}/>
+                                <input className="docas-input" type="email" required onChange={this.emailHander} />
+                                    {
+                                        ("email" in this.state.postMessage) ? this.handleEmailError() : null
+                                    }
                                 <button type="submit" className="docas-btn-primary margin-inline-start register-button">Wyślij</button>
                             </form>
                         </div>

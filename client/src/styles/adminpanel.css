@@ -31,11 +31,11 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 50px;
 }
 
 .logged-as span {
     font-size: 2rem;
+    padding: 2rem;
 }
 
 .logged-as button {
@@ -44,7 +44,6 @@
 }
 
 .add-content {
-    width: 100%;
     margin-bottom: 50px;
 }
 
@@ -137,14 +136,13 @@
 }
 
 .firebaseNews .card-header .mb-0 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    white-space: normal;
+    word-break: break-all;
 }
 
-.firebaseNews .card-header .mb-0 span {
+.firebaseNews .card-header span {
     font-size: 1.6rem;
 }
 .ql-container{
     min-height: 150px;
-}    
+}

@@ -95,12 +95,10 @@ class FirebaseNews extends React.Component {
                             return (
                                 <div className="card"  key={index}>
                                     <div className="card-header" id={`heading${index}`}>
-                                    <h5 className="mb-0">
                                         <button className="btn btn-link collapsed" data-toggle="collapse" data-target={`#collapse${index}`} aria-expanded="false" aria-controls={`collapse${index}`}>
-                                            {doc.data().title}
+                                            <h5 className="mb-0 text-left">{doc.data().title}</h5>
                                         </button>
-                                        <span>{this.onTimeDetailsHandle(doc.data().date.seconds)}</span>
-                                    </h5>
+                                        <span className="float-right">{this.onTimeDetailsHandle(doc.data().date.seconds)}</span>
                                     </div>
                                     <div id={`collapse${index}`} className="collapse" aria-labelledby={`heading${index}`} data-parent="#accordion">
                                         <div className="card-body">

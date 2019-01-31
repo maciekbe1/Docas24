@@ -40,7 +40,7 @@ class Article extends Component {
                 <div className="socials">
                     <FacebookProvider appId="334768987246948">
                       <Comments width={"100%"} href={window.location.href} />
-                      <Like size={"large"} href={window.location.href} colorScheme="dark" showFaces share/>
+                      <Like size={"large"} width={"200"} href={window.location.href} colorScheme="dark" showFaces share/>
                       <button className="btn docas-btn-primary d-block margin-inline-start" onClick={this.goBack}>Powrót</button>
                     </FacebookProvider>
                 </div>

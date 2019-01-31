@@ -64,9 +64,6 @@
     width: 300px;
     margin: 0 30px 10px 0;
 }
-iframe {
-    width: 100% !important;
-}
 @media (max-width: 768px) {
     .latest-square:first-child {
         margin-bottom: 20px;
