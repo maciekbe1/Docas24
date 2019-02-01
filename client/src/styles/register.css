@@ -1,5 +1,6 @@
 .docas-register-from {
     width: 500px;
+    z-index: 1;
 }
 .register-image{
     width: 100%;

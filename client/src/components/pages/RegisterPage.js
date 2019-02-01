@@ -59,17 +59,20 @@ class RegisterPage extends React.Component {
         //http://localhost/api/registerDocasUser?groupId=5c16f5ad165ad5a46d17f0acfed84dfe'
         //https://app.docas24.com/index.php/api/registerDocasUser?groupId={hash_grupy}
         //https://app.docas24.com/index.php/api/registerDocasUser?groupId=9a5fd6494582c5acad1660e53ab942a0
-        if (password === password_repeat) {
+        if (password === password_repeat && ((self.state.password.length !== 0) && (self.state.password_repeat.length !== 0))) {
             axios({
                 method: 'post',
                 url: 'https://app.docas24.com/index.php/api/registerDocasUser?groupId=9a5fd6494582c5acad1660e53ab942a0',
+                headers: {
+                    'X-PINGOTHER': 'pingpong',
+                    'Content-Type': 'application/json'
+                },
                 data: {
                     "user": {"login": login, "password": password, "password_repeat": password_repeat, "email": email},
                     "userInfo": {}
                 }
             })
             .then(function (response) {
-                console.log(response)
                 if (response.data.code === 200) {
                     self.setState({send: true})
                 } else {
@@ -95,9 +98,9 @@ class RegisterPage extends React.Component {
                                     ("login" in this.state.postMessage) ? this.handleLoginError() : null
                                 }
                                 <label><h3>Hasło</h3></label>
-                                <input className="docas-input" type="password" onChange={this.passwordHander}/>
+                                <input className="docas-input" type="password" required onChange={this.passwordHander}/>
                                 <label><h3>Powtórz hasło</h3></label>
-                                <input className="docas-input" type="password" onChange={this.password_repeatHander}/>
+                                <input className="docas-input" type="password" required onChange={this.password_repeatHander}/>
                                 {
                                     this.handlePasswordError()
                                 }
