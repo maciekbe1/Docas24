@@ -58,7 +58,7 @@ class FirebaseNews extends React.Component {
             if (!doc.exists) {
               console.log('No such document!');
             } else {
-              console.log('Document data:', doc.data());
+              // console.log('Document data:', doc.data());
               this.setState({
                   document: doc.data()
                 })

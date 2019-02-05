@@ -54,8 +54,10 @@ class FirebaseAddNews extends React.Component {
                 text: this.state.text,
                 img: this.state.img
             });
-
             document.querySelector('.close-add-article').click();
+            this.setState({title: '', text: '', img: ''});
+            document.querySelector(".choose-image input").value = '';
+            document.querySelector("input[name=title]").value = '';
         } else {
             this.setState({isRequred: true})
         }
@@ -68,8 +70,8 @@ class FirebaseAddNews extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <div className="firebase-add-btn" data-toggle="modal" data-target="#firebaseAddArticle">
-                <i className="far fa-plus-square fa-5x"></i>
+                <div className="firebase-add-btn">
+                    <i className="far fa-plus-square fa-5x" data-toggle="modal" data-target="#firebaseAddArticle"></i>
                 </div>
 
                 <div className="modal fade firebase-modal-add-article" id="firebaseAddArticle" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -92,7 +94,9 @@ class FirebaseAddNews extends React.Component {
                                 <ReactQuill value={this.state.text} onChange={this.handleChange.bind(this)} modules={this.modules} formats={this.formats}/>
 
                                 <label htmlFor="img">Zdjęcie:</label>
-                                <FileBase64 multiple={ true } onDone={ this.getFiles.bind(this) } />
+                                <div className="choose-image">
+                                    <FileBase64 multiple={ true } onDone={ this.getFiles.bind(this) } />
+                                </div>
                                 <div className="text-center">
                                     {this.state.img ? <img className="mw-100" alt="img" src={this.state.img[1]} /> : null}
                                 </div>

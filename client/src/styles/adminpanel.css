@@ -65,6 +65,7 @@
 
 .firebase-add-btn:hover .fa-plus-square {
     color: #0b51ca;
+    cursor: pointer;
 }
 
 .firebase-btns {
@@ -143,6 +144,6 @@
 .firebaseNews .card-header span {
     font-size: 1.6rem;
 }
-.ql-container{
+.ql-container .ql-editor {
     min-height: 150px;
 }

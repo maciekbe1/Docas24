@@ -66,3 +66,29 @@
     background: #007bb5;
     color: white;
 }
+.tweet-button {
+    display: flex;
+    font-size: 1.5rem;
+    background: #55ACEE;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    align-items: center;
+}
+.tweet-button:hover {
+    background-color: #1886C9;
+    color: white;
+}
+.tweet-button .fab {
+    margin-right: 5px !important;
+    font-size: 1.5rem;
+    width: unset;
+    background: transparent;
+    padding: 0;
+    margin-right: 2px;
+}
+.social-container {
+    display: flex;
+    margin-bottom: 20px;
+}

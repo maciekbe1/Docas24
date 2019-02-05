@@ -111,6 +111,7 @@ ul {
     color: #ffffff;
 }
 .margin-inline-start {
+    -webkit-margin-start: unset;
     margin-inline-start: auto;
 }
 .send-message-success > .row {

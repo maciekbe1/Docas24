@@ -226,8 +226,9 @@
     justify-content: center;
 }
 .news-content {
+    padding: 40px;
     width: 100%;
-    max-width: 570px;
+    max-width: 600px;
     margin: 10px;
     position: relative;
 }

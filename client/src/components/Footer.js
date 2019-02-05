@@ -64,7 +64,7 @@ class Footer extends React.Component {
                         </div>
                         <div className="col-sm-3 d-flex flex-column align-items-center font-weight-bold">
                             <p>Zgłoś brakujący formularz</p>
-                            <a href="https://app.docas24.com/index.php/site/login" className="btn btn-primary report">Zgłoś</a>
+                            <NavLink to="/contact" className="btn btn-primary report">Zgłoś</NavLink>
                         </div>
                     </div>
                     <div className="container text-center">

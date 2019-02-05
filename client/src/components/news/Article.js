@@ -3,6 +3,7 @@ import { FacebookProvider, Comments, Like } from 'react-facebook';
 import firebase from "firebase";
 import {newsEnvironment} from '../firebase/config';
 import ReactHtmlParser from 'react-html-parser';
+import TwitterShareLink from 'react-twitter-share-link';
 
 class Article extends Component {
     state = {
@@ -37,13 +38,26 @@ class Article extends Component {
                 <div className="article-text">
                     {ReactHtmlParser(this.state.news.text)}
                 </div>
+                <br/>
                 <div className="socials">
                     <FacebookProvider appId="334768987246948">
-                      <Comments width={"100%"} href={window.location.href} />
-                      <Like size={"large"} width={"200"} href={window.location.href} colorScheme="dark" showFaces share/>
-                      <button className="btn docas-btn-primary d-block margin-inline-start" onClick={this.goBack}>Powrót</button>
+                        <Comments width={"100%"} href={window.location.href} />
                     </FacebookProvider>
+                        <div className="social-container">
+                            <FacebookProvider appId="334768987246948">
+                                <Like size={"large"} width={"200"} href={window.location.href} colorScheme="dark" showFaces share/>
+                            </FacebookProvider>
+                            <TwitterShareLink link={window.location.href}>
+                                  {link => (
+                                        <a className="tweet-button margin-inline-start" href={link} rel="noopener noreferrer" target='_blank'>
+                                            <i className="fab fa-twitter"></i>
+                                            Tweet
+                                        </a>
+                                  )}
+                            </TwitterShareLink>
+                        </div>
                 </div>
+                <button className="btn docas-btn-primary d-block margin-inline-start" onClick={this.goBack}>Powrót</button>
             </div>
         );
     }

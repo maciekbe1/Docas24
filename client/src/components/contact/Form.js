@@ -38,7 +38,7 @@ class Form extends Component {
 
     render() {
         return (
-            <form action="https://formspree.io/&#112;&#105;&#111;&#116;&#114;&#46;&#102;&#114;&#117;&#107;&#97;&#99;&#122;&#46;&#115;&#103;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" method="POST">
+            <form action="https://formspree.io/&#102;&#114;&#111;&#110;&#116;&#101;&#110;&#100;&#046;&#098;&#112;&#111;&#119;&#101;&#114;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" method="POST">
                 <input onChange={this.changeForm} className="col-12 contact-field" type="text" name="name"placeholder="Imię i nazwisko" required />
                 <input onChange={this.changeForm} className="col-6 contact-field" type="email" name="email" placeholder="Adres e-mail" required />
                 <input onChange={this.changeForm} className="col-6 contact-field" type="text" pattern="\d+" name="phone" placeholder="Numer telefonu" />

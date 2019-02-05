@@ -48,7 +48,6 @@ class FirebaseForms extends React.Component {
                                     <div className="type">{doc.data().type}</div>
                                     <div className="description">{doc.data().description}</div>
                                     <div className="tags">{doc.data().tags}</div>
-
                                 </div>
                             </div>
                         )
