@@ -67,14 +67,13 @@
     color: white;
 }
 .tweet-button {
-    display: flex;
+    display: inline-table;
     font-size: 1.5rem;
     background: #55ACEE;
     color: white;
     padding: 4px 8px 4px 8px;
     border-radius: 5px;
     font-weight: bold;
-    align-items: center;
 }
 .tweet-button:hover {
     background-color: #1886C9;

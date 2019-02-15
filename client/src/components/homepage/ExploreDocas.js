@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import computer_bg from '../../images/01_Home_computer_with_bg.png';
 import line_right from '../../images/01_Home_bg_line_2.png';
 
@@ -20,7 +21,7 @@ class ExploreDocas extends Component {
                                 <p>Serwis internetowy wspierający wypełnianie, składanie i archiwizowanie dokumentów elektronicznych przygotowywanych dla urzędów, banków i innych instytucji.</p>
                                 <div className="explore-docas-btns">
                                     <a href="http://app.docas24.com/index.php/site/login" className="btn docas-btn-primary">Zaloguj się</a>
-                                    <a href="http://app.docas24.com/register" className="btn docas-btn-outline-primary">Zarejestruj się</a>
+                                    <NavLink to="/register" className="btn docas-btn-outline-primary">Zarejestruj się</NavLink>
                                 </div>
                             </div>
                         </div>
