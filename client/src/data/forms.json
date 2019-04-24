@@ -190,5 +190,53 @@
         "type": "Rekrutacja i zatrudnienie",
         "description": "Wypowiedzenie umowy o pracę zawartej na czas określony.",
         "tags": ["wypowiedzenie", "umowa o pracę", "czas określony"]
+    },
+    {
+        "id": 17,
+        "name": "Umowa pośrednictwa w sprzedaży nieruchomości",
+        "category": "Umowy",
+        "link": "https://app.docas24.com/index.php/Docas24/forms/show/docasFormId/38/?returnFullUrl=%2Findex.php%2FDocas24%2Fforms%2Fall%2FDocasForm_page%2F2%3Fajax%3Ddocas-forms-user-list",
+        "image": "ID_38_sprzedaz_nieruchomosci.png",
+        "department": "",
+        "year": "2019",
+        "type": "Nieruchomości",
+        "description": "Umowa pośrednictwa w sprzedaży nieruchomości.",
+        "tags": ["umowa pośrednictwa", "sprzedaż", "nieruchomości"]
+    },
+    {
+        "id": 18,
+        "name": "Umowa pośrednictwa w kupnie nieruchomości",
+        "category": "Umowy",
+        "link": "https://app.docas24.com/index.php/Docas24/forms/show/docasFormId/39/?returnFullUrl=%2Findex.php%2FDocas24%2Fforms%2Fall%2FDocasForm_page%2F2%3Fajax%3Ddocas-forms-user-list",
+        "image": "ID39_Umowa_posrednictwa_ w_kupnie_nieruchomosci.png",
+        "department": "",
+        "year": "2019",
+        "type": "Nieruchomości",
+        "description": "Umowa pośrednictwa w kupnie nieruchomości.",
+        "tags": ["umowa pośrednictwa", "kupno", "nieruchomości"]
+    },
+    {
+        "id": 19,
+        "name": "Umowa pośrednictwa w najmie nieruchomości dla firm",
+        "category": "Umowy",
+        "link": "https://app.docas24.com/index.php/Docas24/forms/show/docasFormId/40/?returnFullUrl=%2Findex.php%2FDocas24%2Fforms%2Fall%2Fajax%2Fdocas-forms-user-list%2FDocasForm_page%2F3%3Fajax%3Ddocas-forms-user-list",
+        "image": "ID40_Umowa_posrednictwa_w_najmie_nieruchomosci_dla_firm.png",
+        "department": "",
+        "year": "2019",
+        "type": "Nieruchomości",
+        "description": "Umowa pośrednictwa w najmie nieruchomości dla firm.",
+        "tags": ["umowa pośrednictwa", "wynajem", "nieruchomości"]
+    },
+    {
+        "id": 20,
+        "name": "Protokół zdawczo-odbiorczy",
+        "category": "Protokoły",
+        "link": "https://app.docas24.com/index.php/Docas24/forms/show/docasFormId/42/?returnFullUrl=%2Findex.php%2FDocas24%2Fforms%2Fall%2Fajax%2Fdocas-forms-user-list%2FDocasForm_page%2F3%3Fajax%3Ddocas-forms-user-list",
+        "image": "ID42_protokol_zdawczo_odbiorczy.png",
+        "department": "",
+        "year": "2019",
+        "type": "Nieruchomości",
+        "description": "Protokół zdawczo-odbiorczy.",
+        "tags": ["protokół", "nieruchomości"]
     }
 ]
