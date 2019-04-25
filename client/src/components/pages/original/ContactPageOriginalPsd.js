@@ -48,12 +48,12 @@ class ContactPage extends React.Component {
                 <div className="container contact-details-blocks">
                     <div className="address">
                         <h5>Nazwa firmy</h5>
-                        <p>MP NEW sp. z o.o. w LEŻAJSKU</p>
+                        <p>MP NEW sp. z o.o. w RZESZOWIE</p>
                     </div>
                     <div className="email">
                         <h5>Adres</h5>
-                        <p>ul. Ogrodowa 22</p>
-                        <p>Leżajsk 37-300</p>
+                        <p>ul. Tulipanowa 5</p>
+                        <p>35-604 Rzeszów</p>
                     </div>
                     <div className="phone-number">
                         <h5>Informacje</h5>

@@ -22,9 +22,9 @@ class Footer extends React.Component {
                             <div className="d-flex flex-column">
                             <p className="font-weight-bold text-center">Kontakt</p>
                                 <ul className="text-center">
-                                    <li className="p-footer font-weight-bold">MP NEW sp. z o.o. w LEŻAJSKU</li>
-                                    <li className="p-footer">ul. Ogrodowa 22</li>
-                                    <li className="p-footer">Leżajsk 37-300</li>
+                                    <li className="p-footer font-weight-bold">MP NEW sp. z o.o. w Rzeszowie</li>
+                                    <li className="p-footer">ul. Tulipanowa 5</li>
+                                    <li className="p-footer">35-604 Rzeszów</li>
                                 </ul>
                             </div>
                         </div>
