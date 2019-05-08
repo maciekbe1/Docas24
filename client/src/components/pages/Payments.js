@@ -12,7 +12,7 @@ class Payments extends Component {
                         <img className="regulation-euro-image" alt="dotation" src={euroDotation}/>
                     </div>
                     <div className="col-md-7 my-5">
-                        <p className="font-weight-bold text-justify">Firma MP NEW SP. Z O.O. W RZESZOWIE realizuje projekt w ramach działania 1.4.1 Wsparcie MŚP, poddziałanie 1.4.1 Dotacje Bezpośrednie, Regionalny Program Operacyjny Województwa Podkarpackiego na lata 2014-2020.</p>
+                        <p className="font-weight-bold text-justify">Firma MP NEW sp. z o.o. w LEŻAJSKU realizuje projekt w ramach działania 1.4.1 Wsparcie MŚP, poddziałanie 1.4.1 Dotacje Bezpośrednie, Regionalny Program Operacyjny Województwa Podkarpackiego na lata 2014-2020.</p>
                     </div>
                     <div className="col-md-7 my-5">
                         <h3 className="text-justify">Załącznik nr 2 do Regulaminu Serwisu docas24.com – Wysokość opłat za usługi świadczone przez Zarządzającego Serwisem na rzecz Użytkowników</h3>

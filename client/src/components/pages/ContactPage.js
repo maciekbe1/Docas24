@@ -36,7 +36,7 @@ class ContactPage extends React.Component {
                 <div className="container contact-details-blocks">
                     <div className="address">
                         <h5>Nazwa firmy</h5>
-                        <p>MP NEW sp. z o.o. w Rzeszowie</p>
+                        <p>MP NEW sp. z o.o. w LEŻAJSKU</p>
                     </div>
                     <div className="email">
                         <h5>Adres</h5>
@@ -56,7 +56,7 @@ class ContactPage extends React.Component {
                             <img alt="contact" src={contactImg}/>
                         </div>
                         <div className="col-6 contact-info-column">
-                            <h5>Firma <span className="font-weight-bold">MP NEW SP. Z O.O. W RZESZOWIE</span> realizuje projekt w ramach działania 1.4.1 Wsparcie MŚP, poddziałanie 1.4.1 Dotacje Bezpośrednie, Regionalny Program Operacyjny Województwa Podkarpackiego na lata 2014-2020.</h5>
+                            <h5>Firma <span className="font-weight-bold">MP NEW sp. z o.o. w LEŻAJSKU</span> realizuje projekt w ramach działania 1.4.1 Wsparcie MŚP, poddziałanie 1.4.1 Dotacje Bezpośrednie, Regionalny Program Operacyjny Województwa Podkarpackiego na lata 2014-2020.</h5>
 
                             <h5><span className="font-weight-bold">Tytuł projektu:</span> Stworzenie serwisu internetowego wspierającego wypełnianie, składanie i archiwizowanie dokumentów elektronicznych przygotowywanych dla urzędów, banków i innych instytucji.</h5>
 

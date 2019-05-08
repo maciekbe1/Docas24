@@ -48,7 +48,7 @@ class ContactPage extends React.Component {
                 <div className="container contact-details-blocks">
                     <div className="address">
                         <h5>Nazwa firmy</h5>
-                        <p>MP NEW sp. z o.o. w RZESZOWIE</p>
+                        <p>MP NEW sp. z o.o. w LEŻAJSKU</p>
                     </div>
                     <div className="email">
                         <h5>Adres</h5>
